@@ -1,0 +1,22 @@
+variable,matrix,expected_unit,justification
+potassium,"serum, urine",mmol/L,"Primary analyte; the only element surviving compositional correction in flight-grown Tokyo Bekana, and the one showing post-flight decline in Inspiration4 crew"
+sodium,"serum, urine",mmol/L,Largest flight/ground change in plant tissue (2.15x); paired intake-status relationship needed
+calcium,"serum, urine",mg/dL,Central to spaceflight bone loss; apparent plant increase shown here to be a dilution artefact
+magnesium,"serum, urine",mg/dL,"Cofactor for >300 enzymes; measured in plant tissue, absent from OSD-575"
+phosphorus,"serum, urine",mg/dL,Paired with calcium in NASA requirements (<=1.5x calcium intake)
+iron,serum,ug/dL,NASA caps intake at 8 mg/d due to spaceflight iron-store increases; central to the overload question
+ferritin,serum,ng/mL,Iron store index; the marker that motivates NASA's iron cap
+transferrin,serum,mg/dL,Iron transport capacity
+zinc,serum,ug/dL,Has a stated NASA upper limit (40 mg/d); measured in plant tissue
+selenium,serum,ug/L,Antioxidant status under spaceflight oxidative stress; not measured in OSD-575
+chloride,serum,mmol/L,Electrolyte balance; available in OSD-575 for cross-validation
+sulfate,urine,mmol/L,Sulfur is one of three elements surviving compositional correction in plant tissue
+oxalate,urine,mg/d,Renal stone risk; interacts with dietary calcium and plant intake
+25-hydroxyvitamin D,serum,ng/mL,Regulates calcium absorption; determines whether dietary calcium is bioavailable
+parathyroid hormone,serum,pg/mL,Calcium homeostasis regulator
+bone-specific alkaline phosphatase,serum,U/L,Bone formation marker
+pyridinium cross-links,urine,nmol/mmol Cr,Bone resorption marker; the source of spaceflight calcium release
+"dietary intake, per nutrient",dietary record,mg/d or ug/d,THE critical variable. No open dataset pairs recorded intake with serum status; this is the gap the request exists to fill
+energy intake,dietary record,kcal/d,Denominator for nutrient density; needed to distinguish under-eating from mineral-specific deficits
+timepoint label,metadata,-,Pre-flight / in-flight / post-flight designation with days relative to launch and return
+subject code,metadata,-,"De-identified, to link timepoints within subject for within-subject modelling"

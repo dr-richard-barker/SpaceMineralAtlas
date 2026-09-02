@@ -1,0 +1,55 @@
+\section{Introduction}
+
+Crops grown aboard the International Space Station (ISS) in the Veggie plant
+growth system are intended to supplement crew diets on long-duration missions,
+supplying fresh produce that resupply cannot economically provide
+\citep{massa2017}. Whether they do so usefully depends on what is actually in
+the tissue. Spaceflight alters plant water relations, root-zone oxygen
+availability and nutrient transport, and there is a reasonable prior that
+mineral accumulation differs from ground controls.
+
+The same minerals matter on the crew side. Spaceflight perturbs human mineral
+homeostasis: bone resorption releases calcium, fluid shifts alter electrolyte
+balance, and iron stores rise as erythropoiesis is suppressed
+\citep{smith2005,zheng2023}. If spaceflight-grown produce were to concentrate
+particular ions, a plant-rich diet could in principle interact with those
+perturbations --- an accumulation-plus-overload concern that motivates asking
+what the plants actually contain and what a realistic serving delivers.
+
+Answering that requires two things this literature has lacked. The first is
+harmonised elemental data across more than one crop. Two NASA Open Science Data
+Repository (OSDR) studies report ICP-OES elemental composition for Veggie
+produce: OSD-745 for red romaine lettuce \citep{khodadad2020,osdr745} and
+OSD-655 for Tokyo Bekana \citep{bunchek2024,osdr655}. They have not previously
+been analysed together, and as this work shows, doing so naively produces a
+result that is wrong by three orders of magnitude for five elements.
+
+The second is a clear picture of what human spaceflight mineral and dietary data
+exists and can be obtained. The NASA Life Sciences Data Archive (LSDA) holds
+records for several thousand experiments, but its catalog is designed for
+interactive browsing rather than systematic survey, and an experiment's record
+does not make its accessibility obvious at a glance.
+
+\begin{smamethod}[title=Contributions]
+\begin{enumerate}\itemsep2pt
+  \item A machine-readable survey of all \LSDATotal{} LSDA experiments,
+        annotated for mineral and nutritional content and classified by whether
+        the data can actually be obtained.
+  \item Identification and correction of a unit-labelling defect in OSD-655
+        that inflates five elements by a factor of 1000, present in the archived
+        data dictionary as well as the data files.
+  \item A compositional (centred log-ratio) reanalysis separating genuine
+        ionome changes from dry-matter dilution artefacts, showing that the two
+        Veggie crops respond differently to spaceflight.
+  \item A quantitative assessment of what a Veggie serving contributes against
+        NASA crew mineral requirements \citep{jsc67378}, and of whether dietary
+        mineral overload is achievable.
+\end{enumerate}
+\end{smamethod}
+
+We state at the outset what this work does not do. The plant and crew datasets
+come from different missions and different people; nothing here supports a
+causal claim that Veggie produce altered anyone's serum chemistry. That question
+requires paired dietary-intake and serum data, which exists --- as the
+Nutritional Status Assessment (SMO-016E) --- but is not openly available.
+Section~\ref{sec:availability} sets out the route to it.

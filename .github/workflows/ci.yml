@@ -1,0 +1,113 @@
+name: pipeline
+
+# Runs the analysis, not just a linter. The predecessor project's CI only
+# deployed a static site, so nothing ever verified that the published numbers
+# matched the code that supposedly produced them.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Tests and guards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Unit tests and synthetic-data guards
+        # These run without network access. The regression tests that need
+        # pipeline outputs skip themselves when those outputs are absent.
+        run: pytest tests/ -v
+
+  pipeline:
+    name: Full pipeline against live NASA APIs
+    runs-on: ubuntu-latest
+    # The LSDA harvest is throttled to one request per two seconds across 134
+    # pages, so this job is slow by design.
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Harvest LSDA catalog
+        run: python scripts_harvest_lsda.py
+
+      - name: Download OSDR data, harmonise units, run QC gates
+        run: python scripts_curate.py
+
+      - name: Analyse
+        run: |
+          python scripts_analyse_plants.py
+          python scripts_analyse_astronauts.py
+          python scripts_analyse_supply.py
+          python scripts_integrate.py
+          python scripts_ml.py
+
+      - name: Figures
+        run: python scripts_figures.py
+
+      - name: Regenerate manuscript numbers and verify every macro resolves
+        run: |
+          python scripts_generate_numbers.py
+          python scripts_check_macros.py
+
+      - name: Verify every DOI still resolves
+        run: python scripts_build_bibliography.py
+
+      - name: Regression tests against the live results
+        # Fails if any headline number has moved since it was published.
+        run: pytest tests/test_results_regression.py -v
+
+      - name: Build FAIR package and dashboard
+        run: |
+          python scripts_fair_package.py
+          python scripts_build_docs.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: analysis-outputs
+          path: |
+            analysis/results/
+            analysis/figures/
+            catalog/
+            data/processed/
+            fair/
+
+  pages:
+    name: Deploy dashboard
+    needs: [test, pipeline]
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,233 @@
+{
+  "n_samples": 60,
+  "features_used": [
+    "calcium",
+    "iron",
+    "magnesium",
+    "manganese",
+    "phosphorus",
+    "potassium",
+    "sodium",
+    "sulfur",
+    "zinc"
+  ],
+  "features_excluded": [
+    "aluminium",
+    "boron",
+    "copper"
+  ],
+  "schemes": {
+    "LeaveOneMissionOut": {
+      "scheme": "LeaveOneMissionOut",
+      "group_column": "mission",
+      "n_folds": 5,
+      "n_samples": 60,
+      "n_features": 9,
+      "features": [
+        "calcium",
+        "iron",
+        "magnesium",
+        "manganese",
+        "phosphorus",
+        "potassium",
+        "sodium",
+        "sulfur",
+        "zinc"
+      ],
+      "class_balance": {
+        "flight": 29,
+        "ground": 31
+      },
+      "models": {
+        "dummy_stratified": {
+          "is_baseline": true,
+          "accuracy": 0.5666666666666667,
+          "balanced_accuracy": 0.5684093437152391,
+          "accuracy_ci95": [
+            0.43333333333333335,
+            0.6833333333333333
+          ]
+        },
+        "dummy_most_frequent": {
+          "is_baseline": true,
+          "accuracy": 0.5166666666666667,
+          "balanced_accuracy": 0.5,
+          "accuracy_ci95": [
+            0.38333333333333336,
+            0.6333333333333333
+          ]
+        },
+        "logistic_l2": {
+          "is_baseline": false,
+          "accuracy": 0.5333333333333333,
+          "balanced_accuracy": 0.5305895439377086,
+          "accuracy_ci95": [
+            0.4,
+            0.6666666666666666
+          ],
+          "hyperparameters_per_fold": [
+            {
+              "clf__C": 0.1
+            },
+            {
+              "clf__C": 0.01
+            },
+            {
+              "clf__C": 1.0
+            },
+            {
+              "clf__C": 0.01
+            },
+            {
+              "clf__C": 1.0
+            }
+          ],
+          "roc_auc": 0.5027808676307007,
+          "margin_over_baseline": -0.03781979977753047
+        },
+        "random_forest": {
+          "is_baseline": false,
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.6084538375973303,
+          "accuracy_ci95": [
+            0.48333333333333334,
+            0.7166666666666667
+          ],
+          "hyperparameters_per_fold": [
+            {
+              "clf__max_depth": 2,
+              "clf__min_samples_leaf": 4
+            },
+            {
+              "clf__max_depth": 3,
+              "clf__min_samples_leaf": 4
+            },
+            {
+              "clf__max_depth": 2,
+              "clf__min_samples_leaf": 1
+            },
+            {
+              "clf__max_depth": 2,
+              "clf__min_samples_leaf": 1
+            },
+            {
+              "clf__max_depth": 3,
+              "clf__min_samples_leaf": 2
+            }
+          ],
+          "roc_auc": 0.6596218020022246,
+          "margin_over_baseline": 0.04004449388209119
+        }
+      },
+      "best_baseline_balanced_accuracy": 0.5684093437152391
+    },
+    "LeaveOneCropOut": {
+      "scheme": "LeaveOneCropOut",
+      "group_column": "crop",
+      "n_folds": 2,
+      "n_samples": 60,
+      "n_features": 9,
+      "features": [
+        "calcium",
+        "iron",
+        "magnesium",
+        "manganese",
+        "phosphorus",
+        "potassium",
+        "sodium",
+        "sulfur",
+        "zinc"
+      ],
+      "class_balance": {
+        "flight": 29,
+        "ground": 31
+      },
+      "models": {
+        "dummy_stratified": {
+          "is_baseline": true,
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.5995550611790879,
+          "accuracy_ci95": [
+            0.48333333333333334,
+            0.7166666666666667
+          ]
+        },
+        "dummy_most_frequent": {
+          "is_baseline": true,
+          "accuracy": 0.5166666666666667,
+          "balanced_accuracy": 0.5,
+          "accuracy_ci95": [
+            0.38333333333333336,
+            0.6333333333333333
+          ]
+        },
+        "logistic_l2": {
+          "is_baseline": false,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.492769744160178,
+          "accuracy_ci95": [
+            0.36666666666666664,
+            0.6166666666666667
+          ],
+          "hyperparameters_per_fold": [
+            {
+              "note": "defaults; too few groups to tune"
+            },
+            {
+              "note": "defaults; too few groups to tune"
+            }
+          ],
+          "roc_auc": 0.3959955506117909,
+          "margin_over_baseline": -0.10678531701890986
+        },
+        "random_forest": {
+          "is_baseline": false,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.4860956618464961,
+          "accuracy_ci95": [
+            0.36666666666666664,
+            0.6166666666666667
+          ],
+          "hyperparameters_per_fold": [
+            {
+              "note": "defaults; too few groups to tune"
+            },
+            {
+              "note": "defaults; too few groups to tune"
+            }
+          ],
+          "roc_auc": 0.3809788654060067,
+          "margin_over_baseline": -0.11345939933259175
+        }
+      },
+      "best_baseline_balanced_accuracy": 0.5995550611790879
+    }
+  },
+  "permutation_importance_top5": [
+    {
+      "feature": "potassium",
+      "importance_mean": 0.07548387096774194,
+      "importance_std": 0.02684654622803208
+    },
+    {
+      "feature": "sodium",
+      "importance_mean": 0.03827586206896552,
+      "importance_std": 0.0204846161934885
+    },
+    {
+      "feature": "sulfur",
+      "importance_mean": 0.030923248053392624,
+      "importance_std": 0.020072856566775578
+    },
+    {
+      "feature": "magnesium",
+      "importance_mean": 0.01293659621801999,
+      "importance_std": 0.010685371604381539
+    },
+    {
+      "feature": "iron",
+      "importance_mean": 0.006206896551724111,
+      "importance_std": 0.008275862068965481
+    }
+  ]
+}

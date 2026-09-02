@@ -1,0 +1,62 @@
+% ---------------------------------------------------------------------------
+% sma-style.sty -- shared visual identity for SpaceMineralAtlas
+% Palette matches docs/css/style.css and src/spacemineralatlas/figures.py so the
+% manuscript, the dashboard and the figures read as one piece of work.
+% ---------------------------------------------------------------------------
+\ProvidesPackage{sma-style}[2026/09/02 SpaceMineralAtlas style]
+
+\RequirePackage{xcolor}
+\definecolor{smanavy}{HTML}{2F5985}
+\definecolor{smablue}{HTML}{3B6EA5}
+\definecolor{smateal}{HTML}{3FB6A8}
+\definecolor{smamint}{HTML}{54C9BA}
+\definecolor{smagold}{HTML}{D4AF37}
+\definecolor{smacoral}{HTML}{E07A5F}
+\definecolor{smagray}{HTML}{F8FAFC}
+\definecolor{smatext}{HTML}{1E293B}
+\definecolor{smaslate}{HTML}{64748B}
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage{mathpazo}
+\RequirePackage{helvet}
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{setspace}
+\setstretch{1.10}
+
+\RequirePackage{sectsty}
+\allsectionsfont{\sffamily\color{smanavy}}
+
+\RequirePackage{graphicx}
+\RequirePackage{amsmath}
+\RequirePackage{booktabs}
+\RequirePackage{longtable}
+\RequirePackage{caption}
+\captionsetup{labelfont={color=smanavy,bf},textfont={color=smatext},font=small}
+
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{smanavy}SpaceMineralAtlas}
+\fancyhead[R]{\small\sffamily\color{smaslate}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\RequirePackage[many]{tcolorbox}
+% Callout for a caveat the reader must not miss.
+\newtcolorbox{smacaution}[1][]{
+  colback=smagray, colframe=smacoral, boxrule=0.8pt, arc=2pt,
+  left=6pt, right=6pt, top=5pt, bottom=5pt,
+  fonttitle=\bfseries\sffamily\color{smacoral}, #1
+}
+% Callout for a methodological point.
+\newtcolorbox{smamethod}[1][]{
+  colback=smagray, colframe=smateal, boxrule=0.8pt, arc=2pt,
+  left=6pt, right=6pt, top=5pt, bottom=5pt,
+  fonttitle=\bfseries\sffamily\color{smanavy}, #1
+}
+
+\RequirePackage[numbers,sort&compress]{natbib}
+\RequirePackage{hyperref}
+\hypersetup{
+  colorlinks=true, linkcolor=smanavy, citecolor=smablue,
+  urlcolor=smateal, filecolor=smanavy
+}

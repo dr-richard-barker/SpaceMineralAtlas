@@ -1,0 +1,121 @@
+{
+  "source": "NASA OSDR OSD-655 supplementary water and harvest-mass files",
+  "supplement_mission": "VEG-04A",
+  "n_tokyo_bekana_samples": 36,
+  "n_with_supplement": 14,
+  "n_without_supplement": 22,
+  "coverage_note": "Water and harvest-mass supplements exist for VEG-04A only. VEG-04B elemental samples have no matching per-pillow record.",
+  "dry_matter_fraction_range": [
+    0.05,
+    0.1
+  ],
+  "dry_matter_note": "OSD-655 reports harvested FRESH mass while ICP-OES reports concentration per DRY gram, and no dry-matter fraction is archived. Mineral content is therefore bounded across a plausible range rather than point-estimated. Archiving dry-matter fraction is the single cheapest addition that would make uptake efficiency computable.",
+  "by_condition": {
+    "Flight": {
+      "n_samples": 18,
+      "n_with_supplement": 8,
+      "mean_total_water_ml": 1480.0,
+      "mean_harvested_fresh_g": 45.3,
+      "mean_water_use_efficiency_g_per_l": 30.449395720547038
+    },
+    "Ground": {
+      "n_samples": 18,
+      "n_with_supplement": 6,
+      "mean_total_water_ml": 1814.0,
+      "mean_harvested_fresh_g": 43.73,
+      "mean_water_use_efficiency_g_per_l": 24.371363714493413
+    }
+  },
+  "uptake_index_mg_per_litre": {
+    "calcium": {
+      "Flight": {
+        "low_dry_matter": 9.423388004198413,
+        "high_dry_matter": 18.846776008396827
+      },
+      "Ground": {
+        "low_dry_matter": 5.897714476917564,
+        "high_dry_matter": 11.795428953835128
+      }
+    },
+    "copper": {
+      "Flight": {
+        "low_dry_matter": 0.01341294334860708,
+        "high_dry_matter": 0.02682588669721416
+      },
+      "Ground": {
+        "low_dry_matter": 0.01234570926990008,
+        "high_dry_matter": 0.02469141853980016
+      }
+    },
+    "iron": {
+      "Flight": {
+        "low_dry_matter": 0.10842285557926698,
+        "high_dry_matter": 0.21684571115853396
+      },
+      "Ground": {
+        "low_dry_matter": 0.07140266304871835,
+        "high_dry_matter": 0.1428053260974367
+      }
+    },
+    "potassium": {
+      "Flight": {
+        "low_dry_matter": 56.11200190374367,
+        "high_dry_matter": 112.22400380748734
+      },
+      "Ground": {
+        "low_dry_matter": 31.27691542082046,
+        "high_dry_matter": 62.55383084164092
+      }
+    },
+    "magnesium": {
+      "Flight": {
+        "low_dry_matter": 12.45468154361043,
+        "high_dry_matter": 24.90936308722086
+      },
+      "Ground": {
+        "low_dry_matter": 7.284735387484983,
+        "high_dry_matter": 14.569470774969966
+      }
+    },
+    "manganese": {
+      "Flight": {
+        "low_dry_matter": 0.43792992475879317,
+        "high_dry_matter": 0.8758598495175863
+      },
+      "Ground": {
+        "low_dry_matter": 0.22860416779202838,
+        "high_dry_matter": 0.45720833558405677
+      }
+    },
+    "sodium": {
+      "Flight": {
+        "low_dry_matter": 1.163386647912588,
+        "high_dry_matter": 2.326773295825176
+      },
+      "Ground": {
+        "low_dry_matter": 0.6409929706921126,
+        "high_dry_matter": 1.2819859413842252
+      }
+    },
+    "phosphorus": {
+      "Flight": {
+        "low_dry_matter": 7.447143084317889,
+        "high_dry_matter": 14.894286168635778
+      },
+      "Ground": {
+        "low_dry_matter": 3.934784779449988,
+        "high_dry_matter": 7.869569558899976
+      }
+    },
+    "zinc": {
+      "Flight": {
+        "low_dry_matter": 0.05694464505695204,
+        "high_dry_matter": 0.11388929011390408
+      },
+      "Ground": {
+        "low_dry_matter": 0.03586335070830233,
+        "high_dry_matter": 0.07172670141660466
+      }
+    }
+  }
+}

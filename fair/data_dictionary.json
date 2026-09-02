@@ -1,0 +1,283 @@
+{
+  "canonical_element_unit": "microgram_per_gram_of_dry_weight",
+  "unit_harmonisation": {
+    "note": "All elemental values are expressed in ug/g dry weight. mg/kg (as used by OSD-745) is numerically identical and requires no scaling.",
+    "overrides_applied": [
+      {
+        "osd_id": "OSD-655",
+        "elements": [
+          "calcium",
+          "potassium",
+          "magnesium",
+          "phosphorus",
+          "sulfur"
+        ],
+        "stated_unit": "milligram_per_gram",
+        "actual_unit": "microgram_per_gram",
+        "evidence": "Taking the stated mg/g at face value gives mean concentrations of 2943% (K), 805% (Mg), 651% (Ca), 551% (S) and 367% (P) of dry weight, which are physically impossible. Interpreted as ug/g the same values agree with OSD-745, whose lettuce elemental data are independently expressed in mg/kg: Ca 5.83 vs 4.50 mg/g, K 29.4 vs 47.9 mg/g, Mg 8.05 vs 2.60 mg/g. The three elements OSD-655 labels in ug/g (Al, B, Cu, Fe, Mn, Zn) require no correction and already agree across studies, which localises the defect to the five mg/g labels. OSD-655_dictionary_DataDictionary_OSD-655.csv repeats the incorrect unit, so the defect is in the curation metadata, not only the header."
+      }
+    ]
+  },
+  "tables": {
+    "data/processed/plant_elemental_ugg.csv": {
+      "description": "Harmonised elemental composition of Veggie-grown lettuce and Tokyo Bekana, one row per sample.",
+      "columns": {
+        "osd_id": {
+          "type": "string",
+          "description": "Source OSDR study accession"
+        },
+        "sample_name": {
+          "type": "string",
+          "description": "Original OSDR sample identifier"
+        },
+        "crop": {
+          "type": "string",
+          "description": "lettuce | tokyo_bekana"
+        },
+        "species": {
+          "type": "string",
+          "description": "Binomial species name"
+        },
+        "cultivar": {
+          "type": "string",
+          "description": "Cultivar name"
+        },
+        "reference": {
+          "type": "string",
+          "description": "Source publication"
+        },
+        "mission": {
+          "type": "string",
+          "description": "Veggie growout (VEG-01A, VEG-01B, VEG-03A, VEG-04A, VEG-04B)"
+        },
+        "condition": {
+          "type": "string",
+          "description": "Flight | Ground"
+        },
+        "pillow": {
+          "type": "string",
+          "description": "Plant pillow identifier; joins to the water and mass supplements"
+        },
+        "tissue": {
+          "type": "string",
+          "description": "Tissue assayed (leaf)"
+        },
+        "light_spectrum": {
+          "type": "string",
+          "description": "LED treatment (red | blue); OSD-655 only"
+        },
+        "harvest_day": {
+          "type": "integer",
+          "description": "Days after planting at harvest; OSD-745 only"
+        },
+        "aluminium": {
+          "symbol": "Al",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of aluminium in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "boron": {
+          "symbol": "B",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of boron in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "calcium": {
+          "symbol": "Ca",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of calcium in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "copper": {
+          "symbol": "Cu",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of copper in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "iron": {
+          "symbol": "Fe",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of iron in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "magnesium": {
+          "symbol": "Mg",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of magnesium in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "manganese": {
+          "symbol": "Mn",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of manganese in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "phosphorus": {
+          "symbol": "P",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of phosphorus in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "potassium": {
+          "symbol": "K",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of potassium in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "sodium": {
+          "symbol": "Na",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of sodium in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "sulfur": {
+          "symbol": "S",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of sulfur in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        },
+        "zinc": {
+          "symbol": "Zn",
+          "type": "number",
+          "unit": "microgram_per_gram_of_dry_weight",
+          "description": "Concentration of zinc in dried edible tissue, measured by ICP-OES and harmonised to ug/g dry weight.",
+          "measured_by": "Inductively coupled plasma optical emission spectroscopy"
+        }
+      }
+    },
+    "data/processed/astronaut_serum_cmp.csv": {
+      "description": "Inspiration4 comprehensive metabolic panel, one row per subject-timepoint, with clinical reference ranges.",
+      "columns": {
+        "subject": {
+          "type": "string",
+          "description": "De-identified crew identifier (C001-C004)"
+        },
+        "timepoint": {
+          "type": "string",
+          "description": "L-n = days before launch; R+n = days after return"
+        },
+        "day_relative": {
+          "type": "integer",
+          "description": "Days relative to return; negative is pre-flight"
+        },
+        "phase": {
+          "type": "string",
+          "description": "preflight | postflight"
+        },
+        "calcium": {
+          "type": "number",
+          "unit": "milligram_per_deciliter",
+          "description": "Serum calcium"
+        },
+        "potassium": {
+          "type": "number",
+          "unit": "millimole_per_liter",
+          "description": "Serum potassium"
+        },
+        "sodium": {
+          "type": "number",
+          "unit": "millimole_per_liter",
+          "description": "Serum sodium"
+        },
+        "chloride": {
+          "type": "number",
+          "unit": "millimole_per_liter",
+          "description": "Serum chloride"
+        },
+        "carbon_dioxide": {
+          "type": "number",
+          "unit": "millimole_per_liter",
+          "description": "Total CO2 / bicarbonate"
+        },
+        "<analyte>_range_min": {
+          "type": "number",
+          "description": "Lower clinical reference limit as supplied by OSDR"
+        },
+        "<analyte>_range_max": {
+          "type": "number",
+          "description": "Upper clinical reference limit as supplied by OSDR"
+        },
+        "<analyte>_range_position": {
+          "type": "number",
+          "description": "Position within the reference range; 0 = lower limit, 1 = upper limit"
+        },
+        "<analyte>_out_of_range": {
+          "type": "boolean",
+          "description": "True if the value lies outside the reference range"
+        }
+      }
+    },
+    "catalog/lsda_mineral_nutrition_catalog.csv": {
+      "description": "LSDA experiments mentioning or measuring a mineral or nutritional variable, annotated and ranked.",
+      "columns": {
+        "experiment_id": {
+          "type": "string",
+          "description": "LSDA experiment identifier"
+        },
+        "experiment_title": {
+          "type": "string",
+          "description": "Experiment title"
+        },
+        "parameter_name": {
+          "type": "string",
+          "description": "Variables the experiment measured, as recorded by LSDA"
+        },
+        "species": {
+          "type": "string",
+          "description": "Study organism"
+        },
+        "missions": {
+          "type": "string",
+          "description": "Missions or analog campaigns"
+        },
+        "archive_status": {
+          "type": "string",
+          "description": "LSDA free-text data availability statement"
+        },
+        "access_category": {
+          "type": "string",
+          "description": "open | request_required | held_elsewhere | not_submitted | other | unknown"
+        },
+        "mineral_<element>": {
+          "type": "boolean",
+          "description": "Element appears anywhere in the record"
+        },
+        "measured_<element>": {
+          "type": "boolean",
+          "description": "Element appears in the measured-parameter list"
+        },
+        "minerals": {
+          "type": "string",
+          "description": "Semicolon-separated list of minerals matched"
+        },
+        "n_minerals": {
+          "type": "integer",
+          "description": "Count of minerals mentioned"
+        },
+        "n_minerals_measured": {
+          "type": "integer",
+          "description": "Count of minerals measured"
+        },
+        "is_nutrition": {
+          "type": "boolean",
+          "description": "Record matches a nutritional term"
+        },
+        "relevance": {
+          "type": "integer",
+          "description": "Ranking score; ordering only, no analysis depends on it"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# SpaceMineralAtlas -- packaging and dependency manifest
+#
+# Dependencies are pinned to EXACT versions, not floors. This is deliberate:
+# a FAIR analysis that cannot be re-run against the same library versions is
+# not reproducible, and floor pins ( >= ) silently drift as upstream releases.
+# The versions below are the ones the published results were generated with.
+# ---------------------------------------------------------------------------
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spacemineralatlas"
+version = "0.1.0"
+description = "Mining NASA LSDA and OSDR for spaceflight mineral-ion and dietary data"
+readme = "README.md"
+requires-python = "==3.11.*"
+license = { text = "MIT" }
+authors = [{ name = "Richard Barker", email = "dr.richard.barker@gmail.com" }]
+keywords = ["spaceflight", "NASA", "OSDR", "LSDA", "minerals", "nutrition", "FAIR"]
+
+dependencies = [
+    "pandas==2.2.3",
+    "numpy==2.1.3",
+    "scipy==1.14.1",
+    "scikit-learn==1.5.2",
+    "matplotlib==3.9.2",
+    "seaborn==0.13.2",
+    "requests==2.32.3",
+    "openpyxl==3.1.5",      # needed to read the OSD-655 supplementary .xlsx files
+    "statsmodels==0.14.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.3"]
+
+[project.urls]
+Repository = "https://github.com/dr-richard-barker/SpaceMineralAtlas"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

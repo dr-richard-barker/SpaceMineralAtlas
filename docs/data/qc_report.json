@@ -1,0 +1,94 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "physical_plausibility",
+      "passed": true,
+      "detail": "all 12 elements within 10% of dry weight",
+      "data": {}
+    },
+    {
+      "name": "cross_study_agreement",
+      "passed": true,
+      "detail": "all 10 shared elements agree within 10.0x between crops in ground controls",
+      "data": {
+        "all_ratios": {
+          "boron": 1.607,
+          "calcium": 1.294,
+          "iron": 2.139,
+          "potassium": 2.068,
+          "magnesium": 2.776,
+          "manganese": 1.36,
+          "sodium": 5.406,
+          "phosphorus": 1.021,
+          "sulfur": 1.574,
+          "zinc": 4.267
+        }
+      }
+    },
+    {
+      "name": "design_balance",
+      "passed": true,
+      "detail": "lettuce: 11 flight / 13 ground; tokyo_bekana: 18 flight / 18 ground",
+      "data": {
+        "per_crop": {
+          "Flight": {
+            "lettuce": 11,
+            "tokyo_bekana": 18
+          },
+          "Ground": {
+            "lettuce": 13,
+            "tokyo_bekana": 18
+          }
+        },
+        "per_mission": {
+          "lettuce/VEG-01A": {
+            "Flight": 2,
+            "Ground": 3
+          },
+          "lettuce/VEG-01B": {
+            "Flight": 3,
+            "Ground": 4
+          },
+          "lettuce/VEG-03A": {
+            "Flight": 6,
+            "Ground": 6
+          },
+          "tokyo_bekana/VEG-04A": {
+            "Flight": 8,
+            "Ground": 6
+          },
+          "tokyo_bekana/VEG-04B": {
+            "Flight": 10,
+            "Ground": 12
+          }
+        }
+      }
+    },
+    {
+      "name": "missingness",
+      "passed": true,
+      "detail": "missingness acceptable; 2 element(s) measured by one study only (aluminium, copper)",
+      "data": {
+        "fractions": {
+          "aluminium": 0.4,
+          "boron": 0.2,
+          "calcium": 0.0,
+          "copper": 0.4,
+          "iron": 0.0,
+          "magnesium": 0.0,
+          "manganese": 0.0,
+          "phosphorus": 0.0,
+          "potassium": 0.0,
+          "sodium": 0.0,
+          "sulfur": 0.0,
+          "zinc": 0.0
+        },
+        "single_study_elements": [
+          "aluminium",
+          "copper"
+        ]
+      }
+    }
+  ]
+}

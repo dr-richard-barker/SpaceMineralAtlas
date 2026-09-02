@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+title: >-
+  SpaceMineralAtlas: crop-specific mineral responses to spaceflight, a
+  unit-labelling defect in OSD-655, and a survey of mineral and dietary data
+  availability across the NASA Life Sciences Data Archive
+message: If you use this software or data, please cite it as below.
+type: software
+authors:
+  - family-names: Barker
+    given-names: Richard
+    email: dr.richard.barker@gmail.com
+    orcid: 'https://orcid.org/0000-0002-4525-3341'
+repository-code: 'https://github.com/dr-richard-barker/SpaceMineralAtlas'
+abstract: >-
+  Open-data reanalysis of the two NASA Veggie studies with archived ICP-OES
+  elemental data (OSD-745 lettuce, OSD-655 Tokyo Bekana) together with
+  Inspiration4 clinical chemistry (OSD-575), plus a machine-readable survey of
+  all 2,676 NASA Life Sciences Data Archive experiments annotated for mineral
+  and dietary content and classified by accessibility. Identifies a 1000-fold
+  unit-labelling defect in OSD-655 present in both the data files and the
+  archived data dictionary; shows that the two Veggie crops do not share a
+  flight ionome response and that apparent calcium and iron increases are
+  dry-matter dilution artefacts; and establishes that dietary mineral overload
+  from Veggie produce is not achievable at plausible harvest scales.
+keywords:
+  - spaceflight
+  - space nutrition
+  - ionome
+  - NASA Veggie
+  - compositional data analysis
+  - OSDR
+  - LSDA
+  - FAIR data
+  - data quality
+license: MIT
+version: 0.1.0
+date-released: '2026-09-02'
+references:
+  - type: article
+    title: >-
+      Microbiological and Nutritional Analysis of Lettuce Crops Grown on the
+      International Space Station
+    authors:
+      - family-names: Khodadad
+        given-names: Christina L. M.
+    doi: 10.3389/fpls.2020.00199
+    journal: Frontiers in Plant Science
+    volume: '11'
+    year: 2020
+  - type: article
+    title: >-
+      Pick-and-eat space crop production flight testing on the International
+      Space Station
+    authors:
+      - family-names: Bunchek
+        given-names: Jess M.
+    doi: 10.1080/17429145.2023.2292220
+    journal: Journal of Plant Interactions
+    volume: '19'
+    year: 2024
+  - type: article
+    title: >-
+      Time-resolved molecular measurements reveal changes in astronauts during
+      spaceflight
+    authors:
+      - family-names: Zheng
+        given-names: Minzhang
+    doi: 10.3389/fphys.2023.1219221
+    journal: Frontiers in Physiology
+    volume: '14'
+    year: 2023

@@ -1,0 +1,118 @@
+{
+  "requirement_source": "NASA JSC-67378 Rev 1, Nutritional Requirements for Exploration Missions up to 365 days, 20 April 2020",
+  "sex_assumed_for_requirements": "male",
+  "serving_masses_g": [
+    25.0,
+    50.0,
+    100.0,
+    200.0
+  ],
+  "dry_matter_fraction_range": [
+    0.05,
+    0.1
+  ],
+  "reference_case": "100 g fresh serving at 10% dry matter",
+  "percent_of_requirement_per_100g": {
+    "lettuce/Flight/calcium": 4.032,
+    "lettuce/Flight/iron": 11.701,
+    "lettuce/Flight/potassium": 13.922,
+    "lettuce/Flight/magnesium": 6.169,
+    "lettuce/Flight/manganese": 122.425,
+    "lettuce/Flight/sodium": 1.545,
+    "lettuce/Flight/phosphorus": 4.997,
+    "lettuce/Flight/zinc": 14.61,
+    "lettuce/Ground/calcium": 4.501,
+    "lettuce/Ground/iron": 12.156,
+    "lettuce/Ground/potassium": 14.103,
+    "lettuce/Ground/magnesium": 6.202,
+    "lettuce/Ground/manganese": 129.366,
+    "lettuce/Ground/sodium": 1.31,
+    "lettuce/Ground/phosphorus": 4.545,
+    "lettuce/Ground/zinc": 11.782,
+    "tokyo_bekana/Flight/calcium": 7.193,
+    "tokyo_bekana/Flight/copper": 10.42,
+    "tokyo_bekana/Flight/iron": 8.154,
+    "tokyo_bekana/Flight/potassium": 10.489,
+    "tokyo_bekana/Flight/magnesium": 21.13,
+    "tokyo_bekana/Flight/manganese": 99.318,
+    "tokyo_bekana/Flight/sodium": 0.522,
+    "tokyo_bekana/Flight/phosphorus": 6.039,
+    "tokyo_bekana/Flight/zinc": 3.163,
+    "tokyo_bekana/Ground/calcium": 5.827,
+    "tokyo_bekana/Ground/copper": 12.252,
+    "tokyo_bekana/Ground/iron": 5.683,
+    "tokyo_bekana/Ground/potassium": 6.821,
+    "tokyo_bekana/Ground/magnesium": 17.217,
+    "tokyo_bekana/Ground/manganese": 95.139,
+    "tokyo_bekana/Ground/sodium": 0.242,
+    "tokyo_bekana/Ground/phosphorus": 4.452,
+    "tokyo_bekana/Ground/zinc": 2.761
+  },
+  "overload_assessment": {
+    "iron/lettuce/Flight/high": {
+      "upper_limit_mg": 8.0,
+      "kg_fresh_tissue_to_reach_limit": 0.85
+    },
+    "iron/lettuce/Flight/low": {
+      "upper_limit_mg": 8.0,
+      "kg_fresh_tissue_to_reach_limit": 1.71
+    },
+    "iron/lettuce/Ground/high": {
+      "upper_limit_mg": 8.0,
+      "kg_fresh_tissue_to_reach_limit": 0.82
+    },
+    "iron/lettuce/Ground/low": {
+      "upper_limit_mg": 8.0,
+      "kg_fresh_tissue_to_reach_limit": 1.65
+    },
+    "iron/tokyo_bekana/Flight/high": {
+      "upper_limit_mg": 8.0,
+      "kg_fresh_tissue_to_reach_limit": 1.23
+    },
+    "iron/tokyo_bekana/Flight/low": {
+      "upper_limit_mg": 8.0,
+      "kg_fresh_tissue_to_reach_limit": 2.45
+    },
+    "iron/tokyo_bekana/Ground/high": {
+      "upper_limit_mg": 8.0,
+      "kg_fresh_tissue_to_reach_limit": 1.76
+    },
+    "iron/tokyo_bekana/Ground/low": {
+      "upper_limit_mg": 8.0,
+      "kg_fresh_tissue_to_reach_limit": 3.52
+    },
+    "zinc/lettuce/Flight/high": {
+      "upper_limit_mg": 40.0,
+      "kg_fresh_tissue_to_reach_limit": 2.49
+    },
+    "zinc/lettuce/Flight/low": {
+      "upper_limit_mg": 40.0,
+      "kg_fresh_tissue_to_reach_limit": 4.98
+    },
+    "zinc/lettuce/Ground/high": {
+      "upper_limit_mg": 40.0,
+      "kg_fresh_tissue_to_reach_limit": 3.09
+    },
+    "zinc/lettuce/Ground/low": {
+      "upper_limit_mg": 40.0,
+      "kg_fresh_tissue_to_reach_limit": 6.17
+    },
+    "zinc/tokyo_bekana/Flight/high": {
+      "upper_limit_mg": 40.0,
+      "kg_fresh_tissue_to_reach_limit": 11.49
+    },
+    "zinc/tokyo_bekana/Flight/low": {
+      "upper_limit_mg": 40.0,
+      "kg_fresh_tissue_to_reach_limit": 22.99
+    },
+    "zinc/tokyo_bekana/Ground/high": {
+      "upper_limit_mg": 40.0,
+      "kg_fresh_tissue_to_reach_limit": 13.17
+    },
+    "zinc/tokyo_bekana/Ground/low": {
+      "upper_limit_mg": 40.0,
+      "kg_fresh_tissue_to_reach_limit": 26.34
+    }
+  },
+  "interpretation_note": "Plant and astronaut datasets derive from different missions and crews. These figures describe what a serving supplies against a published requirement; they are not evidence that Veggie produce altered any measured serum value."
+}

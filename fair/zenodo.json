@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "SpaceMineralAtlas: crop-specific mineral responses to spaceflight, a unit-labelling defect in OSD-655, and a survey of mineral and dietary data availability across the NASA Life Sciences Data Archive",
+    "upload_type": "software",
+    "description": "<p>Open-data reanalysis of the two NASA Veggie studies with archived ICP-OES elemental data (OSD-745 lettuce, OSD-655 Tokyo Bekana), Inspiration4 clinical chemistry (OSD-575), and a machine-readable survey of all 2,676 NASA Life Sciences Data Archive experiments annotated for mineral and dietary content and classified by accessibility.</p><p>Principal findings: (1) OSD-655 labels five elements as mg/g dry weight in both its data files and its archived data dictionary when the values are ug/g, a 1000-fold error; (2) the two Veggie crops do not share a flight ionome response, and apparent calcium and iron increases are dry-matter dilution artefacts that do not survive a centred log-ratio correction; (3) dietary mineral overload from Veggie produce is not achievable at plausible harvest scales.</p><p>All analysis code, harmonised data tables, the annotated LSDA catalog and the manuscript source are included. No value in this work is simulated; every input is retrieved from a public NASA API and checksummed.</p>",
+    "creators": [
+      {
+        "name": "Barker, Richard",
+        "affiliation": "University of Wisconsin-Madison",
+        "orcid": "0000-0002-4525-3341"
+      }
+    ],
+    "access_right": "open",
+    "license": "MIT",
+    "version": "0.1.0",
+    "publication_date": "2026-09-02",
+    "keywords": [
+      "spaceflight",
+      "space nutrition",
+      "ionome",
+      "NASA Veggie",
+      "compositional data analysis",
+      "OSDR",
+      "LSDA",
+      "FAIR data",
+      "data quality",
+      "plant mineral nutrition"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.3389/fpls.2020.00199",
+        "relation": "isDerivedFrom",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1080/17429145.2023.2292220",
+        "relation": "isDerivedFrom",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.3389/fphys.2023.1219221",
+        "relation": "references",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1038/s41586-024-07639-y",
+        "relation": "references",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-745",
+        "relation": "isDerivedFrom",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-655",
+        "relation": "isDerivedFrom",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575",
+        "relation": "isDerivedFrom",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "https://github.com/dr-richard-barker/SpaceMineralAtlas",
+        "relation": "isSupplementTo",
+        "resource_type": "software"
+      }
+    ],
+    "communities": [
+      {
+        "identifier": "nasa-genelab"
+      }
+    ]
+  }
+}

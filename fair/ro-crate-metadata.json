@@ -1,0 +1,135 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "./",
+      "name": "SpaceMineralAtlas",
+      "description": "Crop-specific mineral responses to spaceflight, a unit-labelling defect in OSD-655, and a survey of mineral and dietary data availability across the NASA Life Sciences Data Archive.",
+      "datePublished": "2026-09-02",
+      "version": "0.1.0",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT.html"
+      },
+      "author": {
+        "@id": "#richard-barker"
+      },
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.3389/fpls.2020.00199"
+        },
+        {
+          "@id": "https://doi.org/10.1080/17429145.2023.2292220"
+        },
+        {
+          "@id": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-745"
+        },
+        {
+          "@id": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-655"
+        },
+        {
+          "@id": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575"
+        },
+        {
+          "@id": "https://nlsp.nasa.gov/explore/mtable/lsda_experiment/lsda_experiment"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "data/processed/plant_elemental_ugg.csv"
+        },
+        {
+          "@id": "data/processed/astronaut_serum_cmp.csv"
+        },
+        {
+          "@id": "catalog/lsda_mineral_nutrition_catalog.csv"
+        },
+        {
+          "@id": "catalog/lsda_experiments_full.csv"
+        },
+        {
+          "@id": "src/spacemineralatlas"
+        },
+        {
+          "@id": "manuscript/SpaceMineralAtlas_manuscript.pdf"
+        },
+        {
+          "@id": "fair/osdr_curation_report.md"
+        },
+        {
+          "@id": "lsda_request/"
+        },
+        {
+          "@id": "veggie_correction/"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "#richard-barker",
+      "name": "Richard Barker",
+      "email": "dr.richard.barker@gmail.com"
+    },
+    {
+      "@id": "data/processed/plant_elemental_ugg.csv",
+      "@type": "Dataset",
+      "description": "Harmonised Veggie elemental composition (60 samples, 12 elements, ug/g DW)",
+      "contentSize": 12129
+    },
+    {
+      "@id": "data/processed/astronaut_serum_cmp.csv",
+      "@type": "Dataset",
+      "description": "Inspiration4 serum minerals with clinical reference ranges",
+      "contentSize": 9459
+    },
+    {
+      "@id": "catalog/lsda_mineral_nutrition_catalog.csv",
+      "@type": "Dataset",
+      "description": "LSDA experiments annotated for mineral and nutritional content",
+      "contentSize": 6928071
+    },
+    {
+      "@id": "catalog/lsda_experiments_full.csv",
+      "@type": "Dataset",
+      "description": "Complete annotated LSDA experiment catalog (2,676 records)",
+      "contentSize": 14833873
+    },
+    {
+      "@id": "src/spacemineralatlas",
+      "@type": "SoftwareSourceCode",
+      "description": "Analysis package: API clients, unit harmonisation, QC, statistics, ML"
+    },
+    {
+      "@id": "manuscript/SpaceMineralAtlas_manuscript.pdf",
+      "@type": "ScholarlyArticle",
+      "description": "Manuscript",
+      "contentSize": 1244570
+    },
+    {
+      "@id": "fair/osdr_curation_report.md",
+      "@type": "Report",
+      "description": "Data-quality report on the OSD-655 unit-labelling defect",
+      "contentSize": 3442
+    },
+    {
+      "@id": "lsda_request/",
+      "@type": "Collection",
+      "description": "Prepared LSDA data request for SMO-016E Nutritional Status Assessment"
+    },
+    {
+      "@id": "veggie_correction/",
+      "@type": "Collection",
+      "description": "Correction note and replacement data-acquisition module for a prior synthetic-data analysis of these studies"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "n_experiments_total": 2676,
+  "n_mineral_or_nutrition": 1114,
+  "n_measured_mineral_or_nutrition": 423,
+  "by_access_category": {
+    "request_required": 482,
+    "not_submitted": 455,
+    "open": 131,
+    "held_elsewhere": 41,
+    "other": 5
+  },
+  "measured_by_access_category": {
+    "request_required": 213,
+    "not_submitted": 145,
+    "open": 62,
+    "held_elsewhere": 2,
+    "other": 1
+  },
+  "by_mineral_mentioned": {
+    "calcium": 390,
+    "potassium": 101,
+    "sodium": 134,
+    "magnesium": 175,
+    "iron": 183,
+    "zinc": 24,
+    "copper": 25,
+    "selenium": 17,
+    "phosphorus": 166,
+    "manganese": 20,
+    "boron": 3,
+    "chloride": 65
+  },
+  "by_mineral_measured": {
+    "calcium": 208,
+    "potassium": 75,
+    "sodium": 82,
+    "magnesium": 59,
+    "iron": 105,
+    "zinc": 17,
+    "copper": 17,
+    "selenium": 16,
+    "phosphorus": 113,
+    "manganese": 6,
+    "boron": 0,
+    "chloride": 34
+  },
+  "n_human_studies": 1573,
+  "n_nutrition_mentioned": 704,
+  "n_nutrition_measured": 168
+}

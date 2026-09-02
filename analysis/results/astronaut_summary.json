@@ -1,0 +1,76 @@
+{
+  "source": "NASA OSDR OSD-575 (Inspiration4 Comprehensive Metabolic Panel)",
+  "n_subjects": 4,
+  "n_timepoints": 7,
+  "n_observations": 28,
+  "timepoints": [
+    "L-92",
+    "L-44",
+    "L-3",
+    "R+1",
+    "R+45",
+    "R+82",
+    "R+194"
+  ],
+  "mission_duration_days": 3,
+  "inflight_samples": 0,
+  "minerals_measured": [
+    "calcium",
+    "potassium",
+    "sodium",
+    "chloride",
+    "carbon_dioxide"
+  ],
+  "by_mineral": {
+    "calcium": {
+      "unit": "milligram_per_deciliter",
+      "observed_min": 9.2,
+      "observed_max": 10.3,
+      "n_decreased_at_return": 4,
+      "n_increased_at_return": 0,
+      "n_subjects_compared": 4,
+      "median_percent_change": -3.0315402674288032,
+      "n_observations_outside_reference_range": 0
+    },
+    "potassium": {
+      "unit": "millimol_per_liter",
+      "observed_min": 3.0,
+      "observed_max": 5.9,
+      "n_decreased_at_return": 3,
+      "n_increased_at_return": 1,
+      "n_subjects_compared": 4,
+      "median_percent_change": -5.541428268701005,
+      "n_observations_outside_reference_range": 3
+    },
+    "sodium": {
+      "unit": "millimol_per_liter",
+      "observed_min": 136.0,
+      "observed_max": 143.0,
+      "n_decreased_at_return": 3,
+      "n_increased_at_return": 1,
+      "n_subjects_compared": 4,
+      "median_percent_change": -1.5488288370397307,
+      "n_observations_outside_reference_range": 0
+    },
+    "chloride": {
+      "unit": "millimol_per_liter",
+      "observed_min": 97.0,
+      "observed_max": 106.0,
+      "n_decreased_at_return": 2,
+      "n_increased_at_return": 2,
+      "n_subjects_compared": 4,
+      "median_percent_change": 0.9734971868522357,
+      "n_observations_outside_reference_range": 1
+    },
+    "carbon_dioxide": {
+      "unit": "millimol_per_liter",
+      "observed_min": 19.0,
+      "observed_max": 28.0,
+      "n_decreased_at_return": 4,
+      "n_increased_at_return": 0,
+      "n_subjects_compared": 4,
+      "median_percent_change": -5.1249999999999964,
+      "n_observations_outside_reference_range": 1
+    }
+  }
+}

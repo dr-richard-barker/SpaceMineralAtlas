@@ -1,0 +1,127 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Crop-specific responses argue against a general spaceflight ionome}
+
+The clearest result is negative in a useful way: there is no shared
+flight-induced ionome response across the two Veggie crops with archived
+elemental data. Lettuce shows no significant change in any element on either
+scale; Tokyo Bekana shows \NSigCLR{} after compositional correction, and
+\NDivergentCLR{} elements move in opposite directions between the crops. A
+classifier trained on one crop performs below chance on the other.
+
+This matters for how spaceflight crop nutrition is generalised. Statements of
+the form ``spaceflight increases mineral $X$ in leafy greens'' are not supported
+by these data even across two leafy green species grown in the same hardware.
+The two studies differ in more than species --- mission, duration, light
+spectrum, harvest protocol --- and those covariates cannot be separated with
+$n=\NSamples$. That is precisely the point: with the available data, crop
+identity and its confounds cannot be disentangled, so a species-general claim is
+not currently derivable from the archive.
+
+\subsection{Compositional artefacts are the dominant failure mode}
+
+The apparent calcium and iron increases in Tokyo Bekana --- \FcTbCa$\times$ and
+\FcTbFe$\times$, both large and one significant --- do not survive correction
+for dry-matter dilution. Had we reported the raw concentrations, we would have
+reported an accumulation effect that the data do not support.
+
+This is a general hazard for ICP-OES tissue data, which is compositional by
+construction \citep{aitchison1982}. Any treatment that changes tissue water
+content, structural carbohydrate or non-mineral dry matter shifts every
+concentration together. Spaceflight plausibly does all three. We would suggest
+that reporting a concentration fold change without a compositional or
+content-based check should be treated as an incomplete analysis in this
+literature, not a stylistic preference.
+
+The elements that survive are informative in their own right. Potassium, sodium
+and sulfur are the mobile ions most closely tied to water relations and
+osmotic adjustment, which is a coherent picture for plants in altered
+root-zone water distribution --- and consistent with the reduced water delivery
+recorded for flight pillows.
+
+\subsection{Data quality is a first-order scientific problem}
+
+The OSD-655 unit defect is a 1000-fold error on five of twelve elements, present
+in both the data files and the archived data dictionary, in an openly available
+and citable NASA dataset. It is not hidden --- a plausibility check catches it
+immediately --- but nothing in the archive's own metadata flags it, and a
+pipeline that trusts the stated unit inherits it silently.
+
+We have written this up for the OSDR curation team
+(\path{fair/osdr_curation_report.md}). The broader lesson is that a FAIR
+dataset is interoperable only to the extent its unit metadata is correct, and
+that automated plausibility gates belong in analysis pipelines as a matter of
+routine. The gate that caught this is four lines of arithmetic.
+
+\subsection{Overload is not the risk; sufficiency is the question}
+
+The concern that motivated this work --- that plant-rich diets combined with
+spaceflight-altered mineral handling could drive crew mineral overload --- is
+not supported. Reaching NASA's iron upper limit would require
+\OverloadFeLet\,kg of fresh lettuce daily, against a per-pillow yield of
+roughly \BiomassFlight\,g. The margin is two orders of magnitude.
+
+The useful question is the opposite one. A 100\,g serving supplies
+\ServeLetK\% of daily potassium and \ServeLetCa\% of daily calcium: real but
+supplementary contributions. The exception is manganese, at \ServeLetMn\% of
+the daily requirement from a single serving, which is worth monitoring as
+Veggie-type production scales --- not because these values approach a toxic
+threshold, but because it is the one element where produce could plausibly
+become a dominant dietary source.
+
+\subsection{The missing measurements}
+
+Two absences constrain everything above, and both are cheap to fix.
+
+\emph{Dry-matter fraction.} OSD-655 archives fresh harvest mass and per-dry-gram
+concentrations but no dry-matter fraction, so total mineral content per plant
+cannot be computed and uptake efficiency is unavailable. Dry-matter fraction is
+routinely measured during ICP-OES sample preparation --- the tissue must be
+dried to be analysed. Archiving that number would convert a bounded estimate
+into a measurement, and would also allow the dilution correction of
+Section~\ref{sec:clr} to be tested directly rather than inferred.
+
+\emph{Substrate elemental composition.} No Veggie study archives the elemental
+composition of the arcillite substrate and its controlled-release fertiliser
+charge. Without it, bioavailability --- the fraction of supplied mineral that
+reaches edible tissue --- cannot be computed at all. Our water-normalised index
+is a proxy for the mass-flow driver, not a bioavailability fraction, and we
+name it accordingly.
+
+\subsection{What the crew-side data can and cannot support}
+
+The Inspiration4 panel gives real, openly available serum mineral measurements,
+and the post-flight potassium decline in \AstrodownK{} of \AstroN{} crew is a
+genuine observation. But four subjects on a \AstroDuration-day mission with no
+in-flight sampling cannot establish a spaceflight effect, and the plant and crew
+data describe different missions and different people.
+
+The dataset that would close this loop exists: the Nutritional Status
+Assessment (SMO-016E), with 27 astronauts across long-duration ISS missions,
+in-flight sampling, and paired dietary intake and serum chemistry
+\citep{zheng2023}. Our LSDA survey confirms it is request-gated rather than
+open. Section~\ref{sec:availability} and the request package in
+\path{lsda_request/} set out the route.
+
+\subsection{Limitations}
+
+\begin{itemize}\itemsep2pt
+  \item $n=\NSamples$ plant samples in total (\NLet{} lettuce, \NTb{} Tokyo
+        Bekana). The crop divergence needs replication before it is treated as
+        established.
+  \item Crop, mission, duration and light spectrum are confounded; the
+        divergence is between studies, not cleanly between species.
+  \item The compositional correction assumes the dilution factor is
+        multiplicative and shared across elements within a sample. Direct
+        dry-matter measurement would test this.
+  \item Water and mass supplements cover VEG-04A only
+        (\SupplyMatched/\SupplyTotal{} samples), and biomass is fresh weight.
+  \item Serving calculations assume a $5$--$10\%$ dry-matter fraction from the
+        literature, not from these studies.
+  \item The astronaut cohort is $n=\AstroN$ over \AstroDuration{} days with no
+        in-flight sample.
+  \item LSDA annotation is text-matching over catalog metadata; an experiment
+        whose record does not name its analytes will be missed, so
+        \LSDAMeasured{} is a lower bound.
+\end{itemize}

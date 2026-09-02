@@ -1,0 +1,77 @@
+{
+  "n_samples": 60,
+  "n_by_crop": {
+    "tokyo_bekana": 36,
+    "lettuce": 24
+  },
+  "n_by_crop_condition": {
+    "lettuce/Flight": 11,
+    "lettuce/Ground": 13,
+    "tokyo_bekana/Flight": 18,
+    "tokyo_bekana/Ground": 18
+  },
+  "n_significant_concentration_fdr05": 6,
+  "n_significant_clr_fdr05": 6,
+  "n_significant_both": 3,
+  "n_direction_preserved": 14,
+  "n_element_crop_pairs": 20,
+  "fold_changes_concentration": {
+    "lettuce/calcium": 0.8958,
+    "lettuce/iron": 0.9626,
+    "lettuce/magnesium": 0.9947,
+    "lettuce/manganese": 0.9464,
+    "lettuce/phosphorus": 1.0994,
+    "lettuce/potassium": 0.9871,
+    "lettuce/sodium": 1.1798,
+    "lettuce/sulfur": 0.9746,
+    "lettuce/zinc": 1.24,
+    "tokyo_bekana/boron": 1.3515,
+    "tokyo_bekana/calcium": 1.2345,
+    "tokyo_bekana/copper": 0.8505,
+    "tokyo_bekana/iron": 1.4349,
+    "tokyo_bekana/magnesium": 1.2273,
+    "tokyo_bekana/manganese": 1.0439,
+    "tokyo_bekana/phosphorus": 1.3563,
+    "tokyo_bekana/potassium": 1.5377,
+    "tokyo_bekana/sodium": 2.1531,
+    "tokyo_bekana/sulfur": 1.7456,
+    "tokyo_bekana/zinc": 1.1457
+  },
+  "fold_changes_clr": {
+    "lettuce/calcium": 0.8821,
+    "lettuce/iron": 0.8266,
+    "lettuce/magnesium": 0.9621,
+    "lettuce/manganese": 0.9189,
+    "lettuce/phosphorus": 1.0731,
+    "lettuce/potassium": 1.0213,
+    "lettuce/sodium": 1.199,
+    "lettuce/sulfur": 0.938,
+    "lettuce/zinc": 1.2586,
+    "tokyo_bekana/boron": 0.9932,
+    "tokyo_bekana/calcium": 0.9069,
+    "tokyo_bekana/copper": 0.6409,
+    "tokyo_bekana/iron": 1.1039,
+    "tokyo_bekana/magnesium": 0.9097,
+    "tokyo_bekana/manganese": 0.7578,
+    "tokyo_bekana/phosphorus": 1.0071,
+    "tokyo_bekana/potassium": 1.1471,
+    "tokyo_bekana/sodium": 1.8023,
+    "tokyo_bekana/sulfur": 1.2847,
+    "tokyo_bekana/zinc": 0.851
+  },
+  "n_divergent_elements_concentration": 6,
+  "divergent_elements_concentration": [
+    "calcium",
+    "iron",
+    "magnesium",
+    "manganese",
+    "potassium",
+    "sulfur"
+  ],
+  "n_divergent_elements_clr": 3,
+  "divergent_elements_clr": [
+    "iron",
+    "sulfur",
+    "zinc"
+  ]
+}

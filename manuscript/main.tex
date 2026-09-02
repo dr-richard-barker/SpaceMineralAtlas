@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{sma-style}
+
+% Every numeric result in this manuscript is defined in generated_numbers.tex,
+% which is produced from the analysis outputs by scripts_generate_numbers.py.
+% No statistic is typed into the prose. A macro referenced here but absent from
+% that file raises an undefined-control-sequence error, which is intentional.
+\input{generated_numbers}
+
+\title{\vspace{-1.5em}\sffamily\color{smanavy}\bfseries
+Crop-specific mineral responses to spaceflight, and a unit-labelling
+defect that inverts them\\[0.35em]
+\large\mdseries\color{smatext}
+An open-data reanalysis of NASA Veggie elemental data, with a survey of
+mineral and dietary data availability across the NASA Life Sciences Data Archive}
+
+\author{\sffamily Richard Barker\\
+  \small\ttfamily dr.richard.barker@gmail.com}
+\date{\small\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+\noindent
+Crops grown aboard the International Space Station are intended to supplement
+crew diets, which makes their mineral composition a question of both plant
+biology and crew nutrition. We reanalysed the two NASA Veggie studies that
+report inductively coupled plasma optical emission spectroscopy (ICP-OES)
+elemental data --- OSD-745 (\emph{Lactuca sativa} cv.\ `Outredgeous',
+$n=\NLet$) and OSD-655 (\emph{Brassica rapa} cv.\ `Tokyo Bekana',
+$n=\NTb$) --- together with Inspiration4 clinical chemistry (OSD-575,
+$\AstroN$ crew, $\AstroObs$ observations), and surveyed all $\LSDATotal$
+experiments in the NASA Life Sciences Data Archive (LSDA) for mineral and
+dietary content.
+
+Three findings follow. First, OSD-655 labels calcium, potassium, magnesium,
+phosphorus and sulfur as mg/g dry weight in both its data files and its
+archived data dictionary, but the values are $\mu$g/g: read as stated,
+potassium would constitute \(2943\%\) of dry weight. Analyses that concatenate
+the two studies without correcting this are wrong by a factor of 1000 on five
+of twelve elements. Second, after correcting the units and controlling for
+dry-matter dilution with a centred log-ratio transform, the two crops diverge:
+lettuce shows no element significantly altered by spaceflight, whereas Tokyo
+Bekana shows $\NSigCLR$. Apparent increases in calcium
+(\(\FcTbCa\times\rightarrow\FcclrTbCa\times\)) and iron
+(\(\FcTbFe\times\rightarrow\FcclrTbFe\times\)) do not survive the correction and
+are attributable to dilution; the increases in potassium, sodium and sulfur do.
+Third, classification of flight versus ground from the ionome does not exceed
+chance under leave-one-mission-out cross-validation
+(balanced accuracy \MlMissionRf{} against a \MlbaselineMission{} baseline) and
+falls below baseline when trained on one crop and tested on the other
+(\MlCropRfMargin), which is itself evidence that no shared flight signature
+exists.
+
+Quantitatively, a 100\,g fresh serving supplies \ServeLetK\%
+(lettuce) and \ServeTbK\% (Tokyo Bekana) of the NASA daily
+potassium requirement; reaching the iron upper limit would require
+\OverloadFeLet\,kg of fresh tissue per day. Dietary mineral overload from
+Veggie produce is therefore not plausible at achievable harvest scales. Of the
+$\LSDAMeasured$ LSDA experiments that measured a mineral or nutritional
+variable, only $\LsdaaccessOpen$ are openly available and $\LsdaaccessRequestrequired$
+require a formal data request --- the principal barrier to progress on this
+question is access, not measurement.
+\end{abstract}
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} spaceflight nutrition; ionome; compositional data
+analysis; NASA Veggie; OSDR; LSDA; FAIR data; data quality
+
+\input{chapters/01_introduction}
+\input{chapters/02_methods}
+\input{chapters/03_results}
+\input{chapters/04_discussion}
+\input{chapters/05_conclusion}
+\input{chapters/06_data_availability}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

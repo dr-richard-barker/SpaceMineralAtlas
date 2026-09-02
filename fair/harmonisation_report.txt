@@ -1,0 +1,28 @@
+Unit harmonisation report
+============================================================
+
+OSD-655: 12 elemental columns -> ug/g dry weight
+  5 unit override(s) applied:
+    calcium      milligram_per_gram (stated) -> microgram_per_gram (applied, x1)
+    potassium    milligram_per_gram (stated) -> microgram_per_gram (applied, x1)
+    magnesium    milligram_per_gram (stated) -> microgram_per_gram (applied, x1)
+    phosphorus   milligram_per_gram (stated) -> microgram_per_gram (applied, x1)
+    sulfur       milligram_per_gram (stated) -> microgram_per_gram (applied, x1)
+
+OSD-745: 10 elemental columns -> ug/g dry weight
+  no overrides required; all stated units accepted
+
+Justification for each override:
+
+  OSD-655 [calcium, potassium, magnesium, phosphorus, sulfur]
+    stated: milligram_per_gram -> applied: microgram_per_gram
+    Taking the stated mg/g at face value gives mean concentrations of 2943%
+    (K), 805% (Mg), 651% (Ca), 551% (S) and 367% (P) of dry weight, which are
+    physically impossible. Interpreted as ug/g the same values agree with
+    OSD-745, whose lettuce elemental data are independently expressed in
+    mg/kg: Ca 5.83 vs 4.50 mg/g, K 29.4 vs 47.9 mg/g, Mg 8.05 vs 2.60 mg/g.
+    The three elements OSD-655 labels in ug/g (Al, B, Cu, Fe, Mn, Zn) require
+    no correction and already agree across studies, which localises the defect
+    to the five mg/g labels. OSD-655_dictionary_DataDictionary_OSD-655.csv
+    repeats the incorrect unit, so the defect is in the curation metadata, not
+    only the header.

@@ -1,0 +1,157 @@
+\section{Methods}
+
+\subsection{Data acquisition}
+
+All data were retrieved programmatically from public NASA APIs; no value in this
+study was simulated, imputed or hand-entered. Plant and crew data came from the
+OSDR file API at
+\path{https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/{OSD-ID}/files/},
+preferring OSDR's curated \texttt{*\_TRANSFORMED.csv} products, whose column
+names carry the unit alongside the analyte. Each downloaded file is cached and a
+SHA-256 digest recorded in \path{fair/checksums.sha256}, so a re-run can be
+verified byte-for-byte against ours.
+
+The LSDA catalog was harvested from the JSON query endpoint at
+\path{https://nlsp.nasa.gov/explore/api/v1/query}. Two behaviours of that
+endpoint, established by direct probing rather than documentation, determined
+the approach. Its \texttt{query} parameter does not filter server-side --- every
+search term returns the full corpus of \LSDATotal{} records and the term affects
+only relevance ordering --- so the entire catalog was harvested and filtered
+locally. It also returns HTTP 502/503 under rapid request rates, so retrieval
+was throttled to one request per two seconds with exponential-backoff retry.
+Pagination uses a \texttt{page} parameter at 20 records per page; the
+\texttt{from}, \texttt{offset}, \texttt{skip} and \texttt{start} parameters are
+accepted but silently ignored, each returning page one.
+
+\subsection{Mineral and nutrition annotation of the LSDA catalog}
+
+Each experiment record was matched against a curated ontology of twelve minerals
+and their clinical surrogates (for example, ferritin and transferrin for iron;
+parathyroid hormone and bone resorption markers for calcium) and a set of
+nutritional terms, searched across the measured-parameter list, research areas,
+keywords, title and description. All terms are word-bounded: an unbounded
+\texttt{iron} matches \emph{env\underline{iron}ment} and alone produced 1{,}266
+spurious matches during development. Experiments were separately flagged for
+whether a mineral appeared in the \emph{measured parameter} list, which states
+what was actually assayed, as opposed to anywhere in the record. LSDA's
+free-text \texttt{archive\_status} was mapped to four actionable categories:
+openly available, request required, held elsewhere, and never submitted.
+
+\subsection{Unit harmonisation}
+\label{sec:units}
+
+All elemental concentrations were converted to $\mu$g/g dry weight. OSD-745
+reports mg/kg, numerically identical to $\mu$g/g, requiring no rescaling.
+OSD-655 names five columns --- calcium, potassium, magnesium, phosphorus and
+sulfur --- \texttt{*\_milligram\_per\_gram\_of\_dry\_weight}, and
+\path{OSD-655_dictionary_DataDictionary_OSD-655.csv} repeats
+\texttt{unit: milligram\_per\_gram} for each.
+
+\begin{smacaution}[title=The values are not mg/g]
+Read as stated, mean concentrations would be $2943\%$ (K), $805\%$ (Mg),
+$651\%$ (Ca), $551\%$ (S) and $367\%$ (P) of dry weight. Read as $\mu$g/g they
+fall in the normal range for leafy \emph{Brassica} tissue and agree with the
+independently-scaled OSD-745 lettuce measurements. The six elements OSD-655
+labels in $\mu$g/g (Al, B, Cu, Fe, Mn, Zn) need no correction and already agree
+across studies, which localises the defect to the five mg/g labels. Because the
+archived data dictionary carries the same error, the defect is in the curation
+metadata and not only in the file headers.
+\end{smacaution}
+
+The correction is applied through an explicit override table in which each entry
+records the stated unit, the applied unit and the evidence for the change;
+\NUnitOverrides{} overrides fired. Corrections are never silent: the
+harmonisation report in \path{fair/harmonisation_report.txt} lists every one.
+
+\subsection{Quality control}
+
+Four gates run between curation and analysis, independent of the harmonisation
+code so that the two must agree. A \emph{physical plausibility} gate fails the
+build if any element exceeds $10\%$ of dry weight --- the check that catches a
+1000-fold unit error. A \emph{cross-study agreement} gate fails if the two
+crops' ground-control means differ by more than tenfold; the threshold sits two
+orders of magnitude below the error it targets, and is deliberately loose
+because genuine between-species differences here are large (ground-control
+sodium differs 5.4-fold between the crops). Further gates check that each crop
+has both flight and ground arms, and that missingness is structural rather than
+sporadic. All gates passed (\QCAllPassed).
+
+\subsection{Compositional analysis}
+\label{sec:clr}
+
+ICP-OES reports concentrations --- element mass per unit dry tissue mass ---
+which are compositional and share a fixed denominator \citep{aitchison1982}. If
+flight and ground tissue differ in dry-matter composition, every element's
+concentration shifts together even with no change in uptake. This is not
+hypothetical here: in the raw OSD-655 data eight elements rise in concert, the
+signature of a denominator effect rather than eight independent responses.
+
+Each sample was therefore also expressed as a centred log-ratio,
+$\mathrm{clr}(x_i) = \log x_i - \frac{1}{D}\sum_{j=1}^{D} \log x_j$, which
+divides by the sample's geometric mean and so removes any per-sample
+multiplicative factor exactly. A CLR contrast asks whether an element changed
+\emph{relative to the rest of the ionome}, and is invariant to dilution.
+
+The composition must use the same parts in every sample. Missingness here is
+structural --- VEG-03A did not assay boron, so all twelve of its samples lack
+that element while being otherwise complete --- so incomplete \emph{columns}
+were dropped rather than incomplete rows, which would have discarded an entire
+mission. Aluminium is excluded from the composition and analysed separately: it
+is a non-nutrient whose passive uptake tracks substrate carryover rather than
+plant physiology.
+
+\subsection{Statistics}
+
+Flight-versus-ground contrasts used two-sided Mann--Whitney $U$ tests, chosen
+over $t$-tests because group sizes are 11--18 and normality is not established.
+Effect sizes are reported as rank-biserial correlation alongside the descriptive
+fold change. Multiplicity was controlled within each crop across elements by the
+Benjamini--Hochberg procedure \citep{benjamini1995}; $q<0.05$ is reported as
+significant.
+
+\subsection{Classification}
+
+Flight versus ground was classified from the ionome using $L_2$-penalised
+logistic regression and a random forest, each in a pipeline whose scaler is
+fitted inside the training fold. Only the \MLNFeatures{} elements complete
+across all \NSamples{} samples were used (\MLFeatures); imputation was avoided
+because the missingness is structural and an imputed value would be an
+invention.
+
+Two grouped cross-validation schemes were used, since samples from one mission
+share a pillow batch, a fertiliser charge and a harvest date, and a random split
+would place siblings across the fold boundary. \emph{Leave-one-mission-out}
+tests generalisation to an unseen growout; \emph{leave-one-crop-out} trains on
+one species and tests on the other. Hyperparameters were selected by an inner
+grouped cross-validation on training folds only, so no reported score is one
+that tuning maximised. Every model is reported against stratified and
+majority-class dummy classifiers evaluated under the identical scheme: at this
+sample size an accuracy figure without its baseline carries no information.
+Confidence intervals are 2000-sample percentile bootstraps. There are no
+fallback metrics anywhere in the pipeline; a model that fails to fit stops the
+build.
+
+\subsection{Supply and serving calculations}
+
+Per-pillow water delivery and harvest mass were parsed from the OSD-655
+supplements and joined to the elemental data on pillow identifier, which the
+ICP-OES sample names carry. Two limits are propagated into every derived figure:
+the supplements cover VEG-04A only, matching \SupplyMatched{} of
+\SupplyTotal{} Tokyo Bekana samples; and harvest masses are \emph{fresh} while
+concentrations are per \emph{dry} gram, with no dry-matter fraction archived.
+Mineral content is therefore bounded across a dry-matter fraction of
+$5$--$10\%$ rather than point-estimated. Daily requirements are taken verbatim
+from NASA JSC-67378 Rev 1 \citep{jsc67378}, not from terrestrial dietary
+reference intakes, which differ --- NASA caps iron at 8\,mg/d specifically
+because of spaceflight-induced increases in iron stores.
+
+\subsection{Reproducibility}
+
+Python 3.11 with exactly pinned dependencies. The pipeline runs end to end via
+\texttt{make all}: fetch, curate, quality control, analyse, figure generation,
+manuscript build. Every numeric value in this manuscript is injected from the
+analysis outputs as a \LaTeX{} macro generated by
+\path{scripts_generate_numbers.py}; no statistic is typed into the prose, and a
+macro referenced without a definition halts the build. The bibliography is
+likewise generated: every DOI is fetched from Crossref at build time and an
+unresolvable DOI fails the build.

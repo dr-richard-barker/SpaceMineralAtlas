@@ -1,0 +1,73 @@
+{
+  "description": "Target schema for SMO-016E data once received. astronaut.load_smo016e() maps the delivered file into this shape; no downstream code changes are needed.",
+  "expected_path": "data/raw/smo016e/",
+  "grain": "one row per subject per timepoint",
+  "required_columns": {
+    "subject": {
+      "type": "string",
+      "description": "De-identified subject code"
+    },
+    "timepoint": {
+      "type": "string",
+      "description": "Timepoint label as delivered by LSDA"
+    },
+    "day_relative_to_launch": {
+      "type": "integer",
+      "description": "Negative pre-flight, positive in/post-flight"
+    },
+    "phase": {
+      "type": "string",
+      "enum": [
+        "preflight",
+        "inflight",
+        "postflight"
+      ]
+    },
+    "matrix": {
+      "type": "string",
+      "enum": [
+        "serum",
+        "urine",
+        "dietary_record"
+      ]
+    }
+  },
+  "analyte_columns": {
+    "convention": "<analyte>_value and <analyte>_unit, mirroring the OSDR TRANSFORMED convention already handled by astronaut.py",
+    "minerals": [
+      "potassium",
+      "sodium",
+      "chloride",
+      "calcium",
+      "magnesium",
+      "phosphorus",
+      "iron",
+      "zinc",
+      "selenium",
+      "sulfate",
+      "oxalate"
+    ],
+    "iron_status": [
+      "ferritin",
+      "transferrin",
+      "transferrin_receptors",
+      "hemoglobin",
+      "hematocrit"
+    ],
+    "bone_markers": [
+      "bone_specific_alkaline_phosphatase",
+      "pyridinium_crosslinks",
+      "parathyroid_hormone",
+      "vitamin_d_25oh"
+    ],
+    "dietary": [
+      "energy_intake",
+      "<mineral>_intake"
+    ]
+  },
+  "notes": [
+    "Reference ranges, if supplied, are read as <analyte>_range_min / <analyte>_range_max, matching how OSD-575 is already handled.",
+    "The eight-timepoint non-attributable summarisation used in Zheng et al. 2023 is sufficient; per-draw values are not required.",
+    "Data placed here are excluded from version control; see .gitignore."
+  ]
+}
