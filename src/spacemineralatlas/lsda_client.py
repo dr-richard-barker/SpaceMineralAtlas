@@ -160,11 +160,51 @@ def _flatten(value: Any) -> str:
     return re.sub(r"<[^>]+>", " ", str(value))
 
 
+class NonJSONResponse(RuntimeError):
+    """The LSDA endpoint answered with something other than JSON.
+
+    Raised when a request succeeds at the HTTP level but the body is not the
+    expected JSON. The usual cause is network-level filtering rather than a
+    fault in this code: nlsp.nasa.gov serves an HTML interstitial with HTTP 200
+    to some clients, which the retry logic cannot detect because 200 is not a
+    retryable status. This has been observed from GitHub Actions runners while
+    the same request succeeds from a residential connection.
+    """
+
+
 def fetch_page(page: int, *, force: bool = False) -> dict:
-    """Retrieve one page of the experiment catalog (1-based)."""
+    """Retrieve one page of the experiment catalog (1-based).
+
+    Raises
+    ------
+    NonJSONResponse
+        If the endpoint returns a non-JSON body. A bare ``JSONDecodeError``
+        here is very hard to interpret, so the cause and the remedy are stated
+        explicitly, and the cached file is removed so a later run does not read
+        the interstitial back out of the cache as though it were data.
+    """
     url = f"{QUERY_API}?type=lsda_experiment&query=all&page={page}"
-    payload = fetch(url, RAW / "lsda" / f"experiments_page_{page:04d}.json", force=force)
-    return json.loads(payload)
+    cache_path = RAW / "lsda" / f"experiments_page_{page:04d}.json"
+    payload = fetch(url, cache_path, force=force)
+
+    try:
+        return json.loads(payload)
+    except json.JSONDecodeError as error:
+        snippet = payload[:200].decode("utf-8", "replace").replace("\n", " ")
+        # Do not let a non-JSON body persist in the cache: a later run would
+        # serve it from disk and fail identically without touching the network.
+        cache_path.unlink(missing_ok=True)
+        raise NonJSONResponse(
+            f"LSDA returned a non-JSON body for page {page} "
+            f"({len(payload)} bytes) from {url}\n"
+            f"  first bytes: {snippet!r}\n"
+            f"  This is usually network-level filtering, not a code fault: the "
+            f"endpoint serves an HTML interstitial with HTTP 200 to some "
+            f"clients (observed from CI runners and other datacenter ranges) "
+            f"while the same request succeeds from a residential connection.\n"
+            f"  Remedy: run `make harvest` from a network that LSDA answers, or "
+            f"use the catalog already committed under catalog/."
+        ) from error
 
 
 def harvest(*, max_pages: int | None = None, force: bool = False) -> list[dict]:
