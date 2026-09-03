@@ -30,6 +30,7 @@ dependencies = [
     "requests==2.32.3",
     "openpyxl==3.1.5",      # needed to read the OSD-655 supplementary .xlsx files
     "statsmodels==0.14.4",
+    "nhanes-pytool-api>=0.1.1",
 ]
 
 [project.optional-dependencies]

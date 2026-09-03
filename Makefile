@@ -8,7 +8,7 @@
 PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
 
-.PHONY: all setup harvest fetch curate analyse figures numbers bibliography \
+.PHONY: all setup harvest fetch fetch-nhanes curate analyse figures numbers bibliography \
         manuscript fair test check clean distclean help
 
 help:
@@ -18,6 +18,7 @@ help:
 	@echo "  make all          run the complete pipeline end to end"
 	@echo ""
 	@echo "  make harvest      harvest the LSDA experiment catalog (2,676 records)"
+	@echo "  make fetch-nhanes download NHANES population baselines (2017-2018)"
 	@echo "  make curate       download OSDR data, harmonise units, run QC gates"
 	@echo "  make analyse      contrasts, supply indices, astronaut trajectories, ML"
 	@echo "  make figures      generate and distribute all publication figures"
@@ -54,7 +55,10 @@ harvest:
 fetch curate:
 	$(PY) scripts_curate.py
 
-analyse: curate
+fetch-nhanes:
+	$(PY) scripts_integrate_nhanes.py
+
+analyse: curate fetch-nhanes
 	$(PY) scripts_analyse_plants.py
 	$(PY) scripts_analyse_astronauts.py
 	$(PY) scripts_analyse_supply.py

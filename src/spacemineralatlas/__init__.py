@@ -12,3 +12,8 @@ __version__ = "0.1.0"
 # Chosen because it is the unit in which both source studies' values are actually
 # expressed once the OSD-655 mislabelling is corrected (see harmonise.py).
 CANONICAL_ELEMENT_UNIT = "microgram_per_gram_dry_weight"
+
+# Public API
+from . import nhanes_analysis, nhanes_client
+
+__all__ = ["nhanes_analysis", "nhanes_client"]
