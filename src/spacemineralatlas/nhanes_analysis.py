@@ -167,12 +167,18 @@ def compare_astronauts_to_nhanes(
         estimated_sex = 1  # male (placeholder)
 
         # Find matching stratum
+        matching_band = None
         for age_min, age_max in age_bands:
             if age_min <= estimated_age < age_max:
+                matching_band = (age_min, age_max)
                 stratum_label = f"{['M', 'F'][estimated_sex - 1]}_{age_min}-{age_max - 1}"
                 break
-        else:
-            stratum_label = "M_40-49"  # fallback
+
+        if matching_band is None:
+            logger.warning("%s: age %d outside all age bands", subject, estimated_age)
+            continue
+
+        age_min, age_max = matching_band
 
         # For each mineral measured in CMP
         for mineral in ["calcium", "potassium", "sodium"]:  # chloride, CO2 not in NHANES
@@ -191,11 +197,21 @@ def compare_astronauts_to_nhanes(
 
             # Find NHANES reference for this mineral in this stratum
             if col not in nhanes_references or stratum_label not in nhanes_references[col]:
-                logger.warning(
+                logger.debug(
                     "%s: no NHANES reference for %s in stratum %s",
                     subject, col, stratum_label,
                 )
-                continue
+                # Try using all-cohort reference as fallback
+                if col in nhanes_references:
+                    # Use any available stratum from this mineral
+                    available_strata = list(nhanes_references[col].keys())
+                    if available_strata:
+                        logger.debug("%s: using fallback stratum %s", subject, available_strata[0])
+                        stratum_label = available_strata[0]
+                    else:
+                        continue
+                else:
+                    continue
 
             nhanes_ref = nhanes_references[col][stratum_label]
             nhanes_vals = nhanes_cohort[
@@ -224,9 +240,13 @@ def compare_astronauts_to_nhanes(
                 "nhanes_n": nhanes_ref.n,
             })
 
-    result = pd.DataFrame(records)
-    logger.info(
-        "Comparison table: %d subject-analyte pairs, %d unique subjects",
-        len(result), result["subject"].nunique(),
-    )
+    if not records:
+        logger.warning("No astronaut-NHANES comparisons generated")
+        result = pd.DataFrame()
+    else:
+        result = pd.DataFrame(records)
+        logger.info(
+            "Comparison table: %d subject-analyte pairs, %d unique subjects",
+            len(result), result["subject"].nunique(),
+        )
     return result

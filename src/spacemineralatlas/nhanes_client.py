@@ -71,6 +71,25 @@ def list_available_cycles() -> tuple[str, ...]:
     return NHANES_CYCLES
 
 
+def _download_xpt(cycle: str, filename: str) -> pd.DataFrame:
+    """Download a single XPT file from CDC using corrected URL format.
+
+    The nhanes_pytool_api library uses outdated URL patterns; this helper
+    uses the current CDC structure.
+    """
+    # Convert cycle "2017-2018" to year "2017"
+    year = cycle.split("-")[0]
+    url = f"https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/{year}/DataFiles/{filename}.xpt"
+
+    try:
+        response = requests.get(url, timeout=90)
+        response.raise_for_status()
+        return pd.read_sas(io.BytesIO(response.content), format="xport")
+    except Exception as e:
+        logger.error("Failed to download %s: %s", url, e)
+        raise
+
+
 def get_biochemistry(cycle: str, *, force: bool = False) -> pd.DataFrame:
     """Download and parse NHANES standard biochemistry (BIOPRO) for *cycle*.
 
@@ -99,27 +118,21 @@ def get_biochemistry(cycle: str, *, force: bool = False) -> pd.DataFrame:
         raise ValueError(f"Invalid cycle {cycle}; available: {NHANES_CYCLES}")
 
     api = _nhanes_api()
+    file_description = "Standard Biochemistry Profile"
 
     try:
-        # Retrieve the variable table for laboratory data
+        # Get the actual filename from the variable table
         var_table = api._retrieve_variable_table("laboratory")
-        if var_table is None:
-            raise ValueError("Could not retrieve laboratory variable table")
-
-        # Find the file mapping for Standard Biochemistry Profile
         file_mapping = api.retrieve_cycle_data_file_name_mapping(
-            var_table, "Standard Biochemistry Profile"
+            var_table, file_description
         )
         filename = file_mapping[cycle]
-    except Exception as e:
-        logger.warning("Could not find Standard Biochemistry Profile file: %s", e)
-        raise ValueError(f"Could not retrieve biochemistry file for cycle {cycle}: {e}")
 
-    try:
-        raw = api.retrieve_data("laboratory", cycle, filename, include_uncommon_variables=False)
+        # Download using corrected URL format
+        raw = _download_xpt(cycle, filename)
     except Exception as e:
-        logger.warning("Could not retrieve data for cycle %s: %s", cycle, e)
-        raise
+        logger.warning("Could not retrieve biochemistry for cycle %s: %s", cycle, e)
+        raise ValueError(f"Could not retrieve biochemistry data for cycle {cycle}: {e}")
 
     output = pd.DataFrame()
     for mineral, (nhanes_var, unit) in BIOCHEMISTRY_VARIABLES.items():
@@ -163,25 +176,31 @@ def get_cbc(cycle: str, *, force: bool = False) -> pd.DataFrame:
         raise ValueError(f"Invalid cycle {cycle}; available: {NHANES_CYCLES}")
 
     api = _nhanes_api()
+    # Note: file description varies by cycle; try both variants
+    file_descriptions = [
+        "Complete Blood Count with 5-Part Differential",
+        "Complete Blood Count",
+    ]
 
-    try:
-        var_table = api._retrieve_variable_table("laboratory")
-        if var_table is None:
-            raise ValueError("Could not retrieve laboratory variable table")
+    raw = None
+    for file_description in file_descriptions:
+        try:
+            # Get the actual filename from the variable table
+            var_table = api._retrieve_variable_table("laboratory")
+            file_mapping = api.retrieve_cycle_data_file_name_mapping(
+                var_table, file_description
+            )
+            filename = file_mapping[cycle]
 
-        file_mapping = api.retrieve_cycle_data_file_name_mapping(
-            var_table, "Complete Blood Count"
-        )
-        filename = file_mapping[cycle]
-    except Exception as e:
-        logger.warning("Could not find Complete Blood Count file: %s", e)
-        raise ValueError(f"Could not retrieve CBC file for cycle {cycle}: {e}")
+            # Download using corrected URL format
+            raw = _download_xpt(cycle, filename)
+            break  # Success
+        except Exception as e:
+            logger.debug("Failed with description '%s': %s", file_description, e)
+            continue
 
-    try:
-        raw = api.retrieve_data("laboratory", cycle, filename, include_uncommon_variables=False)
-    except Exception as e:
-        logger.warning("Could not retrieve data for cycle %s: %s", cycle, e)
-        raise
+    if raw is None:
+        raise ValueError(f"Could not retrieve CBC data for cycle {cycle}: tried {file_descriptions}")
 
     output = pd.DataFrame()
     for analyte, (nhanes_var, unit) in CBC_VARIABLES.items():
@@ -224,25 +243,21 @@ def get_demographics(cycle: str, *, force: bool = False) -> pd.DataFrame:
         raise ValueError(f"Invalid cycle {cycle}; available: {NHANES_CYCLES}")
 
     api = _nhanes_api()
+    file_description = "Demographic Variables & Sample Weights"
 
     try:
+        # Get the actual filename from the variable table
         var_table = api._retrieve_variable_table("demographics")
-        if var_table is None:
-            raise ValueError("Could not retrieve demographics variable table")
-
         file_mapping = api.retrieve_cycle_data_file_name_mapping(
-            var_table, "Demographic Variables & Sample Weights"
+            var_table, file_description
         )
         filename = file_mapping[cycle]
-    except Exception as e:
-        logger.warning("Could not find demographics file: %s", e)
-        raise ValueError(f"Could not retrieve demographics file for cycle {cycle}: {e}")
 
-    try:
-        raw = api.retrieve_data("demographics", cycle, filename, include_uncommon_variables=False)
+        # Download using corrected URL format
+        raw = _download_xpt(cycle, filename)
     except Exception as e:
-        logger.warning("Could not retrieve data for cycle %s: %s", cycle, e)
-        raise
+        logger.warning("Could not retrieve demographics for cycle %s: %s", cycle, e)
+        raise ValueError(f"Could not retrieve demographics data for cycle {cycle}: {e}")
 
     output = pd.DataFrame()
     if "SEQN" in raw.columns:
