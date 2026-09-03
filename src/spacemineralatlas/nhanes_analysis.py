@@ -159,12 +159,16 @@ def compare_astronauts_to_nhanes(
     for subject in cmp["subject"].unique():
         subject_data = cmp[cmp["subject"] == subject]
 
-        # Infer subject's age and sex from their data (would need to be added to CMP)
-        # For now, assume age 40-50, sex unknown (placeholder)
-        # In reality, this should come from OSD-575 sample metadata.
-        # Rough estimate: civilian astronauts in their 40s-50s.
-        estimated_age = 45
-        estimated_sex = 1  # male (placeholder)
+        # Get crew metadata: age at mission and sex
+        age_series = subject_data["age_at_mission"].dropna()
+        sex_series = subject_data["sex"].dropna()
+
+        if age_series.empty or sex_series.empty:
+            logger.warning("%s: missing age or sex metadata", subject)
+            continue
+
+        estimated_age = int(age_series.iloc[0])
+        estimated_sex = int(sex_series.iloc[0])
 
         # Find matching stratum
         matching_band = None
@@ -180,14 +184,20 @@ def compare_astronauts_to_nhanes(
 
         age_min, age_max = matching_band
 
+        # Mapping from astronaut CMP column names to NHANES cohort column names
+        mineral_mapping = {
+            "calcium": "calcium_mg_per_dL",
+            "potassium": "potassium_mmol_per_L",
+            "sodium": "sodium_mmol_per_L",
+        }
+
         # For each mineral measured in CMP
-        for mineral in ["calcium", "potassium", "sodium"]:  # chloride, CO2 not in NHANES
-            col = mineral
-            if col not in subject_data.columns:
+        for mineral, nhanes_col in mineral_mapping.items():
+            if mineral not in subject_data.columns:
                 continue
 
-            preflight_vals = subject_data[subject_data["phase"] == "preflight"][col]
-            postflight_vals = subject_data[subject_data["phase"] == "postflight"][col]
+            preflight_vals = subject_data[subject_data["phase"] == "preflight"][mineral]
+            postflight_vals = subject_data[subject_data["phase"] == "postflight"][mineral]
 
             if preflight_vals.empty or postflight_vals.empty:
                 continue
@@ -196,15 +206,16 @@ def compare_astronauts_to_nhanes(
             postflight_mean = postflight_vals.mean()
 
             # Find NHANES reference for this mineral in this stratum
-            if col not in nhanes_references or stratum_label not in nhanes_references[col]:
+            # Use the astronaut column name (e.g., "calcium") as key for references
+            if mineral not in nhanes_references or stratum_label not in nhanes_references[mineral]:
                 logger.debug(
                     "%s: no NHANES reference for %s in stratum %s",
-                    subject, col, stratum_label,
+                    subject, mineral, stratum_label,
                 )
                 # Try using all-cohort reference as fallback
-                if col in nhanes_references:
+                if mineral in nhanes_references:
                     # Use any available stratum from this mineral
-                    available_strata = list(nhanes_references[col].keys())
+                    available_strata = list(nhanes_references[mineral].keys())
                     if available_strata:
                         logger.debug("%s: using fallback stratum %s", subject, available_strata[0])
                         stratum_label = available_strata[0]
@@ -213,12 +224,12 @@ def compare_astronauts_to_nhanes(
                 else:
                     continue
 
-            nhanes_ref = nhanes_references[col][stratum_label]
+            nhanes_ref = nhanes_references[mineral][stratum_label]
             nhanes_vals = nhanes_cohort[
                 (nhanes_cohort["age_years"] >= age_min)
                 & (nhanes_cohort["age_years"] < age_max)
                 & (nhanes_cohort["sex"] == estimated_sex)
-            ][col]
+            ][nhanes_col]
 
             pct_preflight = percentile_rank(preflight_mean, nhanes_vals)
             pct_postflight = percentile_rank(postflight_mean, nhanes_vals)

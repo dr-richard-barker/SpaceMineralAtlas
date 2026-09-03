@@ -59,6 +59,16 @@ TIMEPOINT_DAYS: dict[str, int] = {
     "R+1": 1, "R+45": 45, "R+82": 82, "R+194": 194,
 }
 
+# Inspiration4 mission crew demographics (2021 SpaceX mission, Sept 15-18).
+# Sources: Wikipedia, NASA, Inspiration4.com.
+# Used for age/sex stratification in NHANES population comparison.
+CREW_METADATA: dict[str, dict] = {
+    "C001": {"name": "Jared Isaacman", "age_at_mission": 38, "sex": 1, "role": "Commander"},
+    "C002": {"name": "Hayley Arceneaux", "age_at_mission": 29, "sex": 2, "role": "Medical Officer"},
+    "C003": {"name": "Chris Sembroski", "age_at_mission": 41, "sex": 1, "role": "Specialist"},
+    "C004": {"name": "Sian Proctor", "age_at_mission": 51, "sex": 2, "role": "Pilot"},
+}
+
 
 def parse_sample_name(name: str) -> dict:
     """Parse ``C001_serum_L-3`` into subject, matrix and timepoint."""
@@ -126,6 +136,13 @@ def load_cmp(*, force: bool = False) -> pd.DataFrame:
             )
 
     frame = frame.sort_values(["subject", "day_relative"]).reset_index(drop=True)
+
+    # Attach crew metadata for age/sex stratification in population comparison
+    frame["crew_name"] = frame["subject"].map(lambda s: CREW_METADATA.get(s, {}).get("name"))
+    frame["age_at_mission"] = frame["subject"].map(lambda s: CREW_METADATA.get(s, {}).get("age_at_mission"))
+    frame["sex"] = frame["subject"].map(lambda s: CREW_METADATA.get(s, {}).get("sex"))
+    frame["crew_role"] = frame["subject"].map(lambda s: CREW_METADATA.get(s, {}).get("role"))
+
     logger.info(
         "%s: %d subject-timepoint rows (%d subjects x %d timepoints)",
         OSD_ID, len(frame), frame["subject"].nunique(), frame["timepoint"].nunique(),

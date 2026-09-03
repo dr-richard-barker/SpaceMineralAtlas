@@ -36,14 +36,27 @@ def main():
 
     # Step 2: Compute stratified reference ranges
     logger.info("\n[2] Computing age/sex-stratified reference ranges...")
-    variables = [
-        c for c in nhanes_cohort.columns
-        if any(m in c for m in ["calcium", "potassium", "sodium", "iron", "hemoglobin", "hematocrit"])
-    ]
+
+    # Normalize NHANES column names to match astronaut CMP names
+    nhanes_mapping = {
+        "calcium_mg_per_dL": "calcium",
+        "potassium_mmol_per_L": "potassium",
+        "sodium_mmol_per_L": "sodium",
+        "hemoglobin_g_per_dL": "hemoglobin",
+        "hematocrit_pct": "hematocrit",
+        "iron_ug_per_dL": "iron",
+    }
+    nhanes_refs_data = nhanes_cohort.copy()
+    for old_name, new_name in nhanes_mapping.items():
+        if old_name in nhanes_refs_data.columns:
+            nhanes_refs_data[new_name] = nhanes_refs_data[old_name]
+
+    variables = [new_name for new_name in nhanes_mapping.values()
+                 if new_name in nhanes_refs_data.columns]
     logger.info(f"    Analysing {len(variables)} variables")
 
     nhanes_refs = nhanes_analysis.stratified_reference_ranges(
-        nhanes_cohort, variables=variables
+        nhanes_refs_data, variables=variables
     )
 
     # Step 3: Compare astronaut data to population norms
