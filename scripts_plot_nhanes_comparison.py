@@ -27,12 +27,12 @@ crew_info = {
 # ============================================================================
 
 fig, axes = plt.subplots(
-    nrows=4, ncols=3, figsize=(14, 12),
+    nrows=4, ncols=3, figsize=(14, 13),
     constrained_layout=True
 )
 fig.suptitle(
     "Inspiration4 Serum Mineral Levels vs NHANES Population Percentiles",
-    fontsize=16, fontweight="bold", y=0.995
+    fontsize=16, fontweight="bold", y=0.99
 )
 
 analytes = sorted(df["analyte"].unique())
@@ -157,7 +157,11 @@ print("✓ Saved: figures/nhanes_percentile_changes.pdf")
 # Figure 3: Heatmap of Percentile Ranks
 # ============================================================================
 
-fig, (ax_pre, ax_post) = plt.subplots(1, 2, figsize=(10, 5))
+fig = plt.figure(figsize=(12, 6))
+gs = fig.add_gridspec(2, 2, height_ratios=[20, 1], hspace=0.3, wspace=0.3)
+ax_pre = fig.add_subplot(gs[0, 0])
+ax_post = fig.add_subplot(gs[0, 1])
+ax_cbar = fig.add_subplot(gs[1, :])
 
 # Pivot data for heatmap
 pre_data = df.pivot_table(values="preflight_percentile", index="subject", columns="analyte")
@@ -194,14 +198,12 @@ for i, subject in enumerate(post_data.index):
         text = ax_post.text(j, i, f"{post_data.iloc[i, j]:.0f}",
                            ha="center", va="center", color="black", fontsize=10, fontweight="bold")
 
-# Colorbar
-cbar = fig.colorbar(im_post, ax=[ax_pre, ax_post], orientation="horizontal",
-                   pad=0.1, label="Percentile Rank")
+# Colorbar in dedicated subplot
+cbar = fig.colorbar(im_post, cax=ax_cbar, orientation="horizontal", label="Percentile Rank")
+ax_cbar.set_xlabel("")
 
 fig.suptitle("Inspiration4 Serum Mineral Levels: Population Percentile Ranks",
-            fontsize=14, fontweight="bold", y=1.02)
-
-plt.tight_layout()
+            fontsize=14, fontweight="bold", y=0.98)
 plt.savefig("figures/nhanes_percentile_heatmap.pdf", dpi=300, bbox_inches="tight")
 plt.savefig("figures/nhanes_percentile_heatmap.png", dpi=300, bbox_inches="tight")
 print("✓ Saved: figures/nhanes_percentile_heatmap.pdf")
