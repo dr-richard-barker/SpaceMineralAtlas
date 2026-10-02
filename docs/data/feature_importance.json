@@ -1,0 +1,47 @@
+[
+  {
+    "feature": "potassium",
+    "importance_mean": "0.07548387096774194",
+    "importance_std": "0.02684654622803208"
+  },
+  {
+    "feature": "sodium",
+    "importance_mean": "0.03827586206896552",
+    "importance_std": "0.0204846161934885"
+  },
+  {
+    "feature": "sulfur",
+    "importance_mean": "0.030923248053392624",
+    "importance_std": "0.020072856566775578"
+  },
+  {
+    "feature": "magnesium",
+    "importance_mean": "0.01293659621801999",
+    "importance_std": "0.010685371604381539"
+  },
+  {
+    "feature": "iron",
+    "importance_mean": "0.006206896551724111",
+    "importance_std": "0.008275862068965481"
+  },
+  {
+    "feature": "phosphorus",
+    "importance_mean": "0.0017241379310344751",
+    "importance_std": "0.005172413793103426"
+  },
+  {
+    "feature": "calcium",
+    "importance_mean": "0.0",
+    "importance_std": "0.0"
+  },
+  {
+    "feature": "manganese",
+    "importance_mean": "0.0",
+    "importance_std": "0.0"
+  },
+  {
+    "feature": "zinc",
+    "importance_mean": "0.0",
+    "importance_std": "0.0"
+  }
+]

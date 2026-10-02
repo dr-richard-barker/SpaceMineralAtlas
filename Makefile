@@ -9,7 +9,7 @@ PY := ./.venv/bin/python
 PIP := ./.venv/bin/pip
 
 .PHONY: all setup harvest fetch fetch-nhanes curate analyse figures nhanes-figures numbers bibliography \
-        manuscript fair test check clean distclean help
+        manuscript fair docs test check clean distclean help
 
 help:
 	@echo "SpaceMineralAtlas"
@@ -27,6 +27,7 @@ help:
 	@echo "  make bibliography re-verify every DOI against Crossref"
 	@echo "  make manuscript   build the PDF and DOCX"
 	@echo "  make fair         assemble the Zenodo / RO-Crate deposit package"
+	@echo "  make docs         build the GitHub Pages interactive research portal"
 	@echo ""
 	@echo "  make test         run the test suite"
 	@echo "  make check        verify no macro is used without a definition"
@@ -39,13 +40,14 @@ setup:
 	$(PIP) install --quiet -e ".[dev]"
 	@echo "environment ready"
 
-all: harvest curate analyse figures numbers manuscript fair test
+all: harvest curate analyse figures numbers manuscript fair docs test
 	@echo ""
 	@echo "=================================================================="
 	@echo " Pipeline complete."
 	@echo "   manuscript : manuscript/SpaceMineralAtlas_manuscript.pdf"
 	@echo "   catalog    : catalog/lsda_mineral_nutrition_catalog.csv"
 	@echo "   data       : data/processed/plant_elemental_ugg.csv"
+	@echo "   docs       : docs/index.html"
 	@echo "=================================================================="
 
 harvest:
@@ -86,6 +88,9 @@ manuscript: numbers figures check
 
 fair:
 	$(PY) scripts_fair_package.py
+
+docs: figures fair
+	python3 scripts_build_docs.py
 
 test:
 	$(PY) -m pytest tests/ -q

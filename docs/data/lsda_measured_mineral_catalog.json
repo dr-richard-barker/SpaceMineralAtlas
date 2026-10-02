@@ -1,0 +1,4232 @@
+[
+  {
+    "id": "MR016G",
+    "title": "Clinical Nutritional Assessment (Flight Analog)",
+    "pi": "Smith,  Scott  M.",
+    "species": "Human",
+    "missions": "UTMB  Campaign  1  3",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;manganese;chloride",
+    "n_minerals": 11
+  },
+  {
+    "id": "5.3b",
+    "title": "Trace Chemical Contamination:  Water Quality",
+    "pi": "Sauer,  Richard  Sinyak,  Yuri",
+    "species": "Not; applicable",
+    "missions": "Mir  18  19  20  STS-71",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;manganese;chloride",
+    "n_minerals": 11
+  },
+  {
+    "id": "LMLSTP4.2",
+    "title": "Water Chemistry Monitoring",
+    "pi": "Sauer,  Richard",
+    "species": "Human",
+    "missions": "LMLSTP",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;manganese;chloride",
+    "n_minerals": 11
+  },
+  {
+    "id": "Food_Physiology",
+    "title": "The Integrated Impact of Diet on Human Immune Response, the Gut Microbiota, and Nutritional Status during Adaptation to Spaceflight",
+    "pi": "Douglas,  Grace",
+    "species": "Human",
+    "missions": "HERA  Campaign  4  Expedition  61  62  63  65  66",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;chloride",
+    "n_minerals": 10
+  },
+  {
+    "id": "Food_Processing",
+    "title": "Effects of Processing and Subsequent Storage on Nutrition",
+    "pi": "Cooper,  Maya  Perchonok,  Michele",
+    "species": "",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;manganese",
+    "n_minerals": 10
+  },
+  {
+    "id": "ESA_BRSM_Bone_Hema",
+    "title": "Envihab Bed Rest Standard Measures: Bone Marker, Hematology, and Nutrition",
+    "pi": "Clement,  Gilles",
+    "species": "Human",
+    "missions": "VaPER  AGBRESA_1  AGBRESA_2",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;chloride",
+    "n_minerals": 10
+  },
+  {
+    "id": "Biochem_Profile",
+    "title": "NASA Biochemical Profile Project",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Expedition  41  42  37  38  39  40  45  46  50  51  52  43  44  47  48  49  53  54  55  56  57",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;chloride",
+    "n_minerals": 10
+  },
+  {
+    "id": "96-E400",
+    "title": "Effect of Prolonged Space Flight on Human Skeletal Muscle",
+    "pi": "Fitts,  Robert",
+    "species": "Human",
+    "missions": "Expedition  5  6  7  9  10  11",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;manganese",
+    "n_minerals": 10
+  },
+  {
+    "id": "SMO 016E",
+    "title": "Nutritional Status Assessment",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Expedition  25  26  27  28  17  18  35  29  30  31  32  33  34  14  15  16  19  20  23  24  21  22",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;selenium;phosphorus;chloride",
+    "n_minerals": 10
+  },
+  {
+    "id": "LMLSTP5.1",
+    "title": "Nutritional Status Assessment during Phases IIa and III of the Lunar-Mars Life Support Test Project",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "LMLSTP",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;selenium;phosphorus;chloride",
+    "n_minerals": 9
+  },
+  {
+    "id": "NEEMO-MR016L",
+    "title": "Clinical Nutritional Assessment",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "NEEMO  5",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;copper;selenium;phosphorus;chloride",
+    "n_minerals": 9
+  },
+  {
+    "id": "AP010",
+    "title": "Nutritional Studies",
+    "pi": "Rambaut,  Paul  Smith,  Malcolm  Wheeler,  Harry",
+    "species": "Human",
+    "missions": "Apollo  10  11  12  13  14  15  16  17  7  8  9",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;phosphorus;chloride",
+    "n_minerals": 7
+  },
+  {
+    "id": "ProK",
+    "title": "Dietary Intake Can Predict and Protect Against Changes in Bone Metabolism during Space Flight and Recovery",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Expedition  26  40  41  30  31  32  23  24  22  33  34  35  36  37  38  25  27",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;phosphorus;chloride",
+    "n_minerals": 7
+  },
+  {
+    "id": "skych",
+    "title": "Skylab Crew Health",
+    "pi": "Buchanan,  Paul  Hordinsky,  Jerry  Ross,  Charles",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;zinc;copper;phosphorus",
+    "n_minerals": 8
+  },
+  {
+    "id": "COS 2044-30",
+    "title": "Mineral Distribution and Balance in Rats During Spaceflight",
+    "pi": "Cann,  Christopher",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;magnesium;zinc;copper;phosphorus;manganese",
+    "n_minerals": 8
+  },
+  {
+    "id": "SSM_Biochem_Measures",
+    "title": "Spaceflight Standard Measures: Biochemical Measures",
+    "pi": "Theriot,  Corey",
+    "species": "Human",
+    "missions": "Expedition  67  66  65  64  63  60  61  59  58  68  69  70  71  72  73  62",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;phosphorus;chloride",
+    "n_minerals": 7
+  },
+  {
+    "id": "PR",
+    "title": "Physiological Responses of the Astronaut",
+    "pi": "Augerson,  William  Berry,  Charles  Catterson,  A.  Douglas,  Laughlin,  C.  McCutcheon,  Ernest",
+    "species": "Human",
+    "missions": "Mercury  3  4  6  7  8  9",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;phosphorus;chloride",
+    "n_minerals": 7
+  },
+  {
+    "id": "M073",
+    "title": "Bio-Assay of Body Fluids",
+    "pi": "Leach-  Huntoon,  Carolyn",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "ILSRA_2001_028",
+    "title": "SOdium LOading in Microgravity",
+    "pi": "Frings-  Meuthen,  Petra  Heer,  Martina",
+    "species": "Human",
+    "missions": "Expedition  29  30  31  32  17  18  19  20  23  24  25  26  27  28",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;iron;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "DSO 325",
+    "title": "Dried Blood Method for In-flight Storage",
+    "pi": "Whitson,  Peggy",
+    "species": "Human",
+    "missions": "STS-58",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "UWSCI",
+    "title": "A Quantitative Test of On-Orbit Exercise Countermeasures for Bone Demineralization Using a Bed Rest Analog",
+    "pi": "Cavanagh,  Peter",
+    "species": "Human",
+    "missions": "DBLS",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "ASTP010",
+    "title": "Biochemistry and Endocrinology Results",
+    "pi": "Leach-  Huntoon,  Carolyn",
+    "species": "Human",
+    "missions": "ASTP",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "SkyOral",
+    "title": "Skylab Oral Health Studies",
+    "pi": "Brown,  Lee",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "AP008",
+    "title": "Endocrine, Electrolyte, and Fluid Volume Changes Associated with Apollo Missions",
+    "pi": "Alexander,  W.  Johnson,  Phillip  Leach-  Huntoon,  Carolyn",
+    "species": "Human",
+    "missions": "Apollo  10  15  16  17  7  8  9  11  12  13  14",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "AP004",
+    "title": "Clinical Biochemistry",
+    "pi": "Alexander,  W.  Fischer,  Craig  Leach-  Huntoon,  Carolyn",
+    "species": "Human",
+    "missions": "Apollo  10  11  12  14  15  16  17  7  8  9  13",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "M007",
+    "title": "Calcium Balance",
+    "pi": "Whedon,  G.",
+    "species": "Human",
+    "missions": "Gemini  7",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "M071",
+    "title": "Mineral Balance Study",
+    "pi": "Whedon,  G.",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "2.1.3",
+    "title": "Renal Stone Risk Assessment During Long Duration Space Flight",
+    "pi": "Arzamozov,  German  Whitson,  Peggy",
+    "species": "Human",
+    "missions": "Mir  18",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "ASTP013",
+    "title": "Nutrient Energy Requirements Determination",
+    "pi": "Rapp,  Rita  Smith,  Malcolm",
+    "species": "Human",
+    "missions": "ASTP",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "B11-01",
+    "title": "Clinical Assessment of Flight Pool Animals",
+    "pi": "Fanton,  John  Gordeev,  Yuri",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;iron;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "DSO 610",
+    "title": "In-flight Assessment of Renal Stone Risk",
+    "pi": "Whitson,  Peggy",
+    "species": "Human",
+    "missions": "STS-62  STS-64  STS-65  STS-69",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "178120",
+    "title": "Protein Metabolism During Space Flight",
+    "pi": "Stein,  T.",
+    "species": "Human",
+    "missions": "STS-40",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;iron;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "AP007",
+    "title": "Hematology and Immunology Studies",
+    "pi": "Fischer,  Craig  Johnson,  Phillip  Kimzey,  Stephen  Mengel,  Charles  Ritzmann,  Stephan",
+    "species": "Human",
+    "missions": "Apollo  10  11  12  13  14  15  16  17  7  8  9",
+    "access": "request_required",
+    "minerals": "potassium;sodium;iron;copper;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "178192",
+    "title": "Fluid-Electrolyte Regulation during Space Flight",
+    "pi": "Leach-  Huntoon,  Carolyn",
+    "species": "Human",
+    "missions": "STS-40",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;iron;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "96-E057",
+    "title": "Renal Stone Risk During Space Flight:  Assessment and Countermeasure Validation",
+    "pi": "Whitson,  Peggy",
+    "species": "Human",
+    "missions": "Expedition  5  6  8  11  12  13  14  4  3",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "2.2.3",
+    "title": "Metabolic Response to Exercise",
+    "pi": "Lane,  Helen  Popova,  Irena",
+    "species": "Human",
+    "missions": "Mir  18",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;iron;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "M005",
+    "title": "Bioassays of Body Fluids",
+    "pi": "Dietlein,  Lawrence",
+    "species": "Human",
+    "missions": "Gemini  7  8  9",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "SMO 021",
+    "title": "Bisphosphonates As A Countermeasure To Space Flight Induced Bone Loss",
+    "pi": "LeBlanc,  Adrian  Matsumoto,  Toshio",
+    "species": "Human",
+    "missions": "Expedition  25  26  28  35  41  42  45  34  36  37  38  39  40  29  31  19  21  22  18  20  27  23  48  49  43  44",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "9401651",
+    "title": "Renal Stone Risk Assessment During Long-Term Space Flight",
+    "pi": "Whitson,  Peggy",
+    "species": "Human",
+    "missions": "NASA  2  3  6  7",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "PARE.04A",
+    "title": "Fluid Electrolyte Metabolism",
+    "pi": "Serova,  Luba",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;magnesium;iron;copper",
+    "n_minerals": 6
+  },
+  {
+    "id": "Nutrients_Food",
+    "title": "Bioavailability of Nutrients in Food",
+    "pi": "Cooper,  Maya  Douglas,  Grace",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;potassium;magnesium;iron;zinc;phosphorus",
+    "n_minerals": 6
+  },
+  {
+    "id": "COS 1129-11",
+    "title": "Bone Resorption in Rats During Spaceflight",
+    "pi": "Cann,  Christopher",
+    "species": "Rat",
+    "missions": "Cosmos  1129",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;magnesium;zinc;phosphorus",
+    "n_minerals": 6
+  },
+  {
+    "id": "NAG91159",
+    "title": "Effects of Skeletal Unloading and Vitamin E on Bone in Mature Rats",
+    "pi": "Stoecker,  Barbara",
+    "species": "Rat",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "calcium;magnesium;iron;zinc;copper;phosphorus",
+    "n_minerals": 6
+  },
+  {
+    "id": "SLS2 BSP9",
+    "title": "Kidneys and Fluid-Electrolyte Homeostasis",
+    "pi": "Serova,  Luba",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;magnesium;iron",
+    "n_minerals": 5
+  },
+  {
+    "id": "2.2.4",
+    "title": "Metabolism of Red Blood Cells",
+    "pi": "Ivanova,  Svetlana  Lane,  Helen",
+    "species": "Human",
+    "missions": "Mir  18",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "Vascular_Aging",
+    "title": "The Space Environment Causes Acceleration of Vascular Aging: Roles of Hypogravity, Nutrition and Radiation",
+    "pi": "Hughson,  Richard",
+    "species": "Human",
+    "missions": "Expedition  60  61  63  64  65  66",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;iron;selenium",
+    "n_minerals": 5
+  },
+  {
+    "id": "NCC958RE00007",
+    "title": "Evaluation of the Medical Food, Enterade-R, as a Radiation Countermeasure for Enteric Dysfunction",
+    "pi": "Vidyasagar,  Sadasivan",
+    "species": "Mice",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "magnesium;zinc;copper;phosphorus;chloride",
+    "n_minerals": 5
+  },
+  {
+    "id": "SL3 BSP7",
+    "title": "Microprobe Analyses of Epiphyseal Plates from Spacelab 3 Rats",
+    "pi": "Duke,  Pauline",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "MR010G",
+    "title": "Clinical Laboratory Assessment (Flight Analog)",
+    "pi": "McMonigal,  Kathleen  A.",
+    "species": "Human",
+    "missions": "Campaign  19  UTMB  11  DBLS  HDT30  5  3  1  17",
+    "access": "open",
+    "minerals": "calcium;magnesium;iron;phosphorus",
+    "n_minerals": 4
+  },
+  {
+    "id": "SL3 1.1",
+    "title": "Animal Studies on Spacelab-3",
+    "pi": "Callahan,  Paul",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;iron",
+    "n_minerals": 4
+  },
+  {
+    "id": "178140",
+    "title": "Lower Body Negative Pressure - Countermeasure Against Postflight Orthostatic Intolerance",
+    "pi": "Charles,  John",
+    "species": "Human",
+    "missions": "STS-47",
+    "access": "request_required",
+    "minerals": "potassium;sodium;iron;chloride",
+    "n_minerals": 4
+  },
+  {
+    "id": "AP001",
+    "title": "Clinical Aspects of Crew Health",
+    "pi": "Hawkins,  Willard  Zieglschmid,  John",
+    "species": "Human",
+    "missions": "Apollo  10  11  12  13  14  15  16  17  7  8  9",
+    "access": "request_required",
+    "minerals": "potassium;sodium;magnesium;phosphorus",
+    "n_minerals": 4
+  },
+  {
+    "id": "COS 1129-17",
+    "title": "Effects of Weightlessness on Body Composition in the Rat",
+    "pi": "Pitts,  G.",
+    "species": "Rat",
+    "missions": "Cosmos  1129",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;magnesium;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "ARCbedrest116",
+    "title": "Minimum Intermittent Gz Requirements With or Without Activity for Preventing Fluid and Electrolyte Regulating Hormone Changes After 4 Hours -6 Degrees Head Down Bed Rest",
+    "pi": "Vernikos,  Joan",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;iron",
+    "n_minerals": 4
+  },
+  {
+    "id": "SMOg HYPOVOLEMIA",
+    "title": "Hypovolemia As a Model of Space Flight: Cardiovascular Effects and Countermeasures",
+    "pi": "Platts,  Steven",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "potassium;sodium;iron;chloride",
+    "n_minerals": 4
+  },
+  {
+    "id": "DSO 492",
+    "title": "In-flight Evaluation of a Portable Clinical Blood Analyzer",
+    "pi": "Lane,  Helen",
+    "species": "Human",
+    "missions": "STS-62  STS-63  STS-69  STS-71  STS-72  STS-75",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;iron",
+    "n_minerals": 4
+  },
+  {
+    "id": "COS 1887-11",
+    "title": "Growth Hormone Regulation, Synthesis, and Secretion in Microgravity: III. Plasma Analysis",
+    "pi": "Grindeland,  Richard",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;phosphorus",
+    "n_minerals": 4
+  },
+  {
+    "id": "NSBRI_BL00210",
+    "title": "Prevention of Microgravity-Induced Stone Risk by Potassium Magnesium (KMg) Citrate",
+    "pi": "Zerwekh,  Joseph",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;magnesium",
+    "n_minerals": 4
+  },
+  {
+    "id": "Vitamin_D_Dosing",
+    "title": "Vitamin D Supplement Evaluation of Dosing Requirements",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;magnesium;phosphorus;manganese",
+    "n_minerals": 4
+  },
+  {
+    "id": "ROI_Polar_II",
+    "title": "Vitamin D Supplementation in an Antarctic Ground Analog of Space Flight: Study of Supplementation Protocol and Relationship to Immune System Function",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "ROI",
+    "access": "request_required",
+    "minerals": "calcium;magnesium;phosphorus;manganese",
+    "n_minerals": 4
+  },
+  {
+    "id": "ARCbedrest071",
+    "title": "The Effect of Bed Rest on Bone Histology and the Calcium Endocrine System in Adult Men",
+    "pi": "Arnaud,  Sara",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;phosphorus",
+    "n_minerals": 4
+  },
+  {
+    "id": "COS 1887-28",
+    "title": "Trace Element Balance in Rats During Spaceflight",
+    "pi": "Cann,  Christopher",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "calcium;zinc;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "Bone_Muscle_Check",
+    "title": "Salivary Markers of Metabolic Changes during Space Missions",
+    "pi": "Cirillo,  Massimo",
+    "species": "Human",
+    "missions": "Expedition  41  42  43",
+    "access": "request_required",
+    "minerals": "calcium;sodium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "ROI_VITAMIN_D",
+    "title": "Efficacy of Vitamin D Supplementation in an Antarctic Ground Analog of Space Flight",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "ROI",
+    "access": "request_required",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "ARCbedrest159",
+    "title": "Dietary Sodium Effects on Bone and Calcium Metabolism",
+    "pi": "Arnaud,  Sara",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium;sodium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "1NS103",
+    "title": "The Influence of Space Flight on Erythrokinetics in Man",
+    "pi": "Leach-  Huntoon,  Carolyn",
+    "species": "Human",
+    "missions": "STS-9",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;iron;phosphorus",
+    "n_minerals": 5
+  },
+  {
+    "id": "DSO 633",
+    "title": "Renal Stone Risk During Spaceflight:  Assessment and Countermeasure Validation",
+    "pi": "Whitson,  Peggy",
+    "species": "Human",
+    "missions": "STS-107",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;sodium;phosphorus",
+    "n_minerals": 4
+  },
+  {
+    "id": "ARCbedrest112",
+    "title": "Use of Fludrocortisone or Salt Load to Expand Plasma Volume in Ambulatory Subjects",
+    "pi": "Vernikos,  Joan",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "potassium;sodium;magnesium;iron",
+    "n_minerals": 4
+  },
+  {
+    "id": "DSO 323",
+    "title": "Evaluation of Samples Obtained from the Urine Monitoring System",
+    "pi": "Lane,  Helen",
+    "species": "Human",
+    "missions": "STS-47  STS-55",
+    "access": "open",
+    "minerals": "potassium;sodium;chloride",
+    "n_minerals": 3
+  },
+  {
+    "id": "SLS1 BSP15",
+    "title": "Tissue Fluid-Electrolyte Composition",
+    "pi": "Natochin,  Yuri",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "request_required",
+    "minerals": "calcium;potassium;sodium;magnesium;zinc;copper;manganese",
+    "n_minerals": 7
+  },
+  {
+    "id": "NCC958CA00701",
+    "title": "The Multisystem Effect of Exercise Training/Nutritional Support During Prolonged Bed Rest Deconditioning: An Integrative Approach to Countermeasure Development for the Heart, Lungs, Muscles and Bones",
+    "pi": "Levine,  Benjamin",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;magnesium",
+    "n_minerals": 3
+  },
+  {
+    "id": "BEDREST0543",
+    "title": "Gender Differences in Bedrest: Autonomic and Neuroendocrine Changes and Vascular Responses in Lower and Upper Extremities",
+    "pi": "Platts,  Steven  Meck,  Janice  Fritsch-  Yelle",
+    "species": "Human",
+    "missions": "UTMB  Campaign  3",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium",
+    "n_minerals": 3
+  },
+  {
+    "id": "COS 1887-33",
+    "title": "The Maturation of Bone and Dentin Matrices in Rats Flown on Cosmos 1887",
+    "pi": "Simmons,  David",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium;zinc;phosphorus",
+    "n_minerals": 4
+  },
+  {
+    "id": "2.1.2",
+    "title": "Dynamics of Calcium Metabolism and Bone Tissue",
+    "pi": "Lane,  Helen",
+    "species": "Human",
+    "missions": "Mir  18  STS-71",
+    "access": "request_required",
+    "minerals": "calcium;magnesium;phosphorus;chloride",
+    "n_minerals": 4
+  },
+  {
+    "id": "SL3 BSP6",
+    "title": "Electron Microprobe Analyses of Calcium, Sulfate, Magnesium, and Phosphorous Distribution in Incisors of Spacelab-3 Rats",
+    "pi": "Rosenberg,  Gary",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "ROI_ARED",
+    "title": "Musculoskeletal Effects of 16-Weeks of Training with the Advanced Resistive Exercise Device (aRED)",
+    "pi": "Hagan,  R.",
+    "species": "Human",
+    "missions": "ROI",
+    "access": "request_required",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "2.1.1",
+    "title": "Fluid And Electrolyte Homeostasis",
+    "pi": "Grigoriev,  Anatoli  Lane,  Helen",
+    "species": "Human",
+    "missions": "Mir  18  STS-71",
+    "access": "request_required",
+    "minerals": "potassium;sodium;iron",
+    "n_minerals": 3
+  },
+  {
+    "id": "COS 2044-9",
+    "title": "Bone Biochemistry and Mineral Distribution in the Femurs of Rats after Two Weeks in Space: Circulating Parathyroid Hormone, Calcitonin, and Osteocalcin",
+    "pi": "Arnaud,  Sara",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "One_Carbon",
+    "title": "Risk of Visual Impairment and Intracranial Hypertension after Space Flight: Evaluation of the Role of Polymorphism of Enzymes Involved in One-carbon Metabolism",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Ground  Expedition  49  50  51  52  53  54",
+    "access": "request_required",
+    "minerals": "iron;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "284029 2_3",
+    "title": "Bone and Lean Body Mass Changes Following Spaceflight",
+    "pi": "",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "SKYFORM",
+    "title": "Biostereometric Analysis of Body Form",
+    "pi": "Whittle,  Michael",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "calcium;potassium",
+    "n_minerals": 2
+  },
+  {
+    "id": "TBone",
+    "title": "Assessment of the Effect of Space Flight on Bone Quality Using Three-Dimensional High Resolution Peripheral Quantitative Computed Tomography (HR-pQCT)",
+    "pi": "Boyd,  Steven",
+    "species": "Human",
+    "missions": "Expedition  46  47  48  49  50  51  52  53  54  55  56  57  58  59",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "SLS1 BSP3",
+    "title": "Metabolic and Structural Changes in Bone and Systems Regulating Bone Growth and Metabolism",
+    "pi": "Kaplansky,  Alexandre",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "open",
+    "minerals": "calcium;potassium;sodium;phosphorus;chloride",
+    "n_minerals": 5
+  },
+  {
+    "id": "EDOS_1",
+    "title": "Bone Recovery Time Course Following Long Exposure to Microgravity",
+    "pi": "Rittweger,  J\u00f6rn  Vico,  Laurence",
+    "species": "Human",
+    "missions": "Expedition  50  51",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "D2ARANFA",
+    "title": "Regulation of Volume Homeostasis in Reduced Gravity: Possible Involvement of Atrial Natriuretic Factor, Urodilatin and Cyclic GMP",
+    "pi": "Gerzer,  Rupert",
+    "species": "Human",
+    "missions": "STS-55",
+    "access": "request_required",
+    "minerals": "potassium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "COS 1887-24",
+    "title": "Biomedical, Biochemical, and Morphological Alterations of Muscle and Dense, Fibrous Connective Tissues During 14 Days of Spaceflight",
+    "pi": "Vailas,  Arthur",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "9401598",
+    "title": "Bone Mineral Loss and Recovery after Shuttle/Mir Flights",
+    "pi": "Shackelford,  Linda",
+    "species": "Human",
+    "missions": "NASA  2  3  4  5  6  7  Mir  21  22  23  24  25  STS-95",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "BEDREST_NaVC",
+    "title": "Effects of Long-Duration Spaceflight on Venous and Arterial Compliance in Astronauts: Bed Rest Study",
+    "pi": "Platts,  Steven",
+    "species": "Human",
+    "missions": "Campaign  19",
+    "access": "request_required",
+    "minerals": "sodium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "284074",
+    "title": "Direct Measurement of the Initial Bone Response to Space Flight in Humans",
+    "pi": "Cann,  Christopher",
+    "species": "Human",
+    "missions": "STS-78",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "VIIP_Bedrest_Analog",
+    "title": "Integrative Physiology of VIIP: Cardiopulmonary, Sleep, and Cognitive Function Assessment During Hypercapnic Bed Rest",
+    "pi": "Laurie,  Steven",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "DSO 627",
+    "title": "Bone Mineral Loss and Recovery",
+    "pi": "Shackelford,  Linda",
+    "species": "Human",
+    "missions": "STS-95",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "DSO 202",
+    "title": "Joint U.S./Russian Investigations: Metabolic Investigations",
+    "pi": "Grigoriev,  Anatoli  Leach-  Huntoon,  Carolyn",
+    "species": "Human",
+    "missions": "STS-60  STS-71",
+    "access": "open",
+    "minerals": "potassium;sodium;iron;chloride",
+    "n_minerals": 4
+  },
+  {
+    "id": "178194 2_2",
+    "title": "Bone, Calcium, and Spaceflight",
+    "pi": "Morey-  Holton,  Emily",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "open",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "NAG53952",
+    "title": "Evaluation of Intermittent Bright Light Exposure as a Space Flight Countermeasure",
+    "pi": "Czeisler,  Charles",
+    "species": "Human",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "sodium;magnesium;iron;chloride",
+    "n_minerals": 4
+  },
+  {
+    "id": "ARC00XX121",
+    "title": "Regional Arterial Remodeling Induced by Microgravity",
+    "pi": "Delp,  Michael",
+    "species": "Mouse",
+    "missions": "STS-131  PMA",
+    "access": "not_submitted",
+    "minerals": "calcium;potassium;iron;chloride",
+    "n_minerals": 4
+  },
+  {
+    "id": "ROI_MIDO_PMZ",
+    "title": "Test of Interactions Between Midodrine as a Countermeasure Against Postflight Orthostatic Hypotension and Promethazine as an Anti-emetic",
+    "pi": "Shi,  Shang-  Jin",
+    "species": "Human",
+    "missions": "ROI",
+    "access": "request_required",
+    "minerals": "potassium;sodium;magnesium;chloride",
+    "n_minerals": 4
+  },
+  {
+    "id": "1NS105",
+    "title": "Effects of Prolonged Weightlessness on the Humoral Immune Response of Humans",
+    "pi": "Voss,  Edward",
+    "species": "Human",
+    "missions": "STS-9",
+    "access": "request_required",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "DSO 317",
+    "title": "Collection of Shuttle Humidity Condensate for Analytical Evaluation",
+    "pi": "Sauer,  Richard  Schultz,  John",
+    "species": "N/A",
+    "missions": "STS-45  STS-47",
+    "access": "open",
+    "minerals": "magnesium;zinc;chloride",
+    "n_minerals": 3
+  },
+  {
+    "id": "B11-10",
+    "title": "Energy Metabolism of Macaca Mulatta During Space Flight",
+    "pi": "Dotsenko,  M.  Fuller,  Charles",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "IVGEN",
+    "title": "IntraVenous Fluid GENeration for Exploration Missions (IVGEN)",
+    "pi": "McQuillen,  John",
+    "species": "Not; applicable",
+    "missions": "Expedition  23",
+    "access": "request_required",
+    "minerals": "sodium;iron;chloride",
+    "n_minerals": 3
+  },
+  {
+    "id": "COS 1129-18",
+    "title": "The Effect of Spaceflight on Osteogenesis and Dentinogenesis in the Mandibles of Rats",
+    "pi": "Simmons,  David",
+    "species": "Rat",
+    "missions": "Cosmos  1129",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "ASTP008",
+    "title": "Hematological and Immunological Studies",
+    "pi": "Johnson,  Phillip  Kimzey,  Stephen",
+    "species": "Human",
+    "missions": "ASTP",
+    "access": "request_required",
+    "minerals": "magnesium;iron;copper",
+    "n_minerals": 3
+  },
+  {
+    "id": "9401686",
+    "title": "Calcium Metabolism and Vascular Function in Rats after Spaceflight",
+    "pi": "McCarron,  David",
+    "species": "Rat",
+    "missions": "STS-80",
+    "access": "not_submitted",
+    "minerals": "calcium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "178305",
+    "title": "Pathophysiology of Mineral Loss During Space Flight",
+    "pi": "Arnaud,  Claude",
+    "species": "Human",
+    "missions": "STS-40  STS-58",
+    "access": "request_required",
+    "minerals": "calcium;chloride",
+    "n_minerals": 2
+  },
+  {
+    "id": "Calcium_Isotope",
+    "title": "Rapid Measurements of Bone Loss Using Tracer-Less Calcium Isotope Analysis of Blood and Urine",
+    "pi": "Anbar,  Ariel",
+    "species": "Human",
+    "missions": "HDT30",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "DSO 206",
+    "title": "Effect of Space Flight on Bone, Muscle, and Immune Function",
+    "pi": "Ohshima,  Hiroshi",
+    "species": "Human",
+    "missions": "STS-72  STS-95  STS-99  STS-87",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "FTS",
+    "title": "Fluid Therapy System",
+    "pi": "Lloyd,  Charles",
+    "species": "Human",
+    "missions": "STS-47",
+    "access": "open",
+    "minerals": "sodium;chloride",
+    "n_minerals": 2
+  },
+  {
+    "id": "SL3 1.2",
+    "title": "Rat Maintenance in the Research Animal Holding Facility During the Flight of Spacelab 3",
+    "pi": "Fast,  Tom",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "potassium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "ROI_Nutrition",
+    "title": "Oxidative Damage During a 12-day Saturation Dive",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "ROI  NEEMO  12  13  14",
+    "access": "request_required",
+    "minerals": "iron;selenium",
+    "n_minerals": 2
+  },
+  {
+    "id": "M191",
+    "title": "Microbial Response to Space Environment",
+    "pi": "Taylor,  Gerald",
+    "species": "Bacteria; Hay; bacillus; Fungus",
+    "missions": "Apollo  16",
+    "access": "open",
+    "minerals": "potassium;sodium;iron;phosphorus;manganese;chloride",
+    "n_minerals": 6
+  },
+  {
+    "id": "ECP-EB-1",
+    "title": "Resistance Exercise as a Countermeasure to Disuse-induced Bone Loss",
+    "pi": "Shackelford,  Linda",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "SL3 BSP10",
+    "title": "Osteocalcin as an Indicator of Bone Metabolism During Spaceflight",
+    "pi": "Patterson-  Buckendahl,  Patricia",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "Lunar_Dust_Cell",
+    "title": "Study of Lunar Dust and Lunar Simulant Activation, Monitoring, Solution and Cellular Toxicity Properties",
+    "pi": "Jeevarajan,  Antony",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "ROI_KENTAVR",
+    "title": "Evaluation of the Kentavr as a Countermeasure to Orthostatic Intolerance",
+    "pi": "Tuxhorn,  Jennifer  Waters,  Wendy",
+    "species": "Human",
+    "missions": "ROI",
+    "access": "request_required",
+    "minerals": "sodium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "M115",
+    "title": "Special Hematological Effects; Dynamic Changes in Red Cell Shape in Response to the Space-Flight Environment",
+    "pi": "Kimzey,  Stephen",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "potassium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "ROI_Sclerostin",
+    "title": "Retrospective Study of Serum Sclerostin Measurements in Bedrest Subjects",
+    "pi": "Bouxsein,  Mary  Sibonga,  Jean",
+    "species": "Human",
+    "missions": "ROI",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "DSO 453",
+    "title": "Combined Blood Investigations",
+    "pi": "Leach-  Huntoon,  Carolyn  Thornton,  William",
+    "species": "Human",
+    "missions": "STS-51B  STS-51F",
+    "access": "request_required",
+    "minerals": "potassium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NCC958CA00206",
+    "title": "Influence of Gender and Age on Renal and Cardio-Endocrine Responses to Simulated Microgravity",
+    "pi": "Williams,  Gordon",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "potassium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "LS-1",
+    "title": "Vitamin D Metabolites and Bone Demineralization",
+    "pi": "Schnoes,  Heinrich",
+    "species": "Human",
+    "missions": "STS-51F",
+    "access": "open",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "COS 2044-13",
+    "title": "Measurement of Heart Atrial Natriuretic Peptide Concentrations",
+    "pi": "Keil,  Lanny",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "sodium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "Astrocyte_Alteration",
+    "title": "Mechanism of Radiation-Induced Alteration of Astrocyte-Neuronal Coupling",
+    "pi": "Green,  Lora",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;iron;selenium",
+    "n_minerals": 3
+  },
+  {
+    "id": "COS 2044-42",
+    "title": "Biomechanical, Biochemical, and Morphological Alterations of Muscle and Dense Fibrous Connective Tissues After 14 Days Spaceflight: I. Connective Tissue Studies",
+    "pi": "Vailas,  Arthur",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "ARC00XX80",
+    "title": "Regional Arterial Remodeling Induced by Microgravity",
+    "pi": "Delp,  Michael",
+    "species": "Mouse",
+    "missions": "PMA  STS-133",
+    "access": "not_submitted",
+    "minerals": "potassium;chloride",
+    "n_minerals": 2
+  },
+  {
+    "id": "SLS2 CNES8",
+    "title": "Histomorphometric Analysis of Bone Tissue after Weightlessness Exposure and Recovery",
+    "pi": "Alexandre,  Christian",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "open",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "SLS2 CNES7",
+    "title": "Bone Cell Activity During Spaceflight and Recovery",
+    "pi": "Zerath,  Erik",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "open",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "SLS1 BSP4",
+    "title": "Osteogenesis:  Tissue Factors of Regulation",
+    "pi": "Oganov,  Victor",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "BBM23",
+    "title": "Biochemical Markers of Bone Turnover",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Pilot",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "9304022 1_2",
+    "title": "Osteoblast Adhesion and Phenotype in Microgravity",
+    "pi": "Majeska,  Robert",
+    "species": "Rat",
+    "missions": "STS-69",
+    "access": "open",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "M112",
+    "title": "Man's Immunity In-vitro Aspects",
+    "pi": "Kimzey,  Stephen  Ritzmann,  Stephan",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "iron;copper",
+    "n_minerals": 2
+  },
+  {
+    "id": "178294",
+    "title": "Cardiovascular Adaptation to Zero Gravity",
+    "pi": "Blomqvist,  C.",
+    "species": "Human",
+    "missions": "STS-40  STS-58",
+    "access": "request_required",
+    "minerals": "sodium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "COS 2044-14",
+    "title": "The Effect of Spaceflight on Pituitary Oxytocin and Vasopressin Content",
+    "pi": "Keil,  Lanny",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "potassium;sodium;magnesium;phosphorus",
+    "n_minerals": 4
+  },
+  {
+    "id": "9304011 1_2",
+    "title": "The Effects of Hypogravity on Osteoblast Differentiation",
+    "pi": "Globus,  Ruth",
+    "species": "Rat",
+    "missions": "STS-59",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "Dwarf_Fruit",
+    "title": "Dwarf Fruit Production Study",
+    "pi": "Wheeler,  Raymond",
+    "species": "Dwarf; plum; tree",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "potassium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NCC958CA00402",
+    "title": "Effects of Simulated Microgravity on Cardiovascular Stability",
+    "pi": "Cohen,  Richard",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "potassium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "PARE02 BSP1",
+    "title": "Spaceflight Changes in Skeletal mRNA",
+    "pi": "Bikle,  Daniel",
+    "species": "Rat",
+    "missions": "STS-54",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "ARC00XX120",
+    "title": "The Role of Artificial Gravity in Promoting Tissue-Regenerative Matrix-Integrin-Kinase Cell Signaling",
+    "pi": "Almeida,  Eduardo",
+    "species": "Mouse",
+    "missions": "STS-131  PMA",
+    "access": "not_submitted",
+    "minerals": "calcium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "COS 1887-8",
+    "title": "Distribution and Biochemistry of Mineral and Matrix in the Femurs of Rats",
+    "pi": "Arnaud,  Sara",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "SL3 BSP15",
+    "title": "Space Lab 3: Histomorphometric Analysis of the Rat Skeleton",
+    "pi": "Wronski,  Thomas",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "ROI_EccCon",
+    "title": "Musculoskeletal Adaptations to Varying Levels of Eccentric Resistance during 8 Weeks of Training",
+    "pi": "Hagan,  R.",
+    "species": "Human",
+    "missions": "ROI",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "9304011 2_2",
+    "title": "The Effects of Hypogravity on Osteoblast Differentiation",
+    "pi": "Globus,  Ruth",
+    "species": "Rat",
+    "missions": "STS-63",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "LSAHNEWSV13_2_2",
+    "title": "Dietary Calcium Intake in LSAH Participants and U.S. General Population",
+    "pi": "No  Principal  Investigator,",
+    "species": "Human",
+    "missions": "LSAH",
+    "access": "open",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "LMLSTP2.2",
+    "title": "Chamber Study Medical Care Overview: Medical Officer's Report",
+    "pi": "McMonigal,  Kathleen",
+    "species": "Human",
+    "missions": "LMLSTP",
+    "access": "not_submitted",
+    "minerals": "magnesium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "CA_002_14IHF_002_04",
+    "title": "Integrative Cardiac Myocyte Model: Ion Channels, Ca and Contraction",
+    "pi": "Bers,  Donald",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NAG5-4668",
+    "title": "Carotid Baroreflex Function during Prolonged Exercise",
+    "pi": "Raven,  Peter",
+    "species": "Human",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "sodium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "Fluid_Shifts",
+    "title": "Fluid Shifts Before, During and After Prolonged Space Flight and Their Association with Intracranial Pressure and Visual Impairment",
+    "pi": "Dulchavsky,  Scott  Hargens,  Alan  Stenger,  B.",
+    "species": "Human",
+    "missions": "Expedition  44  42  45  46  43  50  51  47  48  49  52  53  56  55  57  58  59  60  61  62",
+    "access": "request_required",
+    "minerals": "sodium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "NCC958BL00206",
+    "title": "Therapeutic Modulation of Systemic Glucose-Dependent Insulintropic Peptide Levels to Counteract Microgravity-Induced Bone Loss",
+    "pi": "Isales,  Carlos",
+    "species": "Mouse",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "COS 936-1",
+    "title": "Quantitative Analysis of Selected Bone Parameters: Formation of Ectopic Bone in Implanted Matrices",
+    "pi": "Baylink,  David",
+    "species": "Rat",
+    "missions": "Cosmos  936",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "Phospho_Aging",
+    "title": "Mechanism of Accelerated Aging Under Microgravity",
+    "pi": "Makoto,  Kuro-o",
+    "species": "Human",
+    "missions": "Expedition  63  64  65  66",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "2.2.5",
+    "title": "Red Blood Cell Mass and Survival",
+    "pi": "Ivanova,  Svetlana  Lane,  Helen",
+    "species": "Human",
+    "missions": "Mir  18",
+    "access": "request_required",
+    "minerals": "magnesium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "ARCbedrest063a",
+    "title": "Stone Risk Factors in a study of Exercise Countermeasures for Bed Rest Deconditioning",
+    "pi": "Arnaud,  Sara",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "NAG53950",
+    "title": "Optimization of a Biomechanical Countermeasure for Disuse Osteoporosis",
+    "pi": "Rubin,  Clinton",
+    "species": "Rat",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "BEDREST0046",
+    "title": "Alterations of Steroidogenesis by Exercise Countermeasures during Bed Rest",
+    "pi": "Wade,  Charles",
+    "species": "Human",
+    "missions": "UTMB  Campaign  1",
+    "access": "not_submitted",
+    "minerals": "potassium",
+    "n_minerals": 1
+  },
+  {
+    "id": "SMO Stability",
+    "title": "Stability of  Nutrition Compounds",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Expedition  13  14  15  16  17  18",
+    "access": "open",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "D2ARRENI",
+    "title": "Effects of The Role of Volume-Regulating Hormones and Plasma Proteins in Man for the Adaptation to Microgravity and for the Readaptation to Terrestrial Conditions",
+    "pi": "Roecker,  Lothar",
+    "species": "Human",
+    "missions": "STS-55",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "9303028",
+    "title": "Effect of Microgravity on Epidermal Development in the Rat",
+    "pi": "Hoath,  Steven",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "P-EPL",
+    "title": "Urine Excretion Rates of Calcium, Creatine and Creatinine in the Test Monkeys and Flight Monkey",
+    "pi": "Pace,  Nello",
+    "species": "Monkey",
+    "missions": "Biosatellite  III",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "178012 1_2",
+    "title": "Regulation of Erythropoiesis During Spaceflight",
+    "pi": "Lange,  Robert",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "96-E318",
+    "title": "Foot Reaction Forces During Space Flight",
+    "pi": "Cavanagh,  Peter",
+    "species": "Human",
+    "missions": "Expedition  6  8  12  11",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARCbedrest146",
+    "title": "Pilot Study for the Life and Microgravity Spacelab Mission (LMS)",
+    "pi": "Arnaud,  Sara",
+    "species": "Human",
+    "missions": "ARCBedrest  STS-78",
+    "access": "request_required",
+    "minerals": "calcium;sodium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "E401",
+    "title": "The Effects of Microgravity on Skeletal Muscle Contractile Properties",
+    "pi": "Cerretelli,  Paolo",
+    "species": "Human",
+    "missions": "STS-78",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Thornton_Bedrest",
+    "title": "Prevention of Bed Rest Induced Osteoporosis: Effect of an Individual Tailored Exercise Program",
+    "pi": "Schneider,  Victor  Thornton,  William",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;sodium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "M078",
+    "title": "Bone Mineral Measurement",
+    "pi": "Vogel,  John",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "calcium;sodium;magnesium",
+    "n_minerals": 3
+  },
+  {
+    "id": "9303011",
+    "title": "Choroid Plexus, Brain and Heart Natriuretic Peptide Development in Space",
+    "pi": "Gabrion,  Jacqueline",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "request_required",
+    "minerals": "sodium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ESA_BRSM_Bone_Dens",
+    "title": "Envihab Bed Rest Standard Measures: Bone Mineral Density",
+    "pi": "Clement,  Gilles",
+    "species": "Human",
+    "missions": "VaPER  AGBRESA_1  AGBRESA_2",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Skin_B",
+    "title": "Skin B - Skin Physiological Changes During Long Duration Space Flight",
+    "pi": "Heinrich,  Ulrike",
+    "species": "Human",
+    "missions": "Expedition  36  39  40  42  41  43  37  38  46  47  48  49  50  51",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "DSO 608",
+    "title": "Effects of Space Flight on Aerobic and Anaerobic Metabolism During Exercise",
+    "pi": "Greenisen,  Michael  Lane,  Helen  Siconolfi,  Steven",
+    "species": "Human",
+    "missions": "STS-59  STS-62  STS-63  STS-65  STS-66  STS-67  STS-69  STS-71  STS-39  STS-44  STS-45  STS-48  STS-53",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "Dietary_Iron",
+    "title": "Effects of Radiation and Dietary Iron on Expression of Genes and Proteins Involved in Drug Metabolism",
+    "pi": "Wotring,  Virginia",
+    "species": "Rat",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "CK22",
+    "title": "Calcium Kinetics",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Pilot",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX13AQ93G",
+    "title": "Determining the Effect of Space Flight on the Incidence of Cardiovascular Risk Factors and Disease",
+    "pi": "Barstow,  Thomas",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "DSO 423",
+    "title": "Study of In-flight Fluid Changes",
+    "pi": "Thornton,  William",
+    "species": "Human",
+    "missions": "STS-8  STS-7  STS-5",
+    "access": "request_required",
+    "minerals": "potassium;sodium;chloride",
+    "n_minerals": 3
+  },
+  {
+    "id": "8809A17",
+    "title": "Calcium Metabolism and Correlated Endocrine Measurements in Primates During Cosmos 2229",
+    "pi": "Cann,  Christopher",
+    "species": "Monkey",
+    "missions": "Cosmos  2229",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "BRSMiDXA",
+    "title": "Bed Rest Standard Measures: Intelligent Dual-Energy X-ray Absorptiometry",
+    "pi": "Cromwell,  Ronita  L.",
+    "species": "Human",
+    "missions": "UTMB  Campaign  11",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARC00XX47",
+    "title": "Effect of Space Flight on Innate Immunity to Respiratory Viral Infections: Mouse Immunology - 2",
+    "pi": "Garofalo,  Roberto",
+    "species": "Mouse",
+    "missions": "STS-133",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARCbedrest068",
+    "title": "Individual Variations in Measures of Muscle and Bone in Ambulatory Subjects<br>",
+    "pi": "Arnaud,  Sara",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958CA00406",
+    "title": "Effects of Microgravity on Renal, Endocrine and Volume Regulatory Function",
+    "pi": "Williams,  Gordon",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "potassium",
+    "n_minerals": 1
+  },
+  {
+    "id": "EORS_HVS",
+    "title": "Hypovolemia as a Model of Space Flight: Cardiovascular Exercise Effects and Countermeasures",
+    "pi": "Lee,  Stuart",
+    "species": "Human",
+    "missions": "ECP",
+    "access": "request_required",
+    "minerals": "sodium;magnesium;iron",
+    "n_minerals": 3
+  },
+  {
+    "id": "80NSSC19K1582",
+    "title": "Impact of Inflight Stress and Sleep Disturbances on Brain Function, Neural Communication, and Inflammation",
+    "pi": "Sanford,  Larry",
+    "species": "Rat; Mouse",
+    "missions": "Ground",
+    "access": "held_elsewhere",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 1514-5",
+    "title": "Calcium Metabolism and Correlated Endocrine Measurements in Primates",
+    "pi": "Cann,  Christopher",
+    "species": "Monkey",
+    "missions": "Cosmos  1514",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "M006",
+    "title": "Bone Demineralization",
+    "pi": "Mack,  Pauline",
+    "species": "Human",
+    "missions": "Apollo  7  Gemini  4  5  8",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "9601381",
+    "title": "Calcium Kinetics during Spaceflight",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "STS-107",
+    "access": "not_submitted",
+    "minerals": "calcium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "9304021 1_2",
+    "title": "Influence of Spaceflight on Bone Cell Cultures",
+    "pi": "Landis,  William",
+    "species": "Chicken",
+    "missions": "STS-59",
+    "access": "request_required",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "Hip_QCT",
+    "title": "Occupational Risk Surveillance for Bone: Pilot Study-Effects of In-flight Countermeasures on Sub-regions of the Hip Bone",
+    "pi": "Sibonga,  Jean  D.",
+    "species": "Human",
+    "missions": "Expedition  38  37  36  35  34  31  46  45  naISS  44  43  30",
+    "access": "request_required",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NAG91150",
+    "title": "Pharmacological Intervention To Prevent Disuse Osteopenia",
+    "pi": "Turner,  Russell",
+    "species": "Rat",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "SLS2 BSP33",
+    "title": "Cellular Homeostasis in Microgravity: Energy and Structure",
+    "pi": "Ivanova,  S.",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "not_submitted",
+    "minerals": "iron;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "NCC958RE00206",
+    "title": "Charged Particle Radiation-Induced Genetic Damage in Transgenic Mice",
+    "pi": "Chang,  Polly",
+    "species": "Mouse",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;iron;manganese",
+    "n_minerals": 3
+  },
+  {
+    "id": "LSAHNEWSV6_2",
+    "title": "Operational Monitoring of Blood Parameters for First Time Shuttle Flyers",
+    "pi": "No  Principal  Investigator,",
+    "species": "Human",
+    "missions": "LSAH",
+    "access": "open",
+    "minerals": "magnesium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "Optical_Biosensors",
+    "title": "Optical Biosensors for In-Flight Measurement of Hormone Levels",
+    "pi": "Dunn,  Bruce",
+    "species": "Not; applicable",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;sodium;phosphorus",
+    "n_minerals": 3
+  },
+  {
+    "id": "5.3a",
+    "title": "Toxicological Assessment of Air Contaminants",
+    "pi": "James,  John",
+    "species": "Not; applicable",
+    "missions": "Mir  18  19  17  20",
+    "access": "open",
+    "minerals": "magnesium;chloride",
+    "n_minerals": 2
+  },
+  {
+    "id": "COS 1887-36",
+    "title": "The Effect of Spaceflight on Pituitary Oxytocin and Vasopressin Content of Rats",
+    "pi": "Keil,  Lanny",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "magnesium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "NAG91155",
+    "title": "Nutritional Intervention to Improve Muscle Protein Metabolism during Stress",
+    "pi": "Ferrando,  Arny",
+    "species": "Human",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "sodium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "9306012 3_3",
+    "title": "Hypogravity's Effect on the Life Cycle of Japanese Quail",
+    "pi": "Hester,  Patricia",
+    "species": "Quail",
+    "missions": "NASA  2",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NNX11AK26G",
+    "title": "Solid Tumor Risk Estimation: Incorporating Intercellular Interaction Effects",
+    "pi": "Hlatky,  Lynn",
+    "species": "Cells,; human; Mouse",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "P-1138",
+    "title": "Biochemical Changes in the Developing Wheat Seedling",
+    "pi": "Conrad,  Herbert",
+    "species": "Wheat",
+    "missions": "Biosatellite  II",
+    "access": "not_submitted",
+    "minerals": "magnesium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "NCC958MA01603",
+    "title": "Monitoring Bone Health by Daily Load Stimulus Measurement during Lunar Missions",
+    "pi": "Cavanagh,  Peter",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958SMST00002",
+    "title": "First Clinical Test of Feasibility of Ultrasound to Reposition Kidney Stones",
+    "pi": "Wessells,  Hunter",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "DSO 464",
+    "title": "In flight Assessment of Renal Stone Risk Factor",
+    "pi": "Cintron,  Nitza",
+    "species": "Human",
+    "missions": "STS-61C",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Lunar_OI",
+    "title": "Effect of Sex on Orthostatic Intolerance and Cardiovascular Responses during Lunar Descent and Ascent",
+    "pi": "Lee,  Stuart  M.  C.",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "other",
+    "minerals": "magnesium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "COS 1887-4",
+    "title": "Hepatic Function in Rats After Spaceflight",
+    "pi": "Merrill,  Alfred",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "SL3 BSP23",
+    "title": "Hepatic Enzymes of Sphingolipid and Glycerolipid Biosynthesis in Rats from Spacelab 3",
+    "pi": "Merrill,  Alfred",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "M114",
+    "title": "Red Cell Metabolism",
+    "pi": "Mengel,  Charles",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "iron;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "9304021 2_2",
+    "title": "The Effects of Micro-Gravity on Bone Cell Cultures",
+    "pi": "Landis,  William",
+    "species": "Chicken",
+    "missions": "STS-63",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "DSO 607",
+    "title": "Cardiovascular Responses to Lower Body Negative Pressure Following Space Flight",
+    "pi": "Charles,  John  Fortney-  Schneider,  Suzanne",
+    "species": "Human",
+    "missions": "STS-37  STS-39  STS-45  STS-47  STS-50  STS-43  STS-44  STS-52",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 782-4",
+    "title": "Response of Crown Gall Tissue to the Space Environment: Glutamine Synthetase Activity",
+    "pi": "Kleinschuster,  Stephen",
+    "species": "Carrot",
+    "missions": "Cosmos  782",
+    "access": "not_submitted",
+    "minerals": "sodium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NNJ04HF71G",
+    "title": "LBNP Treadmill and Resistive Exercises during Long-term Bed Rest",
+    "pi": "Hargens,  Alan",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "80NSSC18K0810",
+    "title": "Sex- and Apo E-specific Late Central Nervous System (CNS) and Cardiovascular (CV) Effects of Space Radiation",
+    "pi": "Lemere,  Cynthia",
+    "species": "Mouse; Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;iron",
+    "n_minerals": 2
+  },
+  {
+    "id": "NAG91151",
+    "title": "Monitoring of Sweat Calcium Using Skin Patches",
+    "pi": "LeBlanc,  Adrian",
+    "species": "Human",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NCC958PF03505",
+    "title": "Improving Kidney Stone Detection in Space Analogs (Postdoctoral Fellowship)",
+    "pi": "Simon,  Julianna",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "178141 2_2",
+    "title": "Regulation of Blood Volume During Spaceflight",
+    "pi": "Alfrey,  Clarence",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "8913048",
+    "title": "Human Sleep, Circadian Rhythms and Performance in Space",
+    "pi": "Monk,  Timothy",
+    "species": "Human",
+    "missions": "STS-78",
+    "access": "request_required",
+    "minerals": "potassium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NAG21642",
+    "title": "Induction of Bystander Effects by High LET Radiation In Cells and in Tissue Models",
+    "pi": "Held,  Kathryn",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "iron;manganese",
+    "n_minerals": 2
+  },
+  {
+    "id": "NNX08AQ35G",
+    "title": "Contributors to Long-Term Recovery of Bone Strength following Exposure to Microgravity",
+    "pi": "Hogan,  Harry",
+    "species": "Rat",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "SL3 BSP9",
+    "title": "Morphologic and Histochemical Studies of Bone Cells from SL-3 Rats",
+    "pi": "Doty,  Stephen",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "request_required",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "NNJ04HF78G",
+    "title": "The Effect of Long-duration Spaceflight on the Biomechanics of the Proximal Femur",
+    "pi": "Lang,  Thomas",
+    "species": "Human",
+    "missions": "BRC",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958SMST01601",
+    "title": "Smart Therapeutic Ultrasound Device for Mission-Critical Medical Care",
+    "pi": "Crum,  Lawrence",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "AP011",
+    "title": "Skeletal Response",
+    "pi": "Rambaut,  Paul",
+    "species": "Human",
+    "missions": "Apollo  14  15  16",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNJ11HB91I",
+    "title": "HZE-induced Skin Carcinoma: An in-vivo-like Multicellular Epithelial Model System for Analysis of Radiation Quality Effects and DSB Repair Processes",
+    "pi": "Wiese,  Claudia",
+    "species": "Mouse; Cells,; human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "iron;manganese",
+    "n_minerals": 2
+  },
+  {
+    "id": "SLS1 BSP8",
+    "title": "Study of the Digestive Transportation Function of the Small Intestine",
+    "pi": "Smirnov,  K.",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "request_required",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX08AQ37G",
+    "title": "Monitoring of Bone Loss Bio-Markers in Human Sweat: A Non-Invasive, Time Efficient Means of Monitoring Bone Resorption Markers under Micro and Partial Gravity Loading Conditions",
+    "pi": "Clarke,  Mark",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "SLS1 BSP19",
+    "title": "Catecholamines, Vasopressin, Atrial Natriuretic Factor (ANF) and ANF Receptors in the Rat Brain",
+    "pi": "Gharib,  Claude",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "request_required",
+    "minerals": "sodium",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 2044-5",
+    "title": "Hepatic Function in Rats After Spaceflight: I. Analyses of Selected Parameters of Carbohydrate, Amino Acid, Lipid, and Xenobiotic Metabolism",
+    "pi": "Merrill,  Alfred",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "CHIMP",
+    "title": "Project Mercury Ballistic and Orbital Chimpanzee Flights",
+    "pi": "Henry,  James  Mosely,  John",
+    "species": "Chimpanzee",
+    "missions": "Mercury  2  5",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "Renal_Stones",
+    "title": "Probabilistic Analysis of Renal Stones in US Astronauts",
+    "pi": "Kassemi,  Mohammad",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "One-Carbon Expansion",
+    "title": "Astronaut Vision Issues and One Carbon Metabolism: Expanded Polymorphism Evaluation and Evaluation in a Potential Analog Population",
+    "pi": "Smith,  Scott  M.",
+    "species": "Human",
+    "missions": "naISS  Expedition  59  58  57  56  55  54  53  51  50  49  Ground",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "SL3 BSP22",
+    "title": "1,25-Dihydroxyvitamin D3 Receptors in Space Flown vs. Grounded Control Rat Kidneys",
+    "pi": "Mangelsdorf,  David",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "IMM_GRC",
+    "title": "Integrated Medical Model (GRC Simulations)",
+    "pi": "Myers,  Jerry",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "284054",
+    "title": "Magnetic Resonance Imaging after Exposure to Microgravity",
+    "pi": "LeBlanc,  Adrian",
+    "species": "Human",
+    "missions": "STS-78",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "9304007 2_2",
+    "title": "Effect of Spaceflight on TGF-Beta Expression by hFOB Cells",
+    "pi": "Turner,  Russell",
+    "species": "Human",
+    "missions": "STS-80",
+    "access": "not_submitted",
+    "minerals": "magnesium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "NAG91458",
+    "title": "Pharmacological Intervention to Prevent Disuse Osteopenia",
+    "pi": "Turner,  Russell",
+    "species": "Rat",
+    "missions": "BRC",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958BL00205",
+    "title": "Bone and Muscle Recovery from Simulated Microgravity",
+    "pi": "Bloomfield,  Susan",
+    "species": "Rat",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "9802307",
+    "title": "Skeletal Development in Embryonic Quail",
+    "pi": "Doty,  Stephen",
+    "species": "Quail",
+    "missions": "STS-108",
+    "access": "open",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "NutrISS",
+    "title": "Nutritional Monitoring for the International Space Station",
+    "pi": "Biolo,  Gianni",
+    "species": "Human",
+    "missions": "Expedition  60  61",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 1129-19",
+    "title": "The Effect of Spaceflight on Osteogenesis and Dentinogenesis in the Mandible of Rats: Supplement 1: The Effects of Spaceflight on Alveolar Bone Remodeling in the Rat Mandible",
+    "pi": "Tran  Van,  P.",
+    "species": "Rat",
+    "missions": "Cosmos  1129",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NAG91097",
+    "title": "Architecture and Mechanical Function in Bone with Recovery from Disuse Osteoporosis",
+    "pi": "Schaffler,  Mitchell",
+    "species": "Dog",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "178141 1_2",
+    "title": "Regulation of Blood Volume During Spaceflight",
+    "pi": "Alfrey,  Clarence",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX12AL41G",
+    "title": "Disuse Osteopenia: A Potential Vascular Coupling Mechanism",
+    "pi": "Delp,  Michael",
+    "species": "Rat",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NCC958PF02601",
+    "title": "Induction of Early Stages of Osteoarthritis After Exposure to Microgravity (Postdoctoral Fellowship)",
+    "pi": "Mellor,  Liliana",
+    "species": "Chondrocyte; cell; lines",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958BL00403",
+    "title": "Examination of Anti-Resorptive and Anabolic Treatments/Stimuli on Unloading Induced Osteoporosis",
+    "pi": "Bateman,  Ted",
+    "species": "Mouse; Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "NNX14AB78G",
+    "title": "Stable Calcium Isotopes in Urine as a Biomarker of Bone Mineral Balance in Spaceflight",
+    "pi": "Anbar,  Ariel",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958CA03801",
+    "title": "Improving Cardiovascular Risk Prediction - Biomarkers and Beyond; Implications for Astronaut Selection and Monitoring During Prolonged Spaceflight",
+    "pi": "de  Lemos,  James",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium;sodium",
+    "n_minerals": 2
+  },
+  {
+    "id": "Blood",
+    "title": "Blood and Oxidative Stress",
+    "pi": "Berra,  Bruno",
+    "species": "Human",
+    "missions": "Expedition  10  11",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "Diurez",
+    "title": "Fluid and Electrolyte Metabolism and Hormonal Regulaltion of Fluid Volume",
+    "pi": "Larina,  Irina",
+    "species": "Human",
+    "missions": "Expedition  5  6  4  7  3  8  9  10",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "CPIMM03",
+    "title": "Confirmation of Ability of Sustained-Release Insulin-like Growth Factor I (IGF-I)  to Counteract the Effect of Space Flight on the Rat Immune and Skeletal Systems",
+    "pi": "Zimmerman,  Robert",
+    "species": "Rat",
+    "missions": "STS-77",
+    "access": "request_required",
+    "minerals": "calcium;magnesium",
+    "n_minerals": 2
+  },
+  {
+    "id": "9304007 1_2",
+    "title": "Effect of Spaceflight on TGF-Beta Expression by hFOB Cells",
+    "pi": "Turner,  Russell",
+    "species": "Human",
+    "missions": "STS-69",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "MA-011",
+    "title": "Electrophoresis Technology",
+    "pi": "Allen,  Robert",
+    "species": "Rat; Human; Rabbit; Horse",
+    "missions": "ASTP",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "MR035G",
+    "title": "Bone Densitometry Assessment (Flight Analog)",
+    "pi": "Sibonga,  Jean  D.",
+    "species": "Human",
+    "missions": "DBLS  UTMB  Campaign  5  Pilot  3  1  MEDES",
+    "access": "open",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX10AP86G",
+    "title": "Testosterone Supplementation as a Countermeasure against Musculoskeletal Losses during Space Exploration",
+    "pi": "Urban,  Randall",
+    "species": "Human",
+    "missions": "UTMB  Campaign  11",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "SL3 BSP14",
+    "title": "Bone Maturation in Rats Flown on the Spacelab-3 Mission",
+    "pi": "Russell,  Jean",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "178194 1_2",
+    "title": "Bone, Calcium, and Spaceflight",
+    "pi": "Morey-  Holton,  Emily",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "open",
+    "minerals": "calcium;phosphorus",
+    "n_minerals": 2
+  },
+  {
+    "id": "DSO 455",
+    "title": "Clinical Characterization of Space Motion Sickness (SMS)",
+    "pi": "Thornton,  William  Vanderploeg,  James",
+    "species": "Human",
+    "missions": "STS-51G  STS-51I  STS-61B  STS-61C  STS-51D  STS-51J  STS-41D  STS-41G  STS-51B  STS-51C  STS-8",
+    "access": "request_required",
+    "minerals": "magnesium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ILSRA-2001-079",
+    "title": "A Low-Intensity Mechanical Countermeasure to Prohibit Osteoporosis in Astronauts During Long-Term Spaceflight",
+    "pi": "Rubin,  Clinton",
+    "species": "Human",
+    "missions": "naISS",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Radiation_Damage",
+    "title": "Pilot Studies of Radiation Damage in Organ Tissues of Mice",
+    "pi": "Sibonga,  Jean",
+    "species": "Mouse",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "178012 2_2",
+    "title": "Regulation of Erythropoiesis During Spaceflight",
+    "pi": "Ichiki,  Albert",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 1887-22",
+    "title": "Pineal Physiology in Microgravity: Relation to Rat Gonadal Function",
+    "pi": "Holley,  Dan",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "SLS2 BSP7",
+    "title": "Functional State of Thyroid and Calcitonin Producing System of Rat Thyroid Gland in Microgravity",
+    "pi": "Loginov,  V.",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "open",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "BEDREST_ACG",
+    "title": "Alternative Compression Garment (Flight Analog)",
+    "pi": "Stenger,  B.",
+    "species": "Human",
+    "missions": "Campaign  17",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "80NSSC18K1639",
+    "title": "Imaging and Serum Biomarkers to Predict and Identify Early Cardiac Injury from Radiation Exposure",
+    "pi": "Chung,  Caroline",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "held_elsewhere",
+    "minerals": "sodium",
+    "n_minerals": 1
+  },
+  {
+    "id": "MA_002_11",
+    "title": "Cell and Molecular Biomechanics: Cardiac and Skeletal Muscle",
+    "pi": "Chase,  P.",
+    "species": "Rat; Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "9307221",
+    "title": "Mechanisms of Gravity Sensing and Response in Hematopoietic Cells",
+    "pi": "Lewis,  Marian",
+    "species": "Human",
+    "missions": "STS-76",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "FEMQCT",
+    "title": "Astronaut Bone Medical Standards Derived from Finite Element [FE] Modeling of QCT Scans from Populations Studies",
+    "pi": "Sibonga,  Jean",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "B11-25",
+    "title": "Hematology, Cytological Composition of Bone Marrow and Standard Blood Parameters",
+    "pi": "Burkovskaya,  T.",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "GSRP_6102",
+    "title": "Using Cyanobacterial Hemoglobins to Sustain Human Life on Mars",
+    "pi": "Vuletich,  David",
+    "species": "Not; applicable",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 782-13",
+    "title": "Effects of Spaceflight on Plasma and Glandular Concentrations of Pituitary Hormones",
+    "pi": "Grindeland,  Richard  Steward,  F.",
+    "species": "Rat",
+    "missions": "Cosmos  782",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "9306012 2_3",
+    "title": "Hypogravity's Effect on the Life Cycle of Japanese Quail",
+    "pi": "Hester,  Patricia",
+    "species": "Quail",
+    "missions": "Mir  19",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "8808A05",
+    "title": "Adaptations of Motor Control in Response to Spaceflight",
+    "pi": "Edgerton,  V.  Kozlovskaya,  Inessa  Rumbaugh,  Duane",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "magnesium",
+    "n_minerals": 1
+  },
+  {
+    "id": "8913020",
+    "title": "The Effects of Weightlessness on Human Single Muscle Fiber Function",
+    "pi": "Fitts,  Robert",
+    "species": "Human",
+    "missions": "STS-78",
+    "access": "not_submitted",
+    "minerals": "magnesium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARCbedrest190",
+    "title": "Comparison of Bone Bending Stiffness in Elite Female Synchronized Swimmers and Judo Athletes",
+    "pi": "Arnaud,  Sara",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Vertebral_Strength",
+    "title": "Vertebral Strength and Fracture Risk Following Long Duration Spaceflight",
+    "pi": "Bouxsein,  Mary",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 2044-27",
+    "title": "Metabolic and Morphologic Properties of Muscle Fibers and Motor Neurons after Spaceflight: I. Muscle Fibers",
+    "pi": "Edgerton,  V.",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "NAG91425",
+    "title": "Artificial Gravity Exercise for Maintaining Fitness During Prolonged Space Flight",
+    "pi": "Hargens,  Alan",
+    "species": "Human",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "MA-032",
+    "title": "The Effect of Space Flight on Polymorphonuclear Leukocyte Response",
+    "pi": "Martin,  Russell",
+    "species": "Human",
+    "missions": "ASTP",
+    "access": "request_required",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 2044-4",
+    "title": "Gravity and Skeletal Growth: II. Morphological Studies of Bone and Tendon",
+    "pi": "Doty,  Stephen",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958BL00406",
+    "title": "Bone Recovery Potential after Bisphosphonate and PTH Treatment of Disuse Osteoporosis",
+    "pi": "Schaffler,  Mitchell",
+    "species": "Dog",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "80NSSC21K0752",
+    "title": "Markers of Vascular Risks Associated with Spaceflight Associated Neuro-ocular Syndrome",
+    "pi": "",
+    "species": "Human",
+    "missions": "",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARCbedrest129",
+    "title": "6 Degree Headdown Tilt with Balance Traction to Emulate Spinal Lengthening Experienced by Astronauts during Microgravity",
+    "pi": "Hargens,  Alan",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "B11-17",
+    "title": "Bone Tissue and Cell Effects of Spaceflight in Young Rhesus Monkey",
+    "pi": "Zerath,  Erik",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "CNES F-09 1_2",
+    "title": "Single Muscle Function and EMG Analysis Associated with Microgravity Conditions",
+    "pi": "Mounier,  Yvonne  Shenkman,  Boris",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Treadmill_DM_Study",
+    "title": "Effects of Inflight Treadmill Exercise on Postflight Sensorimotor and Functional Performance",
+    "pi": "Bloomberg,  Jacob",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "Bone_Model",
+    "title": "Digital Astronaut: Bone Remodeling Model",
+    "pi": "Pennline,  James",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "FTT",
+    "title": "Physiological Factors Contributing to Postflight Changes in Functional Performance (Functional Task Test)",
+    "pi": "Bloomberg,  Jacob",
+    "species": "Human",
+    "missions": "Expedition  39  40  41  43  44  42  45  46  22  34  35  36  37  38  STS-135  25  26  27  28  STS-128  STS-129  STS-131  STS-133  23  24  29  30  31  32",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "SLS1 BSP16",
+    "title": "Spinal Cord and Dorsal Root Ganglion Morphology and Histochemistry",
+    "pi": "Krasnov,  Igor",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "request_required",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "9306012 1_3",
+    "title": "Hypogravity's Effect on the Life Cycle of Japanese Quail",
+    "pi": "Hester,  Patricia",
+    "species": "Quail",
+    "missions": "Mir  18",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "9303021",
+    "title": "Effects of Gravity on the Attachment of Tendon to Bone",
+    "pi": "Johnson,  Roger",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "BRSMPV",
+    "title": "Bed Rest Standard Measures: Plasma Volume",
+    "pi": "Platts,  Steven  Meck,  Janice  Fritsch-  Yelle",
+    "species": "Human",
+    "missions": "Campaign  19  DBLS  HDT30  UTMB  11  LAFSP2  Pilot  3  5  1  17  LAFS",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "BEDREST_FTT",
+    "title": "Physiological Factors Contributing to Post Bed Rest Changes in Functional Performance (Functional Task Test)",
+    "pi": "Bloomberg,  Jacob  J.",
+    "species": "Human",
+    "missions": "UTMB  Campaign  11",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX16AP89G",
+    "title": "Quantitative CT and MRI-based Modeling Assessment of Dynamic Vertebral Strength and Injury Risk Following Long-Duration Spaceflight",
+    "pi": "Weaver,  Ashley",
+    "species": "Human",
+    "missions": "Expedition  65  64  63  62  61  60  59  58  Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 2044-37",
+    "title": "Erythroid Colony Formation In-Vitro and Erythropoietin Determinations",
+    "pi": "Lange,  Robert",
+    "species": "Rat",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "BRSMQCT",
+    "title": "Quantitative Computerized Tomography",
+    "pi": "Sibonga,  Jean  D.",
+    "species": "Human",
+    "missions": "DBLS  UTMB  Campaign  3  11  5",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "178066",
+    "title": "Inflight Study of Cardiovascular Deconditioning",
+    "pi": "Farhi,  Leon",
+    "species": "Human",
+    "missions": "STS-40  STS-58",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958PF03002",
+    "title": "Assessing the Impact of Chronic Sleep Restriction on Sleep and Performance-Associated Regional Brain Activation Using Near-Infrared Spectroscopy (Postdoctoral Fellowship)",
+    "pi": "Lee,  Michael",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX12AL35G",
+    "title": "Vestibular Stimulation: A Countermeasure For Bone Loss During Long-Term Space Mission",
+    "pi": "Elefteriou,  Florent",
+    "species": "Mouse",
+    "missions": "Ground",
+    "access": "open",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Gematologia",
+    "title": "Morphofunctional Characteristic of Blood Cells and the Intensity of Erythropoiesis in Humans by the Influence of Factors of Space Flight",
+    "pi": "Ivanova,  S.",
+    "species": "Human",
+    "missions": "Expedition  13  9  11  12  10",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958CA02201",
+    "title": "Cardiovascular Imaging and Strategies to Mitigate the Risk for Cardiac Events in Astronauts during Prolonged Spaceflight",
+    "pi": "Levine,  Benjamin",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "CPPSE02",
+    "title": "Effect of Weightlessness on Bone Histology, Physiology, and Mechanics",
+    "pi": "Wilfinger,  William",
+    "species": "Rat",
+    "missions": "STS-52",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "EORS_TIMED",
+    "title": "Nutrition Coupled with Traditional Resistance or Low-Load Blood Flow Restricted Exercise during Human Limb Suspension",
+    "pi": "Ploutz-  Snyder,  Lori",
+    "species": "Human",
+    "missions": "ECP",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "9305007",
+    "title": "Regulation of Cell Wall Polymers by Microgravity",
+    "pi": "Hood,  Elizabeth",
+    "species": "Wheat",
+    "missions": "STS-63",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 1887-26",
+    "title": "Metabolic and Morphologic Properties of Muscle Fibers After Spaceflight",
+    "pi": "Edgerton,  V.",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "B11-03",
+    "title": "Structural and Metabolic Plasticity of Leg Muscle",
+    "pi": "Bodine-  Fowler,  Sue  Shenkman,  Boris",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "SLS1 BSP25",
+    "title": "Determination of ANF Receptors and of Particulate Guanylate Cyclase from Rats Flown in Weightlessness",
+    "pi": "Gerzer,  Rupert",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "open",
+    "minerals": "sodium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Sprint",
+    "title": "Integrated Resistance and Aerobic Training Study",
+    "pi": "Ploutz-  Snyder,  Lori",
+    "species": "Human",
+    "missions": "Expedition  36  41  45  46  30  35  39  40  37  38  27  28  29  31  32  47  48  49  50  51  52  43  44",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "SLS2 BSP3",
+    "title": "Morphological Investigations of Skeletal Muscles of SLS-2",
+    "pi": "Ilyina-  Kakueva,  E.",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "open",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958SMST03402",
+    "title": "Prevention of Renal Stone Complications in Space Exploration",
+    "pi": "Bailey,  Michael",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "9305014 2_2",
+    "title": "Starch Metabolism in Space-Grown Soybean Seedlings",
+    "pi": "Brown,  Christopher",
+    "species": "Soybean",
+    "missions": "STS-63",
+    "access": "request_required",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "SL3 BSP26",
+    "title": "Hematologic Parameters of Astrorats Flown on Spacelab-3",
+    "pi": "Lange,  Robert",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NAG91024",
+    "title": "Cancer Induction by Repeated Doses of High-LET Radiation",
+    "pi": "Burns,  Fredric",
+    "species": "Rat",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Musculoskel_Outcomes",
+    "title": "Exploring the Relationship between In-flight Training Load Data and Musculoskeletal Health Outcomes",
+    "pi": "Ploutz-  Snyder,  Lori",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "IPVI",
+    "title": "Non-Invasive Assessment of Intracranial Pressure for Space Flight and Related Visual Impairment",
+    "pi": "Iwasaki,  Kenichi",
+    "species": "Human",
+    "missions": "Expedition  43  44  45  46  47  48  49  50  51  52  53  54  55",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958SMS01302",
+    "title": "Noninvasive Biosensor Algorithms for Continuous Metabolic Rate Determination--SMS01302",
+    "pi": "Soller,  Babs",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "Medical_Proteomics",
+    "title": "Medical Proteome Analysis of Osteoporosis and Bone Mass-related Proteins using the Kibo Japanese Experiment Module of International Space Station",
+    "pi": "Hirano,  Hisashi",
+    "species": "Human",
+    "missions": "Expedition  55  56  57  58  59  60",
+    "access": "request_required",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "LMLSTP5.5",
+    "title": "Physiological Effects of Iodinated Water on Thyroid Function",
+    "pi": "McMonigal,  Kathleen  Sauer,  Richard",
+    "species": "Human",
+    "missions": "LMLSTP",
+    "access": "request_required",
+    "minerals": "magnesium",
+    "n_minerals": 1
+  },
+  {
+    "id": "MR001G",
+    "title": "Neuroendocrine and Cardiovascular Response to Tilt (Flight Analog)",
+    "pi": "Platts,  Steven  Meck,  Janice  Fritsch-  Yelle",
+    "species": "Human",
+    "missions": "UTMB  Campaign  11  DBLS  HDT30  5  3  1  Pilot  17",
+    "access": "open",
+    "minerals": "potassium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Inflight_Loading",
+    "title": "Retrospective Analysis of Inflight Exercise Loading and Health Outcomes",
+    "pi": "De  Witt,  John",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARCbedrest222",
+    "title": "Serial Changes in Site Specific Bone Density and Structure with Paralysis",
+    "pi": "Cleek,  Tammy",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Spinal_Ultrasound",
+    "title": "Sonographic Astronaut Vertebral Examination",
+    "pi": "Dulchavsky,  Scott",
+    "species": "Human",
+    "missions": "Expedition  35  36  37  38  33  34",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "M113",
+    "title": "Blood Volume Changes and Red Blood Cell Life Span",
+    "pi": "Johnson,  Phillip",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "SLS1 BSP5",
+    "title": "Lipid Peroxidation and Antioxidant Defense System",
+    "pi": "Popova,  Irena",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "request_required",
+    "minerals": "selenium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Hybrid_Training",
+    "title": "Effect of the Hybrid Training Method on the Disuse Atrophy of the Musculoskeletal System of the Astronauts Staying in the International Space Station for a Long Term-initial Verification in ISS",
+    "pi": "Shiba,  Naoto",
+    "species": "Human",
+    "missions": "Expedition  37  38  39  40",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958SMST03401",
+    "title": "Portable Quantitative Ultrasound with DXA/QCT and FEA Integration for Human Longitudinal Critical Bone Quality Assessment",
+    "pi": "Qin,  Yi-  Xian",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "P-1096",
+    "title": "Emergence of Wheat Seedlings in Zero Gravity",
+    "pi": "Lyon,  Charles",
+    "species": "Wheat",
+    "missions": "Biosatellite  II",
+    "access": "not_submitted",
+    "minerals": "magnesium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NA00405",
+    "title": "Cytogenetic Study of Heavy Ion-Induced Chromosomal Damage in Human Cells",
+    "pi": "Wu,  Honglu",
+    "species": "Human,; cells",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARCbedrest210",
+    "title": "The Effect of Daily Physical Activity and Age on Bone Density and Bone Structure in Men",
+    "pi": "Whalen,  Robert",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX08BA54G",
+    "title": "Risk Assessment of Space Radiation-Enhanced Colon Tumorigenesis",
+    "pi": "Shay,  Jerry",
+    "species": "Cells,; human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 1887-3",
+    "title": "Gravity and Skeletal Growth: II.  Morphology and Histochemistry of Bone Cells and Vasculature of the Tibia from Cosmos 1887",
+    "pi": "Doty,  Stephen",
+    "species": "Rat",
+    "missions": "Cosmos  1887",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "96-E343",
+    "title": "Subregional Assessment of Bone Loss in the Axial  Skeleton in Long-Term Space Flight",
+    "pi": "Lang,  Thomas",
+    "species": "Human",
+    "missions": "Expedition  5  6  7  8  2  3  4",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX11AQ81G",
+    "title": "Fracture Healing in Haversian Bone under Conditions of Simulated Microgravity",
+    "pi": "Puttlitz,  Christian",
+    "species": "Sheep",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "CREAM",
+    "title": "Cosmic Radiation and Effects Activation Monitor",
+    "pi": "Golightly,  Michael  Truscott,  Peter",
+    "species": "Not; applicable",
+    "missions": "NASA  6  7  STS-91  STS-44  STS-48  STS-53  STS-56  STS-63  STS-68  STS-81",
+    "access": "not_submitted",
+    "minerals": "sodium",
+    "n_minerals": 1
+  },
+  {
+    "id": "FTCSC",
+    "title": "NASA Food Technology Commercial Space Center",
+    "pi": "Pometto,  Anthony",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX07AT42G",
+    "title": "Dose Rate Effects on the Mechanisms of Space Radiation Induced Delayed Genomic Instability",
+    "pi": "Baulch,  Janet",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958TD00405",
+    "title": "A Scanning Confocal Acoustic Diagnostic System for Non-Invasively Assessing Bone Quality",
+    "pi": "Qin,  Yi-  Xian",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "SLS1 BSP13",
+    "title": "Cytochemistry of Neurons",
+    "pi": "Gershtein,  L.",
+    "species": "Rat",
+    "missions": "STS-40",
+    "access": "request_required",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "GSRP_4255",
+    "title": "The Role of Inhibin and the Hypogonadal Axis in Regulating Bone Mass during Simulated Microgravity",
+    "pi": "Perrien,  Daniel",
+    "species": "Mouse; Rat",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Marrow",
+    "title": "The Marrow Study (Bone Marrow Adipose Reaction: Red or White?)",
+    "pi": "Trudel,  Guy",
+    "species": "Human",
+    "missions": "Expedition  46  47  48  49  50  51  52  53  54  55  56  57  58  59",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958PF02603",
+    "title": "Contribution of the Vestibular and Sympathetic Nervous Systems to Space-Induced Bone Loss - Postdoctoral Fellowship",
+    "pi": "Vignaux,  Guillaume",
+    "species": "Mice",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "SL3 BSP11",
+    "title": "Response of Amino Acids in Hindlimb Muscles to Recovery from Hypogravity and Unloading by Tail-Cast Suspension",
+    "pi": "Tischler,  Marc",
+    "species": "Rat",
+    "missions": "STS-51B",
+    "access": "request_required",
+    "minerals": "magnesium",
+    "n_minerals": 1
+  },
+  {
+    "id": "9304016 3_3",
+    "title": "The Effects of Micro-Gravity on In Vitro Calcification",
+    "pi": "Boskey,  Adele",
+    "species": "Chicken",
+    "missions": "STS-77",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958PF03503",
+    "title": "Effect of Unloading on the Structure and Mechanics of the Rotator Cuff Tendon-to-Bone Insertion",
+    "pi": "Deymier-Black,  Alix",
+    "species": "Mouse",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Venous_Congestion_CM",
+    "title": "Venous Congestion Countermeasure Study",
+    "pi": "Marshall-Goebel,  Karina  Petersen,  Lonnie",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "DSO 479",
+    "title": "Hyperosmotic Fluid Countermeasure",
+    "pi": "Charles,  John",
+    "species": "Human",
+    "missions": "STS-31  STS-36  STS-37  STS-48  STS-53",
+    "access": "request_required",
+    "minerals": "sodium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NAG91452",
+    "title": "Response of Thyroid to Space-like Radiation Fields",
+    "pi": "Green,  Lora",
+    "species": "Human",
+    "missions": "BRC",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "Neocytolysis",
+    "title": "Effects of Microgravity on the Haemopoietic System: A Study on Neocytolysis",
+    "pi": "Risso,  Angela",
+    "species": "Human",
+    "missions": "Expedition  14  16  15",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "COS 936-6",
+    "title": "Quantitative Analysis of Selected Bone Parameters",
+    "pi": "Morey-  Holton,  Emily",
+    "species": "Rat",
+    "missions": "Cosmos  936",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Salivary_Markers",
+    "title": "The Effects of Long-Term Exposure to Microgravity on Salivary Markers of Innate Immunity",
+    "pi": "Simpson,  Richard",
+    "species": "Human",
+    "missions": "Expedition  42  37  38  39  40  41  45  46  43  44  47",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "T5282W",
+    "title": "Development of a Flash X-ray Radiography and Tomography System to Measure Bone Mineral Density",
+    "pi": "Seely,  John",
+    "species": "Human",
+    "missions": "BRC",
+    "access": "open",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARC00XX86",
+    "title": "The effect of weightlessness on the tendon-to-bone insertion",
+    "pi": "Thomopoulos,  Stavros",
+    "species": "Mouse",
+    "missions": "PMA  STS-133",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "96-E044",
+    "title": "The Effects of EVA and Long-Term Exposure to Microgravity on Pulmonary Function",
+    "pi": "West,  John",
+    "species": "Human",
+    "missions": "Expedition  5  6  3  4",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "One_Carbon_Expan",
+    "title": "One Carbon Metabolism: Expanded Polymorphism Evaluation",
+    "pi": "Smith,  Scott",
+    "species": "Human",
+    "missions": "Expedition  49  50  51  53  54  55  56  57  58  59",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "DSO 476",
+    "title": "Inflight Aerobic Exercise",
+    "pi": "Charles,  John  Siconolfi,  Steven",
+    "species": "Human",
+    "missions": "STS-40  STS-32  STS-35  STS-39  STS-43  STS-51  STS-54  STS-56",
+    "access": "request_required",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "NCC958BL00405",
+    "title": "Effects of Simulated Weightlessness on the Repair of Lower Limb Bone Fractures and on the Number of Bone-derived Stem Cells",
+    "pi": "Midura,  Ronald",
+    "species": "Rat",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Vascular_Echo",
+    "title": "Cardiac and Vessel Structure and Function with Long-Duration Space Flight and Recovery",
+    "pi": "Hughson,  Richard",
+    "species": "Human",
+    "missions": "Expedition  46  47  48  49  50  51  52  54  55  58  59  60  61  62  63  64  65",
+    "access": "request_required",
+    "minerals": "selenium",
+    "n_minerals": 1
+  },
+  {
+    "id": "MSD007",
+    "title": "Toxicological Assessment of Airborne Volatile Organic Compounds",
+    "pi": "James,  John",
+    "species": "Human",
+    "missions": "NASA  3  4  5  6  7  2",
+    "access": "open",
+    "minerals": "chloride",
+    "n_minerals": 1
+  },
+  {
+    "id": "9802386",
+    "title": "Arterial Remodeling and Functional Adaptations Induced by Microgravity",
+    "pi": "Delp,  Michael",
+    "species": "Rat",
+    "missions": "STS-107",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "178261",
+    "title": "The Influence of Space Flight on Erythrokinetics in Man",
+    "pi": "Alfrey,  Clarence",
+    "species": "Human",
+    "missions": "STS-40",
+    "access": "not_submitted",
+    "minerals": "iron",
+    "n_minerals": 1
+  },
+  {
+    "id": "9501048",
+    "title": "Protein Turnover During Space Flight",
+    "pi": "Ferrando,  Arny",
+    "species": "Human",
+    "missions": "STS-95  STS-107",
+    "access": "not_submitted",
+    "minerals": "chloride",
+    "n_minerals": 1
+  },
+  {
+    "id": "9304016 1_3",
+    "title": "The Effects of Micro-Gravity on In Vitro Calcification",
+    "pi": "Boskey,  Adele",
+    "species": "Chicken",
+    "missions": "STS-66",
+    "access": "not_submitted",
+    "minerals": "phosphorus",
+    "n_minerals": 1
+  },
+  {
+    "id": "SLS2 CNES5",
+    "title": "ANP, Pro-ANP and mRNA Distribution in Rat Heart During a Space Flight",
+    "pi": "Gabrion,  Jacqueline  Gharib,  Claude",
+    "species": "Rat",
+    "missions": "STS-58",
+    "access": "open",
+    "minerals": "sodium",
+    "n_minerals": 1
+  },
+  {
+    "id": "ARCbedrest126",
+    "title": "The Effect of Daily Activity and Age on Bone Density",
+    "pi": "Whalen,  Robert",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Urine_Calcium",
+    "title": "Urine Calcium",
+    "pi": "Paloski,  William  Smith,  Scott",
+    "species": "Human",
+    "missions": "LAFS",
+    "access": "not_submitted",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "Cervical in Space",
+    "title": "Cervical spine and muscle adaptation after spaceflight and relationship to herniation risk",
+    "pi": "Belavy,  Daniel",
+    "species": "Human",
+    "missions": "Expedition  67",
+    "access": "request_required",
+    "minerals": "calcium",
+    "n_minerals": 1
+  },
+  {
+    "id": "NNX12AE56G",
+    "title": "Factors Contributing to Food Acceptability and Consumption, Mood, and Stress on Long-term Space Missions",
+    "pi": "Vickers,  Zata  M.",
+    "species": "Human",
+    "missions": "Ground  Expedition  43  42",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "BRSMPT",
+    "title": "Bed Rest Standard Measures:  Performance Testing",
+    "pi": "Putcha,  Lakshmi",
+    "species": "Human",
+    "missions": "UTMB  Campaign  3  1",
+    "access": "open",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Trade_Study",
+    "title": "Food Processing vs. Packaged Food System Trade Study",
+    "pi": "Cooper,  Maya",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NNX09CB05C",
+    "title": "Development of a Multipurpose Extruder - Press Food Processing System",
+    "pi": "Wijeratne,  Wilmot",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "8913063",
+    "title": "Microgravity Effects on Standardized Cognitive Performance Measures",
+    "pi": "Schiflett,  Samuel  Schlegel,  Robert",
+    "species": "Human",
+    "missions": "STS-78  STS-65",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "LSAHNEWSV10_1",
+    "title": "Nutritional Intake of LSAH Participants",
+    "pi": "No  Principal  Investigator,",
+    "species": "Human",
+    "missions": "LSAH",
+    "access": "open",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "BRSMUBT",
+    "title": "Bed Rest Standard Measures:  Urea Breath Test",
+    "pi": "Putcha,  Lakshmi",
+    "species": "Human",
+    "missions": "UTMB  Campaign  3  1",
+    "access": "open",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Thermo_Food",
+    "title": "Thermostabilized Food Study",
+    "pi": "Perchonok,  Michele",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Food_Acceptability",
+    "title": "Food Acceptability, Menu Fatigue, and Aversion in ISS Missions",
+    "pi": "Douglas,  Grace",
+    "species": "Human",
+    "missions": "Expedition  66  65  64  63  62  61  60  59  58  57  56  55  52  51  50",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Drug_Adaptation",
+    "title": "Facilitation of Adaptation to Unusual Gravitoinertial Environments: Evaluation of Dexamethasone, Thyrotropic Releasing Hormone, Scopolamine Plus Amphetamine, and Doxepin",
+    "pi": "Kohl,  Randall",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "BRSMGBT",
+    "title": "Bed Rest Standard Measures: Glucose Breath Test",
+    "pi": "Putcha,  Lakshmi",
+    "species": "Human",
+    "missions": "UTMB  Campaign  3  1",
+    "access": "open",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "ISS_FIT",
+    "title": "Evaluation of the ISS Food Intake Tracker App",
+    "pi": "Zwart,  Sara",
+    "species": "Human",
+    "missions": "HERA  Campaign  1  2  3  4",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "SR_Nutrition",
+    "title": "Effect of Space Radiation on the Nutrition and Quality of the Food",
+    "pi": "Perchonok,  Michele",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "ILSRA_2004_144",
+    "title": "Astronaut's Energy Requirement for Long-Term Spaceflight",
+    "pi": "Blanc,  Stephane",
+    "species": "Human",
+    "missions": "Expedition  38  35  37  41  32  34  36  40  45  46  47  48  49  50  51  44  52  53",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "M487",
+    "title": "Habitability and Crew Quarters",
+    "pi": "Johnson,  Caldwell",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "DSO 625",
+    "title": "Measurement of Blood Volumes Before and After Space Flight",
+    "pi": "Meck,  Janice",
+    "species": "Human",
+    "missions": "STS-51  STS-55  STS-57",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "SkinCare",
+    "title": "SkinCare",
+    "pi": "Massow,  Michael",
+    "species": "Human",
+    "missions": "Expedition  13",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Food_Stability",
+    "title": "Food Fortification Stability Study",
+    "pi": "Cooper,  Maya  Sirmons,  Takiyah",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "284029",
+    "title": "Magnetic  Resonance Imaging",
+    "pi": "LeBlanc,  Adrian",
+    "species": "Human",
+    "missions": "STS-47",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "SL3 BSP29",
+    "title": "Early Adaptation to Altered Gravitational Environments in the Squirrel Monkey",
+    "pi": "Fuller,  Charles",
+    "species": "Monkey",
+    "missions": "STS-51B",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "CRF",
+    "title": "Case Report Form",
+    "pi": "Meck,  Janice  Fritsch-  Yelle  Paloski,  William  H.  Cromwell,  Ronita  L.",
+    "species": "Human",
+    "missions": "Campaign  19  DBLS  HDT30  LAFSP2  UTMB  5  Pilot  3  1  11  17  LAFS",
+    "access": "open",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Food_System",
+    "title": "Integration of Product, Package, Process, and Environment: A Food System Optimization",
+    "pi": "Cooper,  Maya",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Food_Mass_Reduction",
+    "title": "Packaged Food Mass Reduction Technology Development",
+    "pi": "Leong,  Monica",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "LSAHNEWSV11_2_1",
+    "title": "Surveillance of Health Risks Among Older Adults",
+    "pi": "No  Principal  Investigator,",
+    "species": "Human",
+    "missions": "LSAH",
+    "access": "open",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "System_Approach",
+    "title": "Total System Approach",
+    "pi": "Oziomek,  Thomas",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "DSO 612",
+    "title": "Energy and Metabolic Requirements for Extended Duration Space Flight (Energy Utilization)",
+    "pi": "Lane,  Helen",
+    "species": "Human",
+    "missions": "STS-45  STS-47  STS-58  STS-62  STS-64  STS-66",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "9301132",
+    "title": "CNS Control of Rhythms and Homeostasis During Space Flight",
+    "pi": "Fuller,  Charles",
+    "species": "Rat",
+    "missions": "STS-90",
+    "access": "open",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NCC958PF04308",
+    "title": "Fluid Shift Associated Lymphostasis of the Gut Induces Inflammation and Microbial Intolerance (Postdoctoral Fellowship)",
+    "pi": "Cromer,  Walter",
+    "species": "Rat",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "9401613",
+    "title": "Protein Metabolism During Long Term Space Flights",
+    "pi": "Stein,  T.",
+    "species": "Human",
+    "missions": "NASA  2  3",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "199081775",
+    "title": "Review and Analysis of Diaries from French Remote Duty Stations",
+    "pi": "Stuster,  Jack",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "9303009",
+    "title": "Effect of Spaceflight on Development of Immune Responses",
+    "pi": "Sonnenfeld,  Gerald",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "9303031 1_2",
+    "title": "Spaceflight Effects on Mammalian Development",
+    "pi": "Alberts,  Jeffrey",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "open",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "EES",
+    "title": "Energy Expenditure in Space Flight",
+    "pi": "Parsons,  Howard",
+    "species": "Human",
+    "missions": "STS-42",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Mass_Reduction_2",
+    "title": "Meal Replacement Mass Reduction and Integration Acceptability Study",
+    "pi": "Sirmons,  Takiyah",
+    "species": "Human",
+    "missions": "HERA  Campaign  3",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Micro_Foods",
+    "title": "Development of Spaceflight Foods with High Microbial Concentrations",
+    "pi": "Cooper,  Maya",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NCC958HFP02804",
+    "title": "Stabilized Foods for Use in Extended Spaceflight: Preservation of Shelf-Life, Nutrient Content and Acceptability",
+    "pi": "Barrett,  Ann",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "9303019",
+    "title": "Effects of Spaceflight on Muscles and Nerves",
+    "pi": "Clark,  Kathryn",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "LMLSTP3.1",
+    "title": "Lunar Mars Life Support Test Project (LMLSTP) Architecture",
+    "pi": "Connolly,  Janis",
+    "species": "Human",
+    "missions": "LMLSTP",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "E971",
+    "title": "Measurement of Energy Expenditure During Spaceflight with the Doubly Labeled Water (DLW) Method",
+    "pi": "Stein,  T.",
+    "species": "Human",
+    "missions": "STS-78",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NAG91528",
+    "title": "A Study Of Dietary Retinoid for Prevention of 56Fe-Induced Cancers in Rat Skin",
+    "pi": "Burns,  Fredric",
+    "species": "Rat",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "B11-06",
+    "title": "Effect of Microgravity on Sympathetic and Parasympathetic Compartments of the Autonomic Nervous System",
+    "pi": "Badakva,  Anatoly",
+    "species": "Monkey",
+    "missions": "Bion  11",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Mass_Reduction",
+    "title": "Packaged Food Mass Reduction Trade Study",
+    "pi": "Perchonok,  Michele",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NNX12CA62C",
+    "title": "Non-Thermal Sanitation By Atmospheric Pressure Plasma",
+    "pi": "Remiker,  Ross",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Menu_Development",
+    "title": "Bulk Ingredient-Based Menu Development",
+    "pi": "Perchonok,  Michele",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NNX11AE53G",
+    "title": "Effects of Retronasal Smelling, Variety and Choice on Appetite and Satiety",
+    "pi": "Hunter,  Jean",
+    "species": "Human",
+    "missions": "UTMB  Campaign  11  Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NNX10CB04C",
+    "title": "Flexible High-Barrier Polymers for Food Packaging",
+    "pi": "Cogan,  Stuart",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NNX14AP32G",
+    "title": "Vitamins B1 and K Degradation in Spaceflight Foods: Establishment of Prediction Models and Prevention Strategies",
+    "pi": "Xiao,  Hang",
+    "species": "N/A",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "P-1035B",
+    "title": "Effects of Weightlessness on the Nuclear and Cellular Division of Pelomyxa carolinensis",
+    "pi": "Eckberg,  D.",
+    "species": "Amoeba",
+    "missions": "Biosatellite  II",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "9303006",
+    "title": "Development of Sensory Receptors in Skeletal Muscle",
+    "pi": "DeSantis,  Mark",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "ARC00XX84",
+    "title": "Protein Expression in Salivary Glands: Effects of Extended Space Flight",
+    "pi": "Mednieks,  Maija",
+    "species": "Mouse",
+    "missions": "PMA  STS-133",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Thermo_FD",
+    "title": "Themostabilized Food Development",
+    "pi": "Perchonok,  Michele",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Nutrient_Stability",
+    "title": "Literature Review of Factors Affecting Food and Nutrient Stability",
+    "pi": "Cooper,  Maya",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "ARCbedrest063",
+    "title": "Exercise Countermeasure for Bedrest Deconditioning",
+    "pi": "Greenleaf,  John",
+    "species": "Human",
+    "missions": "ARCBedrest",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "9303003",
+    "title": "Effects of Weightlessness on Vestibular Development",
+    "pi": "Fritzsch,  Bernd",
+    "species": "Rat",
+    "missions": "STS-66",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "P-1035A",
+    "title": "Effects of Weightlessness on the Nutrition and Growth of Pelomyxa carolinensis",
+    "pi": "Price,  Richard",
+    "species": "Amoeba",
+    "missions": "Biosatellite  II",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "COS 1129-4",
+    "title": "Rat and Quail Ontogenesis",
+    "pi": "Keefe,  J.",
+    "species": "Rat; Quail",
+    "missions": "Cosmos  1129",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "COS 1129-12",
+    "title": "Fetal and Neonatal Rat Bone and Joint Development Following In Utero Spaceflight",
+    "pi": "Sabelman,  E.",
+    "species": "Rat",
+    "missions": "Cosmos  1129",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "Functional_Foods",
+    "title": "Functional Foods Baseline and Requirements Analysis",
+    "pi": "Cooper,  Maya",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "E409",
+    "title": "An Approach to Counteract Impairment of Musculoskeletal Function in Space",
+    "pi": "Tesch,  Per",
+    "species": "Human",
+    "missions": "STS-78",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "80NSSC19K1480",
+    "title": "Promoting Behavioral Health, Cognitive, Sensorimotor, and Immune Function Using Guided Imagery to Augment Exercise Training in an Isolated and Confined Spaceflight Analog Environment",
+    "pi": "Simpson,  Richard",
+    "species": "Human",
+    "missions": "Ground  HERA  Campaign  6",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NAG91424",
+    "title": "Bioluminescent Monitoring of Opportunistic Pathogens in the Spacecraft Environment",
+    "pi": "Sayler,  Gary",
+    "species": "Not; applicable",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "LMLSTP4.4",
+    "title": "Crew Food Systems During the Lunar-Mars Life Support Test Project",
+    "pi": "Bourland,  C.",
+    "species": "Human",
+    "missions": "LMLSTP",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NAG91491",
+    "title": "Precise Assessment of Prevalence and Progression Rates of Lens Opacities in Astronauts as a Function of Radiation Exposure during Space Flight and Development of Improved Routine Clinical Assessment of Ocular Lens Status",
+    "pi": "Chylack,  Leo",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "request_required",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "COS 2044-24",
+    "title": "Biological Rhythm and Temperature Regulation: II. Metabolism",
+    "pi": "Fuller,  Charles",
+    "species": "Monkey",
+    "missions": "Cosmos  2044",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "M074",
+    "title": "Specimen Mass Measurement",
+    "pi": "Thornton,  William",
+    "species": "Human",
+    "missions": "Skylab  2  3  4",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  },
+  {
+    "id": "NCC958NPFR00301",
+    "title": "Timed Feeding and Resistance Training to Prevent Muscle Atrophy",
+    "pi": "Castaneda-Sceppa,  Carmen  Roubenoff,  Ronnen",
+    "species": "Human",
+    "missions": "Ground",
+    "access": "not_submitted",
+    "minerals": "",
+    "n_minerals": 0
+  }
+]
