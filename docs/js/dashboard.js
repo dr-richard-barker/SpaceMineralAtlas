@@ -22,43 +22,64 @@ document.addEventListener('DOMContentLoaded', () => {
 // 0. COSE Theme Controller (Light / Dark Mode Switcher)
 // ============================================================================
 function initThemeController() {
-  const themeBtns = document.querySelectorAll('.theme-toggle-btn, .nav-theme-btn');
   const LS_THEME = 'barker.theme';
+  const LS_COSE = 'cose_theme';
 
   function getActiveTheme() {
-    const saved = localStorage.getItem(LS_THEME);
+    const saved = localStorage.getItem(LS_COSE) || localStorage.getItem(LS_THEME);
     if (saved === 'light' || saved === 'dark') return saved;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
 
-  function applyTheme(theme, save = false) {
-    document.documentElement.setAttribute('data-theme', theme);
-    document.documentElement.style.colorScheme = theme;
-    if (save) localStorage.setItem(LS_THEME, theme);
+  function updateButtonUI(theme) {
+    const isDark = theme === 'dark';
+    const icon = isDark ? '🌙' : '☀️';
+    const text = isDark ? 'Dark Mode' : 'Light Mode';
 
-    themeBtns.forEach(btn => {
-      const isDark = theme === 'dark';
-      const icon = isDark ? '🌙' : '☀️';
-      const text = isDark ? 'Dark Mode' : 'Light Mode';
+    document.querySelectorAll('.theme-toggle-btn, .nav-theme-btn').forEach(btn => {
       btn.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} mode`);
       btn.setAttribute('title', `Switch to ${isDark ? 'light' : 'dark'} mode`);
       btn.innerHTML = `<span style="font-size: 0.95rem;">${icon}</span> <span>${text}</span>`;
     });
   }
 
-  themeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+  function applyTheme(theme, save = false) {
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.style.colorScheme = theme;
+    if (save) {
+      localStorage.setItem(LS_THEME, theme);
+      localStorage.setItem(LS_COSE, theme);
+    }
+    updateButtonUI(theme);
+  }
+
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.theme-toggle-btn, .nav-theme-btn, .cose-theme-btn');
+    if (btn) {
+      e.preventDefault();
       const current = document.documentElement.getAttribute('data-theme') || getActiveTheme();
       const next = current === 'dark' ? 'light' : 'dark';
       applyTheme(next, true);
-    });
+    }
   });
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.getItem(LS_THEME)) {
+    if (!localStorage.getItem(LS_COSE) && !localStorage.getItem(LS_THEME)) {
       applyTheme(e.matches ? 'dark' : 'light', false);
     }
   });
+
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+        const current = document.documentElement.getAttribute('data-theme');
+        if (current) {
+          updateButtonUI(current);
+        }
+      }
+    });
+  });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
   applyTheme(getActiveTheme(), false);
 }
