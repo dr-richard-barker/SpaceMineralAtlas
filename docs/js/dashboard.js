@@ -1,9 +1,11 @@
 /**
  * SpaceMineralAtlas Interactive Dashboard
  * Connects research data to interactive visualizers without external framework dependencies.
+ * Fully compatible with Barker Lab COSE design system and theme toggles.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeController();
   initUnitDefectVisualizer();
   initPlantClrExplorer();
   initMlFeatureImportance();
@@ -15,6 +17,51 @@ document.addEventListener('DOMContentLoaded', () => {
   initCitationCopy();
   initFigureModal();
 });
+
+// ============================================================================
+// 0. COSE Theme Controller (Light / Dark Mode Switcher)
+// ============================================================================
+function initThemeController() {
+  const themeBtns = document.querySelectorAll('.theme-toggle-btn, .nav-theme-btn');
+  const LS_THEME = 'barker.theme';
+
+  function getActiveTheme() {
+    const saved = localStorage.getItem(LS_THEME);
+    if (saved === 'light' || saved === 'dark') return saved;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme, save = false) {
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.style.colorScheme = theme;
+    if (save) localStorage.setItem(LS_THEME, theme);
+
+    themeBtns.forEach(btn => {
+      const isDark = theme === 'dark';
+      const icon = isDark ? '🌙' : '☀️';
+      const text = isDark ? 'Dark Mode' : 'Light Mode';
+      btn.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} mode`);
+      btn.setAttribute('title', `Switch to ${isDark ? 'light' : 'dark'} mode`);
+      btn.innerHTML = `<span style="font-size: 0.95rem;">${icon}</span> <span>${text}</span>`;
+    });
+  }
+
+  themeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || getActiveTheme();
+      const next = current === 'dark' ? 'light' : 'dark';
+      applyTheme(next, true);
+    });
+  });
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem(LS_THEME)) {
+      applyTheme(e.matches ? 'dark' : 'light', false);
+    }
+  });
+
+  applyTheme(getActiveTheme(), false);
+}
 
 // ============================================================================
 // 1. OSD-655 1000-Fold Unit Defect Visualizer
@@ -49,11 +96,11 @@ function initUnitDefectVisualizer() {
 
         if (mode === 'stated') {
           valCell.textContent = info.stated;
-          pctCell.innerHTML = `<strong style="color: var(--coral);">${info.statedPct}</strong>`;
+          pctCell.innerHTML = `<strong style="color: var(--coral); font-weight: 800;">${info.statedPct}</strong>`;
           statusCell.innerHTML = `<span class="badge badge-artefact">Physically Impossible (>100%)</span>`;
         } else {
           valCell.textContent = info.corrected;
-          pctCell.innerHTML = `<strong style="color: var(--teal);">${info.correctedPct}</strong>`;
+          pctCell.innerHTML = `<strong style="color: var(--teal); font-weight: 800;">${info.correctedPct}</strong>`;
           statusCell.innerHTML = `<span class="badge badge-survives">Harmonised Plausible</span>`;
         }
       });
@@ -129,14 +176,14 @@ function initPlantClrExplorer() {
 
       const fcVal = currentScale === 'clr' ? item.clrFc : item.rawFc;
       const pctWidth = Math.min(100, Math.max(10, Math.round(fcVal * 45)));
-      const barColor = fcVal > 1.05 ? 'var(--teal)' : (fcVal < 0.95 ? 'var(--coral)' : 'var(--slate)');
+      const barColor = fcVal > 1.05 ? 'var(--teal-graphic)' : (fcVal < 0.95 ? 'var(--coral-graphic)' : 'var(--slate)');
 
       tr.innerHTML = `
         <td><strong>${item.element}</strong></td>
         <td class="text-right">${item.rawFc.toFixed(2)}</td>
-        <td class="text-right" style="color: var(--slate); font-size: 0.85rem;">p=${item.rawP < 0.001 ? '<0.001' : item.rawP.toFixed(3)}</td>
-        <td class="text-right" style="font-weight: 700; color: var(--navy);">${item.clrFc.toFixed(2)}</td>
-        <td class="text-right" style="color: var(--slate); font-size: 0.85rem;">p=${item.clrP < 0.001 ? '<0.001' : item.clrP.toFixed(3)}</td>
+        <td class="text-right" style="color: var(--muted); font-size: 0.85rem;">p=${item.rawP < 0.001 ? '<0.001' : item.rawP.toFixed(3)}</td>
+        <td class="text-right" style="font-weight: 800; color: var(--navy);">${item.clrFc.toFixed(2)}</td>
+        <td class="text-right" style="color: var(--muted); font-size: 0.85rem;">p=${item.clrP < 0.001 ? '<0.001' : item.clrP.toFixed(3)}</td>
         <td>
           <div style="display: flex; align-items: center; gap: 8px;">
             <div style="flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden;">
@@ -201,8 +248,8 @@ function initMlFeatureImportance() {
     div.style.marginBottom = '12px';
     div.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: baseline; font-size: 0.88rem; margin-bottom: 4px;">
-        <div><strong>${f.name}</strong> <span style="font-size: 0.78rem; color: var(--slate); margin-left: 6px;">(${f.note})</span></div>
-        <div style="font-weight: 700; color: var(--navy); font-size: 0.85rem;">${f.importance > 0 ? f.importance.toFixed(4) : '0.0000'}</div>
+        <div><strong>${f.name}</strong> <span style="font-size: 0.8rem; color: var(--muted); margin-left: 6px;">(${f.note})</span></div>
+        <div style="font-weight: 800; color: var(--navy); font-size: 0.88rem;">${f.importance > 0 ? f.importance.toFixed(4) : '0.0000'}</div>
       </div>
       <div class="progress-container">
         <div class="progress-bar-track" style="height: 10px;">
@@ -277,13 +324,13 @@ function initNutritionCalculator() {
       card.innerHTML = `
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
           <strong>${std.label}</strong>
-          <span style="font-size: 0.85rem; color: var(--slate);">${suppliedMg.toFixed(2)} / ${std.req} ${std.unit}</span>
+          <span style="font-size: 0.85rem; color: var(--muted);">${suppliedMg.toFixed(2)} / ${std.req} ${std.unit}</span>
         </div>
         <div class="progress-container">
           <div class="progress-bar-track">
             <div class="progress-bar-fill ${fillClass}" style="width: ${barWidth}%;"></div>
           </div>
-          <span class="progress-val-text" style="color: ${pctReq > 100 ? 'var(--coral)' : 'var(--navy)'};">${pctReq.toFixed(1)}%</span>
+          <span class="progress-val-text" style="color: ${pctReq > 100 ? 'var(--coral)' : 'var(--navy)'}; font-weight: 800;">${pctReq.toFixed(1)}%</span>
         </div>
       `;
       resultsContainer.appendChild(card);
@@ -304,7 +351,7 @@ function initNutritionCalculator() {
             <strong>${kgToFeUl.toFixed(2)} kg</strong> of fresh ${crop === 'lettuce' ? 'Lettuce' : 'Tokyo Bekana'} per day 
             (equivalent to <strong>${pillowPillows} pillows</strong> harvested daily).
           </p>
-          <p style="margin: 0; font-size: 0.88rem; color: var(--slate);">
+          <p style="margin: 0; font-size: 0.9rem; color: var(--muted);">
             ${hasMnWarning ? '⚠️ <strong>Nutritional Note:</strong> Manganese supply is high (' + ((profile.manganese * (grams/100)/2.0)*100).toFixed(0) + '% DV), representing the key micronutrient to track for long-duration crew diets.' : 'At standard operational harvest volumes (~45 g/pillow), dietary mineral toxicity from Veggie crops is impossible.'}
           </p>
         </div>
@@ -387,50 +434,50 @@ function initAstronautNhanesExplorer() {
     }
 
     const changeSign = data.change > 0 ? `+${data.change.toFixed(1)}` : `${data.change.toFixed(1)}`;
-    const changeColor = data.change < -15 ? 'var(--coral)' : (data.change > 15 ? 'var(--teal)' : 'var(--slate)');
+    const changeColor = data.change < -15 ? 'var(--coral)' : (data.change > 15 ? 'var(--teal)' : 'var(--muted)');
 
     detailsBox.innerHTML = `
       <div style="margin-bottom: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
-          <h3 style="margin: 0; color: var(--navy);">${crew.name} &mdash; ${analyteKey.toUpperCase()}</h3>
-          <span style="font-size: 0.85rem; color: var(--slate);">Matched NHANES Cohort: <strong>${crew.stratum}</strong> (N=${crew.cohortN} US adults)</span>
+          <h3 style="margin: 0; color: var(--navy); font-weight: 800;">${crew.name} &mdash; ${analyteKey.toUpperCase()}</h3>
+          <span style="font-size: 0.86rem; color: var(--muted);">Matched NHANES Cohort: <strong>${crew.stratum}</strong> (N=${crew.cohortN} US adults)</span>
         </div>
       </div>
 
       <div class="grid-3" style="margin-bottom: 24px;">
         <div class="sub-card">
-          <span style="font-size: 0.8rem; color: var(--slate); text-transform: uppercase; font-weight: 600;">Pre-Flight</span>
-          <div style="font-size: 1.6rem; font-weight: 800; color: #2F5985;">${data.preVal.toFixed(2)} <span style="font-size: 0.9rem; font-weight: normal;">${data.unit}</span></div>
-          <span style="font-size: 0.85rem; font-weight: 600; color: #2F5985;">${data.prePct.toFixed(1)}th percentile</span>
+          <span style="font-size: 0.8rem; color: var(--muted); text-transform: uppercase; font-weight: 700;">Pre-Flight</span>
+          <div style="font-size: 1.65rem; font-weight: 800; color: var(--navy);">${data.preVal.toFixed(2)} <span style="font-size: 0.9rem; font-weight: normal;">${data.unit}</span></div>
+          <span style="font-size: 0.86rem; font-weight: 700; color: var(--navy);">${data.prePct.toFixed(1)}th percentile</span>
         </div>
         <div class="sub-card">
-          <span style="font-size: 0.8rem; color: var(--slate); text-transform: uppercase; font-weight: 600;">Post-Flight (R+0)</span>
-          <div style="font-size: 1.6rem; font-weight: 800; color: #E07A5F;">${data.postVal.toFixed(2)} <span style="font-size: 0.9rem; font-weight: normal;">${data.unit}</span></div>
-          <span style="font-size: 0.85rem; font-weight: 600; color: #E07A5F;">${data.postPct.toFixed(1)}th percentile</span>
+          <span style="font-size: 0.8rem; color: var(--muted); text-transform: uppercase; font-weight: 700;">Post-Flight (R+0)</span>
+          <div style="font-size: 1.65rem; font-weight: 800; color: var(--coral);">${data.postVal.toFixed(2)} <span style="font-size: 0.9rem; font-weight: normal;">${data.unit}</span></div>
+          <span style="font-size: 0.86rem; font-weight: 700; color: var(--coral);">${data.postPct.toFixed(1)}th percentile</span>
         </div>
         <div class="sub-card">
-          <span style="font-size: 0.8rem; color: var(--slate); text-transform: uppercase; font-weight: 600;">Population Shift</span>
-          <div style="font-size: 1.6rem; font-weight: 800; color: ${changeColor};">${changeSign} <span style="font-size: 0.9rem; font-weight: normal;">pp</span></div>
-          <span style="font-size: 0.85rem; color: var(--slate);">NHANES Median: ${data.median} ${data.unit}</span>
+          <span style="font-size: 0.8rem; color: var(--muted); text-transform: uppercase; font-weight: 700;">Population Shift</span>
+          <div style="font-size: 1.65rem; font-weight: 800; color: ${changeColor};">${changeSign} <span style="font-size: 0.9rem; font-weight: normal;">pp</span></div>
+          <span style="font-size: 0.86rem; color: var(--muted);">NHANES Median: ${data.median} ${data.unit}</span>
         </div>
       </div>
 
       <div style="background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px;">
-        <div style="display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--slate); margin-bottom: 8px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.84rem; color: var(--muted); margin-bottom: 8px;">
           <span>0th Percentile (Min)</span>
           <span>50th (Population Median)</span>
           <span>100th Percentile (Max)</span>
         </div>
         <div style="position: relative; height: 32px; background: var(--line); border-radius: 16px; margin-bottom: 12px; overflow: visible;">
-          <div style="position: absolute; left: 5%; width: 90%; height: 100%; background: rgba(59, 110, 165, 0.15); border-radius: 16px;"></div>
-          <div style="position: absolute; left: 50%; top: -4px; bottom: -4px; width: 2px; background: var(--slate); z-index: 2;"></div>
-          <div style="position: absolute; left: ${data.prePct}%; top: 50%; transform: translate(-50%, -50%); width: 18px; height: 18px; border-radius: 50%; background: #2F5985; border: 2px solid #FFFFFF; box-shadow: var(--shadow-sm); z-index: 5;" title="Pre-flight: ${data.prePct.toFixed(1)}th percentile"></div>
-          <div style="position: absolute; left: ${data.postPct}%; top: 50%; transform: translate(-50%, -50%); width: 18px; height: 18px; border-radius: 4px; background: #E07A5F; border: 2px solid #FFFFFF; box-shadow: var(--shadow-sm); z-index: 6;" title="Post-flight: ${data.postPct.toFixed(1)}th percentile"></div>
+          <div style="position: absolute; left: 5%; width: 90%; height: 100%; background: rgba(37, 85, 132, 0.15); border-radius: 16px;"></div>
+          <div style="position: absolute; left: 50%; top: -4px; bottom: -4px; width: 2px; background: var(--muted); z-index: 2;"></div>
+          <div style="position: absolute; left: ${data.prePct}%; top: 50%; transform: translate(-50%, -50%); width: 18px; height: 18px; border-radius: 50%; background: var(--navy); border: 2px solid #ffffff; box-shadow: var(--shadow-sm); z-index: 5;" title="Pre-flight: ${data.prePct.toFixed(1)}th percentile"></div>
+          <div style="position: absolute; left: ${data.postPct}%; top: 50%; transform: translate(-50%, -50%); width: 18px; height: 18px; border-radius: 4px; background: var(--coral-graphic); border: 2px solid #ffffff; box-shadow: var(--shadow-sm); z-index: 6;" title="Post-flight: ${data.postPct.toFixed(1)}th percentile"></div>
         </div>
-        <div style="display: flex; justify-content: center; gap: 24px; font-size: 0.84rem; font-weight: 600;">
-          <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; border-radius: 50%; background: #2F5985;"></span> Pre-Flight</span>
-          <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #E07A5F;"></span> Post-Flight</span>
-          <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--slate);"><span style="width: 2px; height: 10px; background: var(--slate);"></span> Population Median</span>
+        <div style="display: flex; justify-content: center; gap: 24px; font-size: 0.85rem; font-weight: 700;">
+          <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; border-radius: 50%; background: var(--navy);"></span> Pre-Flight</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: var(--coral-graphic);"></span> Post-Flight</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--muted);"><span style="width: 2px; height: 10px; background: var(--muted);"></span> Population Median</span>
         </div>
       </div>
     `;
@@ -501,7 +548,7 @@ function initAstronautTimeline() {
 
     let html = `
       <div style="margin-top: 24px;">
-        <h4 style="margin: 0 0 10px; color: var(--navy);">Longitudinal Trajectory: ${subjectId} (${analyte.toUpperCase()})</h4>
+        <h4 style="margin: 0 0 10px; color: var(--navy); font-weight: 700;">Longitudinal Trajectory: ${subjectId} (${analyte.toUpperCase()})</h4>
         <div class="table-responsive">
           <table>
             <thead>
@@ -528,20 +575,20 @@ function initAstronautTimeline() {
       const isOut = match[`${analyte}_out_of_range`] === 'True';
 
       const pct = Math.min(100, Math.max(0, pos * 100));
-      const dotColor = isOut ? 'var(--coral)' : (tp.phase === 'postflight' ? 'var(--gold)' : 'var(--teal)');
+      const dotColor = isOut ? 'var(--coral-graphic)' : (tp.phase === 'postflight' ? 'var(--gold-graphic)' : 'var(--teal-graphic)');
 
       html += `
         <tr>
           <td><strong><code>${tp.label}</code></strong></td>
-          <td><span style="font-size: 0.8rem; text-transform: uppercase; color: var(--slate); font-weight: 600;">${tp.phase}</span></td>
-          <td class="text-right"><strong>${val.toFixed(2)}</strong> <span style="font-size: 0.8rem; color: var(--slate);">${unit}</span></td>
-          <td class="text-right" style="color: var(--slate);">${min} &ndash; ${max}</td>
+          <td><span style="font-size: 0.8rem; text-transform: uppercase; color: var(--muted); font-weight: 700;">${tp.phase}</span></td>
+          <td class="text-right"><strong>${val.toFixed(2)}</strong> <span style="font-size: 0.82rem; color: var(--muted);">${unit}</span></td>
+          <td class="text-right" style="color: var(--muted);">${min} &ndash; ${max}</td>
           <td>
             <div style="display: flex; align-items: center; gap: 8px;">
               <div style="flex: 1; height: 6px; background: var(--line); border-radius: 3px; position: relative;">
-                <div style="position: absolute; left: ${pct}%; top: -4px; width: 14px; height: 14px; border-radius: 50%; background: ${dotColor}; transform: translateX(-50%); border: 2px solid #FFFFFF;"></div>
+                <div style="position: absolute; left: ${pct}%; top: -4px; width: 14px; height: 14px; border-radius: 50%; background: ${dotColor}; transform: translateX(-50%); border: 2px solid #ffffff;"></div>
               </div>
-              <span style="font-size: 0.8rem; min-width: 40px; color: var(--slate);">${(pos*100).toFixed(0)}%</span>
+              <span style="font-size: 0.82rem; min-width: 40px; color: var(--muted);">${(pos*100).toFixed(0)}%</span>
             </div>
           </td>
         </tr>
@@ -670,7 +717,7 @@ function initLsdaCatalogExplorer() {
     const pageItems = filteredStudies.slice(startIdx, startIdx + pageSize);
 
     if (pageItems.length === 0) {
-      catalogTbody.innerHTML = '<tr><td colspan="5" class="text-center" style="padding: 24px; color: var(--slate);">No experiments found matching criteria.</td></tr>';
+      catalogTbody.innerHTML = '<tr><td colspan="5" class="text-center" style="padding: 24px; color: var(--muted);">No experiments found matching criteria.</td></tr>';
     } else {
       pageItems.forEach(study => {
         const tr = document.createElement('tr');

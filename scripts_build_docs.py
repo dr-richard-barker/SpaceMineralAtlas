@@ -133,13 +133,21 @@ def main() -> None:
     pct = integ["percent_of_requirement_per_100g"]
     fe_kg = integ["overload_assessment"]["iron/lettuce/Flight/high"]["kg_fresh_tissue_to_reach_limit"]
 
-    # Generate HTML content
+    # Generate HTML content with Anti-FOUT theme script
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SpaceMineralAtlas &mdash; NASA Spaceflight Mineral and Dietary Analysis</title>
+<script>
+  (function() {{
+    var t = localStorage.getItem('barker.theme');
+    if (!t) {{ t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }}
+    document.documentElement.setAttribute('data-theme', t);
+    document.documentElement.style.colorScheme = t;
+  }})();
+</script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-theme.css">
 <link rel="stylesheet" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-chrome.css">
@@ -149,7 +157,12 @@ def main() -> None:
 
 <header class="hero">
   <div class="wrap hero-content">
-    <div class="hero-badge"><span class="pulse"></span> Open NASA Reanalysis &middot; 100% Checksummed</div>
+    <div class="hero-top-row">
+      <div class="hero-badge"><span class="pulse"></span> Open NASA Reanalysis &middot; 100% Checksummed</div>
+      <button class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle light / dark theme">
+        <span>🌙</span> <span>Dark Mode</span>
+      </button>
+    </div>
     <h1>SpaceMineral<span>Atlas</span></h1>
     <p class="tagline">Crop-specific mineral responses to spaceflight, discovery of a 1000-fold unit error in OSD-655, dietary supply sufficiency vs overload safety, and the NASA LSDA data access landscape.</p>
     <div class="hero-meta">
@@ -169,15 +182,20 @@ def main() -> None:
 </header>
 
 <nav class="sticky-nav">
-  <div class="wrap nav-links">
-    <a href="#defect">1000x Unit Defect</a>
-    <a href="#plants">Plant CLR Divergence</a>
-    <a href="#ml">ML Limits</a>
-    <a href="#nutrition">Dietary Calculator</a>
-    <a href="#astronauts">Inspiration4 &times; NHANES</a>
-    <a href="#samples">60 Plant Samples</a>
-    <a href="#lsda">LSDA Access Bottleneck</a>
-    <a href="#fair">FAIR Data &amp; Citation</a>
+  <div class="wrap nav-wrapper-flex">
+    <div class="nav-links">
+      <a href="#defect">1000x Unit Defect</a>
+      <a href="#plants">Plant CLR Divergence</a>
+      <a href="#ml">ML Limits</a>
+      <a href="#nutrition">Dietary Calculator</a>
+      <a href="#astronauts">Inspiration4 &times; NHANES</a>
+      <a href="#samples">60 Plant Samples</a>
+      <a href="#lsda">LSDA Access Bottleneck</a>
+      <a href="#fair">FAIR Data &amp; Citation</a>
+    </div>
+    <button class="nav-theme-btn" aria-label="Toggle light or dark theme" title="Toggle light / dark theme">
+      <span>🌓</span> <span>Theme</span>
+    </button>
   </div>
 </nav>
 
@@ -350,14 +368,14 @@ def main() -> None:
   <div class="grid-2">
     <div class="sub-card">
       <h3>Leave-One-Mission-Out (LOMO)</h3>
-      <p style="font-size: 0.9rem; color: var(--slate); margin-bottom: 12px;">5 folds partitioning VEG-01A, VEG-01B, VEG-03A, VEG-04A, VEG-04B.</p>
+      <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 12px;">5 folds partitioning VEG-01A, VEG-01B, VEG-03A, VEG-04A, VEG-04B.</p>
       <div style="font-size: 2.2rem; font-weight: 800; color: var(--navy); margin-bottom: 4px;">{mission['models']['random_forest']['balanced_accuracy']:.3f}</div>
       <div style="font-size: 0.85rem; color: var(--teal); font-weight: 700;">+0.040 Margin over chance ({mission['best_baseline_balanced_accuracy']:.3f})</div>
       <p class="note" style="margin-top: 10px;">Modest signal within mission cohorts, largely tracking environmental differences.</p>
     </div>
     <div class="sub-card" style="border-left: 4px solid var(--coral);">
       <h3>Leave-One-Crop-Out (LOCO)</h3>
-      <p style="font-size: 0.9rem; color: var(--slate); margin-bottom: 12px;">Train on Lettuce &rarr; Test on Tokyo Bekana (and vice versa).</p>
+      <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 12px;">Train on Lettuce &rarr; Test on Tokyo Bekana (and vice versa).</p>
       <div style="font-size: 2.2rem; font-weight: 800; color: var(--coral); margin-bottom: 4px;">{crop['models']['random_forest']['balanced_accuracy']:.3f}</div>
       <div style="font-size: 0.85rem; color: var(--coral); font-weight: 700;">-0.113 Below chance ({crop['best_baseline_balanced_accuracy']:.3f})</div>
       <p class="note" style="margin-top: 10px;"><strong>Below chance performance:</strong> Demonstrates the absolute absence of a shared cross-crop flight response signature.</p>
@@ -366,7 +384,7 @@ def main() -> None:
 
   <div style="margin-top: 28px;">
     <h3 style="margin: 0 0 12px; color: var(--navy);">Random Forest Feature Importance Ranking</h3>
-    <p style="font-size: 0.92rem; color: var(--slate); margin-bottom: 16px;">
+    <p style="font-size: 0.92rem; color: var(--muted); margin-bottom: 16px;">
       Permutation importance across models confirms that only <strong>Potassium, Sodium, and Sulfur</strong> contribute positive classification importance &mdash; matching the exact three elements that survived CLR compositional correction.
     </p>
     <div id="ml-feature-importance-bars">
@@ -386,7 +404,7 @@ def main() -> None:
 <section class="card highlight" id="nutrition">
   <div class="card-header-flex">
     <h2>4. Interactive Dietary Supply &amp; Overload Safety Calculator</h2>
-    <span class="section-badge" style="background: var(--teal-light); color: var(--teal-dark);">Interactive Tool</span>
+    <span class="section-badge" style="background: var(--teal-light); color: var(--teal);">Interactive Tool</span>
   </div>
   <p class="lead">Evaluate fresh crop dietary contributions against NASA astronaut daily nutritional requirements (JSC-67378 Rev 1) and calculate safety margins against Upper Limits.</p>
 
@@ -610,7 +628,7 @@ def main() -> None:
   </div>
 
   <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px; flex-wrap: wrap; gap: 8px;">
-    <span id="lsda-page-info" style="font-size: 0.85rem; color: var(--slate);">Loading catalog...</span>
+    <span id="lsda-page-info" style="font-size: 0.85rem; color: var(--muted);">Loading catalog...</span>
     <div style="display: flex; gap: 8px;">
       <button id="lsda-prev-btn" class="btn-toggle" style="background: var(--panel); border: 1px solid var(--line);">Previous</button>
       <button id="lsda-next-btn" class="btn-toggle" style="background: var(--panel); border: 1px solid var(--line);">Next</button>
@@ -629,7 +647,7 @@ def main() -> None:
 <section class="card" id="fair">
   <div class="card-header-flex">
     <h2>8. Reproducibility, FAIR Data &amp; Research Downloads</h2>
-    <span class="section-badge" style="background: var(--teal-light); color: var(--teal-dark);">Open Science</span>
+    <span class="section-badge" style="background: var(--teal-light); color: var(--teal);">Open Science</span>
   </div>
   <p class="lead">Every result, figure, and manuscript statistic in SpaceMineralAtlas is deterministically generated from checksummed NASA API responses without simulated or placeholder values.</p>
 
@@ -748,7 +766,7 @@ def main() -> None:
 """
     (DOCS / "index.html").write_text(html, encoding="utf-8")
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
-    log.info("wrote docs/index.html with interactive portal")
+    log.info("wrote docs/index.html with interactive portal and theme controller")
 
 
 if __name__ == "__main__":
