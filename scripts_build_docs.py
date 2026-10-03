@@ -489,7 +489,7 @@ def main() -> None:
         <select id="plant-data-crop-filter" class="select-custom">
           <option value="all">All Crops (60)</option>
           <option value="tokyo_bekana">Tokyo Bekana (36)</option>
-          <option value="outredgeous_lettuce">Outredgeous Lettuce (24)</option>
+          <option value="lettuce">Outredgeous Lettuce (24)</option>
         </select>
         <select id="plant-data-flight-filter" class="select-custom">
           <option value="all">All Conditions (60)</option>

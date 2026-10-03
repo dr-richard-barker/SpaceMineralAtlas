@@ -447,10 +447,14 @@ function initAstronautNhanesExplorer() {
     if (!detailsBox) return;
     const crew = nhanesData[activeCrewId];
     const analyteKey = analyteSelect ? analyteSelect.value : 'potassium';
-    const data = crew.analytes[analyteKey];
-
     if (!data) {
-      detailsBox.innerHTML = '<p class="note">No comparison available for this analyte.</p>';
+      detailsBox.innerHTML = `
+        <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+          <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">
+            <strong>Note:</strong> Population percentile benchmarking vs NHANES 2017&ndash;2018 is evaluated for the 3 primary dietary electrolytes (<strong>Potassium</strong>, <strong>Calcium</strong>, and <strong>Sodium</strong>). For complete longitudinal values of <strong>${analyteKey.toUpperCase()}</strong> across all 7 mission timepoints, see the longitudinal trajectory table below.
+          </p>
+        </div>
+      `;
       return;
     }
 
@@ -635,13 +639,23 @@ function initPlantDatasetViewer() {
 
   let allSamples = [];
 
+  function fmtVal(val, decimals = 0) {
+    if (val === undefined || val === null || val === '' || isNaN(parseFloat(val))) return '&mdash;';
+    return parseFloat(val).toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  }
+
   fetch('data/plant_elemental_ugg.json')
     .then(res => res.json())
     .then(data => {
       allSamples = data;
       renderPlantData();
     })
-    .catch(err => console.warn('Loading fallback plant elemental data...', err));
+    .catch(err => {
+      console.warn('Loading plant elemental data...', err);
+      if (container) {
+        container.innerHTML = '<tr><td colspan="10" class="text-center" style="padding: 24px; color: var(--muted);">Unable to load sample dataset.</td></tr>';
+      }
+    });
 
   function renderPlantData() {
     if (!container || allSamples.length === 0) return;
@@ -651,31 +665,60 @@ function initPlantDatasetViewer() {
     const q = (searchInput ? searchInput.value : '').toLowerCase().trim();
 
     const filtered = allSamples.filter(s => {
-      const matchCrop = crop === 'all' || s.crop.toLowerCase().includes(crop.toLowerCase());
-      const matchFlight = flight === 'all' || s.flight_status.toLowerCase() === flight.toLowerCase();
-      const matchQ = !q || s.sample_id.toLowerCase().includes(q) || s.mission.toLowerCase().includes(q);
+      // Crop match
+      let matchCrop = (crop === 'all');
+      if (!matchCrop) {
+        const cropVal = (s.crop || '').toLowerCase();
+        const cultVal = (s.cultivar || '').toLowerCase();
+        if (crop === 'tokyo_bekana') {
+          matchCrop = cropVal.includes('tokyo') || cultVal.includes('tokyo');
+        } else if (crop === 'lettuce' || crop === 'outredgeous_lettuce') {
+          matchCrop = cropVal.includes('lettuce') || cultVal.includes('outredgeous') || cultVal.includes('lettuce');
+        } else {
+          matchCrop = cropVal.includes(crop.toLowerCase()) || cultVal.includes(crop.toLowerCase());
+        }
+      }
+
+      // Condition match (Flight vs Ground)
+      const cond = (s.condition || '').toLowerCase();
+      const matchFlight = (flight === 'all') || (cond === flight.toLowerCase());
+
+      // Query match across identifiers
+      const matchQ = !q ||
+        (s.sample_name && s.sample_name.toLowerCase().includes(q)) ||
+        (s.mission && s.mission.toLowerCase().includes(q)) ||
+        (s.cultivar && s.cultivar.toLowerCase().includes(q)) ||
+        (s.crop && s.crop.toLowerCase().includes(q)) ||
+        (s.osd_id && s.osd_id.toLowerCase().includes(q));
+
       return matchCrop && matchFlight && matchQ;
     });
 
     container.innerHTML = '';
     if (countBadge) countBadge.textContent = `${filtered.length} of ${allSamples.length} samples`;
 
+    if (filtered.length === 0) {
+      container.innerHTML = '<tr><td colspan="10" class="text-center" style="padding: 24px; color: var(--muted);">No samples match the selected filters.</td></tr>';
+      return;
+    }
+
     filtered.forEach(s => {
       const tr = document.createElement('tr');
-      const isFlight = s.flight_status.toLowerCase() === 'flight';
-      const badgeClass = isFlight ? 'badge-survives' : 'badge-nochange';
+      const isFlight = (s.condition || '').toLowerCase() === 'flight';
+      const badgeClass = isFlight ? 'badge-flight' : 'badge-ground';
+      const cropLabel = s.cultivar ? s.cultivar : (s.crop === 'lettuce' ? 'Outredgeous Lettuce' : 'Tokyo Bekana');
 
       tr.innerHTML = `
-        <td><strong><code>${s.sample_id}</code></strong></td>
-        <td>${s.crop.replace(/_/g, ' ')}</td>
-        <td>${s.mission}</td>
-        <td><span class="badge ${badgeClass}">${s.flight_status}</span></td>
-        <td class="text-right"><strong>${parseFloat(s.potassium).toFixed(0)}</strong></td>
-        <td class="text-right">${parseFloat(s.calcium).toFixed(0)}</td>
-        <td class="text-right">${parseFloat(s.magnesium).toFixed(0)}</td>
-        <td class="text-right">${parseFloat(s.iron).toFixed(1)}</td>
-        <td class="text-right">${parseFloat(s.manganese).toFixed(1)}</td>
-        <td class="text-right">${parseFloat(s.sodium).toFixed(0)}</td>
+        <td><strong><code>${s.sample_name || ''}</code></strong> <span style="font-size: 0.75rem; color: var(--muted); margin-left: 4px;">(${s.osd_id || ''})</span></td>
+        <td>${cropLabel}</td>
+        <td><strong>${s.mission || '&mdash;'}</strong></td>
+        <td><span class="badge ${badgeClass}">${s.condition || 'Unknown'}</span></td>
+        <td class="text-right"><strong>${fmtVal(s.potassium, 0)}</strong></td>
+        <td class="text-right">${fmtVal(s.calcium, 0)}</td>
+        <td class="text-right">${fmtVal(s.magnesium, 0)}</td>
+        <td class="text-right">${fmtVal(s.iron, 1)}</td>
+        <td class="text-right">${fmtVal(s.manganese, 1)}</td>
+        <td class="text-right">${fmtVal(s.sodium, 0)}</td>
       `;
       container.appendChild(tr);
     });

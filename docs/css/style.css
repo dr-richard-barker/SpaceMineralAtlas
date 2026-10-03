@@ -21,6 +21,12 @@
   --coral: #c2412b;
   --gold: #b38600;
   --grey: #8A8A8A;
+  --navy: var(--accent);
+  --teal: var(--accent2);
+  --teal-graphic: var(--accent2);
+  --coral-graphic: var(--coral);
+  --gold-graphic: var(--gold);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
   --maxw: 1040px;
   --rail: 288px;
   color-scheme: light;
@@ -43,6 +49,12 @@
     --accent2: #54c9ba;
     --coral: #f08e74;
     --gold: #e8c547;
+    --navy: var(--accent);
+    --teal: var(--accent2);
+    --teal-graphic: var(--accent2);
+    --coral-graphic: var(--coral);
+    --gold-graphic: var(--gold);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
     color-scheme: dark;
   }
 }
@@ -63,6 +75,12 @@ html[data-theme="light"] {
   --accent2: #3FB6A8;
   --coral: #c2412b;
   --gold: #b38600;
+  --navy: var(--accent);
+  --teal: var(--accent2);
+  --teal-graphic: var(--accent2);
+  --coral-graphic: var(--coral);
+  --gold-graphic: var(--gold);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
   color-scheme: light;
 }
 
@@ -82,6 +100,12 @@ html[data-theme="dark"] {
   --accent2: #54c9ba;
   --coral: #f08e74;
   --gold: #e8c547;
+  --navy: var(--accent);
+  --teal: var(--accent2);
+  --teal-graphic: var(--accent2);
+  --coral-graphic: var(--coral);
+  --gold-graphic: var(--gold);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
   color-scheme: dark;
 }
 
@@ -369,6 +393,8 @@ tbody tr:hover { background: rgba(59, 110, 165, 0.04); }
 .badge-artefact { background: rgba(194, 65, 43, 0.15); color: var(--coral); }
 .badge-decreased { background: rgba(179, 134, 0, 0.15); color: var(--gold); }
 .badge-nochange { background: var(--line); color: var(--muted); }
+.badge-flight { background: rgba(59, 110, 165, 0.15); color: var(--accent); }
+.badge-ground { background: var(--line); color: var(--muted); }
 
 .badge-open { background: rgba(34, 197, 94, 0.15); color: #16a34a; }
 html[data-theme="dark"] .badge-open { color: #4ade80; }
