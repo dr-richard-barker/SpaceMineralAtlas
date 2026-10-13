@@ -1,0 +1,132 @@
+crop,study,species,cultivar,assay,sample,unit,value,mission,replicate,condition,light,duration_days
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01A_A_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,1026.45,VEG-01A,A,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01A_C_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,1450.62,VEG-01A,C,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01A_A_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,565.4,VEG-01A,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01A_B_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,746.85,VEG-01A,B,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01A_C_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,1021.51,VEG-01A,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01B_C_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,765.28,VEG-01B,C,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01B_D_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,890.9,VEG-01B,D,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01B_E_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,847.68,VEG-01B,E,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01B_A_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,1055.56,VEG-01B,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01B_C_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,528.24,VEG-01B,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01B_D_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,861.39,VEG-01B,D,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-01B_F_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,599.8,VEG-01B,F,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_A_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,610.36,VEG-03A,A,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_B_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,744.58,VEG-03A,B,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_C_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,965.13,VEG-03A,C,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_D_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,855.07,VEG-03A,D,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_E_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,834.34,VEG-03A,E,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_F_Flight_33days,umol_trolox_equivalents_per_gram_dry_weight,775.92,VEG-03A,F,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_A_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,453.84,VEG-03A,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_B_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,876.54,VEG-03A,B,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_C_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,728.04,VEG-03A,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_D_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,785.3,VEG-03A,D,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_E_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,805.28,VEG-03A,E,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,orac,VEG-03A_F_Ground_33days,umol_trolox_equivalents_per_gram_dry_weight,481.76,VEG-03A,F,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01A_A_Flight_33days,milligram_per_gram_dry_weight,4.41,VEG-01A,A,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01A_C_Flight_33days,milligram_per_gram_dry_weight,6.23,VEG-01A,C,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01A_A_Ground_33days,milligram_per_gram_dry_weight,3.99,VEG-01A,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01A_B_Ground_33days,milligram_per_gram_dry_weight,4.11,VEG-01A,B,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01A_C_Ground_33days,milligram_per_gram_dry_weight,6.16,VEG-01A,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01B_C_Flight_33days,milligram_per_gram_dry_weight,52.0,VEG-01B,C,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01B_D_Flight_33days,milligram_per_gram_dry_weight,54.03,VEG-01B,D,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01B_E_Flight_33days,milligram_per_gram_dry_weight,44.27,VEG-01B,E,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01B_A_Ground_33days,milligram_per_gram_dry_weight,46.24,VEG-01B,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01B_C_Ground_33days,milligram_per_gram_dry_weight,36.27,VEG-01B,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01B_D_Ground_33days,milligram_per_gram_dry_weight,66.89,VEG-01B,D,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-01B_F_Ground_33days,milligram_per_gram_dry_weight,48.87,VEG-01B,F,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_A_Flight_33days,milligram_per_gram_dry_weight,11.81,VEG-03A,A,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_B_Flight_33days,milligram_per_gram_dry_weight,18.74,VEG-03A,B,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_C_Flight_33days,milligram_per_gram_dry_weight,18.26,VEG-03A,C,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_D_Flight_33days,milligram_per_gram_dry_weight,28.94,VEG-03A,D,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_E_Flight_33days,milligram_per_gram_dry_weight,20.88,VEG-03A,E,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_F_Flight_33days,milligram_per_gram_dry_weight,18.74,VEG-03A,F,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_A_Ground_33days,milligram_per_gram_dry_weight,7.98,VEG-03A,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_B_Ground_33days,milligram_per_gram_dry_weight,18.29,VEG-03A,B,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_C_Ground_33days,milligram_per_gram_dry_weight,15.63,VEG-03A,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_D_Ground_33days,milligram_per_gram_dry_weight,17.9,VEG-03A,D,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_E_Ground_33days,milligram_per_gram_dry_weight,20.88,VEG-03A,E,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,total_phenolics,VEG-03A_F_Ground_33days,milligram_per_gram_dry_weight,9.16,VEG-03A,F,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01A_A_Flight_33days,milligram_per_gram_dry_weight,54.85,VEG-01A,A,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01A_C_Flight_33days,milligram_per_gram_dry_weight,82.88,VEG-01A,C,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01A_A_Ground_33days,milligram_per_gram_dry_weight,41.53,VEG-01A,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01A_B_Ground_33days,milligram_per_gram_dry_weight,53.28,VEG-01A,B,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01A_C_Ground_33days,milligram_per_gram_dry_weight,66.35,VEG-01A,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01B_C_Flight_33days,milligram_per_gram_dry_weight,4.61,VEG-01B,C,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01B_D_Flight_33days,milligram_per_gram_dry_weight,3.89,VEG-01B,D,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01B_E_Flight_33days,milligram_per_gram_dry_weight,2.39,VEG-01B,E,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01B_A_Ground_33days,milligram_per_gram_dry_weight,3.44,VEG-01B,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01B_C_Ground_33days,milligram_per_gram_dry_weight,2.29,VEG-01B,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01B_D_Ground_33days,milligram_per_gram_dry_weight,3.91,VEG-01B,D,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-01B_F_Ground_33days,milligram_per_gram_dry_weight,2.52,VEG-01B,F,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-03A_B_Flight_33days,milligram_per_gram_dry_weight,4.84,VEG-03A,B,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-03A_D_Flight_33days,milligram_per_gram_dry_weight,3.0,VEG-03A,D,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-03A_F_Flight_33days,milligram_per_gram_dry_weight,4.23,VEG-03A,F,Flight,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-03A_A_Ground_33days,milligram_per_gram_dry_weight,4.18,VEG-03A,A,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-03A_C_Ground_33days,milligram_per_gram_dry_weight,5.52,VEG-03A,C,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-03A_D_Ground_33days,milligram_per_gram_dry_weight,3.74,VEG-03A,D,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-03A_E_Ground_33days,milligram_per_gram_dry_weight,2.42,VEG-03A,E,Ground,,33.0
+lettuce,OSD-745,Lactuca sativa,Outredgeous,anthocyanin,VEG-03A_F_Ground_33days,milligram_per_gram_dry_weight,4.97,VEG-03A,F,Ground,,33.0
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_GC_leaf_pillow3_red,umol_trolox_equivalents_per_gram_dry_weight,101.32,VEG04A,pillow3,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_GC_leaf_pillow5_red,umol_trolox_equivalents_per_gram_dry_weight,126.25,VEG04A,pillow5,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_GC_leaf_pillow6_red,umol_trolox_equivalents_per_gram_dry_weight,147.83,VEG04A,pillow6,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_GC_leaf_pillow7_blue,umol_trolox_equivalents_per_gram_dry_weight,145.79,VEG04A,pillow7,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_GC_leaf_pillow8_blue,umol_trolox_equivalents_per_gram_dry_weight,129.08,VEG04A,pillow8,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_GC_leaf_pillow12_blue,umol_trolox_equivalents_per_gram_dry_weight,242.28,VEG04A,pillow12,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_F_leaf_pillow1_red,umol_trolox_equivalents_per_gram_dry_weight,155.34,VEG04A,pillow1,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_F_leaf_pillow2_red,umol_trolox_equivalents_per_gram_dry_weight,122.51,VEG04A,pillow2,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_F_leaf_pillow4_red,umol_trolox_equivalents_per_gram_dry_weight,161.52,VEG04A,pillow4,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_F_leaf_pillow6_red,umol_trolox_equivalents_per_gram_dry_weight,90.85,VEG04A,pillow6,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_F_leaf_pillow7_blue,umol_trolox_equivalents_per_gram_dry_weight,32.8,VEG04A,pillow7,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04A_F_leaf_pillow11_blue,umol_trolox_equivalents_per_gram_dry_weight,729.06,VEG04A,pillow11,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow1_red,umol_trolox_equivalents_per_gram_dry_weight,93.41,VEG04B,pillow1,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow2_red,umol_trolox_equivalents_per_gram_dry_weight,81.29,VEG04B,pillow2,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow3_red,umol_trolox_equivalents_per_gram_dry_weight,81.12,VEG04B,pillow3,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow4_red,umol_trolox_equivalents_per_gram_dry_weight,87.68,VEG04B,pillow4,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow5_red,umol_trolox_equivalents_per_gram_dry_weight,104.09,VEG04B,pillow5,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow6_red,umol_trolox_equivalents_per_gram_dry_weight,136.77,VEG04B,pillow6,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow7_blue,umol_trolox_equivalents_per_gram_dry_weight,113.63,VEG04B,pillow7,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow8_blue,umol_trolox_equivalents_per_gram_dry_weight,103.68,VEG04B,pillow8,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow9_blue,umol_trolox_equivalents_per_gram_dry_weight,181.83,VEG04B,pillow9,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow10_blue,umol_trolox_equivalents_per_gram_dry_weight,118.15,VEG04B,pillow10,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow11_blue,umol_trolox_equivalents_per_gram_dry_weight,168.37,VEG04B,pillow11,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_GC_leaf_pillow12_blue,umol_trolox_equivalents_per_gram_dry_weight,122.42,VEG04B,pillow12,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_F_leaf_pillow1_red,umol_trolox_equivalents_per_gram_dry_weight,115.14,VEG04B,pillow1,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_F_leaf_pillow3_red,umol_trolox_equivalents_per_gram_dry_weight,129.73,VEG04B,pillow3,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_F_leaf_pillow4_red,umol_trolox_equivalents_per_gram_dry_weight,125.11,VEG04B,pillow4,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_F_leaf_pillow6_red,umol_trolox_equivalents_per_gram_dry_weight,25.31,VEG04B,pillow6,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_F_leaf_pillow8_blue,umol_trolox_equivalents_per_gram_dry_weight,148.63,VEG04B,pillow8,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_F_leaf_pillow9_blue,umol_trolox_equivalents_per_gram_dry_weight,110.65,VEG04B,pillow9,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,orac,VEG04B_F_leaf_pillow10_blue,umol_trolox_equivalents_per_gram_dry_weight,139.1,VEG04B,pillow10,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_GC_leaf_pillow3_red,milligram_per_gram_dry_weight,17.34,VEG04A,pillow3,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_GC_leaf_pillow5_red,milligram_per_gram_dry_weight,18.7,VEG04A,pillow5,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_GC_leaf_pillow6_red,milligram_per_gram_dry_weight,17.42,VEG04A,pillow6,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_GC_leaf_pillow7_blue,milligram_per_gram_dry_weight,18.8,VEG04A,pillow7,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_GC_leaf_pillow8_blue,milligram_per_gram_dry_weight,16.19,VEG04A,pillow8,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_GC_leaf_pillow12_blue,milligram_per_gram_dry_weight,37.7,VEG04A,pillow12,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_F_leaf_pillow1_red,milligram_per_gram_dry_weight,21.9,VEG04A,pillow1,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_F_leaf_pillow2_red,milligram_per_gram_dry_weight,17.1,VEG04A,pillow2,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_F_leaf_pillow4_red,milligram_per_gram_dry_weight,16.84,VEG04A,pillow4,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_F_leaf_pillow6_red,milligram_per_gram_dry_weight,15.82,VEG04A,pillow6,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_F_leaf_pillow7_blue,milligram_per_gram_dry_weight,20.91,VEG04A,pillow7,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04A_F_leaf_pillow11_blue,milligram_per_gram_dry_weight,33.47,VEG04A,pillow11,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow1_red,milligram_per_gram_dry_weight,13.0,VEG04B,pillow1,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow2_red,milligram_per_gram_dry_weight,11.29,VEG04B,pillow2,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow3_red,milligram_per_gram_dry_weight,11.39,VEG04B,pillow3,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow4_red,milligram_per_gram_dry_weight,12.42,VEG04B,pillow4,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow5_red,milligram_per_gram_dry_weight,7.57,VEG04B,pillow5,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow6_red,milligram_per_gram_dry_weight,9.65,VEG04B,pillow6,Ground,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow7_blue,milligram_per_gram_dry_weight,9.89,VEG04B,pillow7,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow8_blue,milligram_per_gram_dry_weight,10.04,VEG04B,pillow8,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow9_blue,milligram_per_gram_dry_weight,11.08,VEG04B,pillow9,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow10_blue,milligram_per_gram_dry_weight,8.98,VEG04B,pillow10,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow11_blue,milligram_per_gram_dry_weight,12.6,VEG04B,pillow11,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_GC_leaf_pillow12_blue,milligram_per_gram_dry_weight,10.47,VEG04B,pillow12,Ground,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_F_leaf_pillow1_red,milligram_per_gram_dry_weight,10.2,VEG04B,pillow1,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_F_leaf_pillow3_red,milligram_per_gram_dry_weight,10.39,VEG04B,pillow3,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_F_leaf_pillow4_red,milligram_per_gram_dry_weight,10.23,VEG04B,pillow4,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_F_leaf_pillow5_red,milligram_per_gram_dry_weight,7.74,VEG04B,pillow5,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_F_leaf_pillow6_red,milligram_per_gram_dry_weight,8.55,VEG04B,pillow6,Flight,red,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_F_leaf_pillow8_blue,milligram_per_gram_dry_weight,11.14,VEG04B,pillow8,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_F_leaf_pillow9_blue,milligram_per_gram_dry_weight,11.7,VEG04B,pillow9,Flight,blue,
+tokyo_bekana,OSD-655,Brassica rapa,Tokyo Bekana,total_phenolics,VEG04B_F_leaf_pillow10_blue,milligram_per_gram_dry_weight,10.6,VEG04B,pillow10,Flight,blue,

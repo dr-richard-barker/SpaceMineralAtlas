@@ -210,6 +210,34 @@ def main() -> None:
               row.kilograms_fresh_to_reach_upper_limit,
               f"overload_assessment.csv:{row.element}/{row.crop}", fmt="{:.2f}")
 
+    # --- Antioxidant assays -----------------------------------------------
+    # Fetched 13 Oct 2026 and never analysed before. The headline is a negative
+    # result, so the macros that matter are the FDR p-values and the confound
+    # scale that justifies stratifying on mission rather than pooling.
+    antiox_path = RESULTS / "antioxidant_summary.json"
+    if antiox_path.exists():
+        antiox = json.loads(antiox_path.read_text())
+        assay_keys = {"orac": "Orac", "total_phenolics": "Phen",
+                      "anthocyanin": "Anth"}
+        m.add("NAntioxMeasurements", antiox["n_measurements"],
+              "antioxidant_summary.json:n_measurements")
+        m.add("NAntioxSignificant", antiox["n_significant_fdr05"],
+              "antioxidant_summary.json:n_significant_fdr05")
+        for key, row in antiox["stratified"].items():
+            crop, assay = key.split("/")
+            stem = f"{CROP_KEYS[crop]}{assay_keys[assay]}"
+            src = f"antioxidant_summary.json:stratified.{key}"
+            m.add(macro_name("Antiox", stem, "Fold"), row["pooled_fold_change"],
+                  f"{src}.pooled_fold_change", fmt="{:.2f}")
+            m.add(macro_name("Antiox", stem, "Fdr"), row["p_value_fdr"],
+                  f"{src}.p_value_fdr", fmt="{:.3f}")
+            m.add(macro_name("Antiox", stem, "Between"),
+                  row["between_mission_spread"],
+                  f"{src}.between_mission_spread", fmt="{:.1f}")
+            m.add(macro_name("Antiox", stem, "Within"),
+                  row["max_within_mission_fold"],
+                  f"{src}.max_within_mission_fold", fmt="{:.2f}")
+
     # --- QC ---------------------------------------------------------------
     m.add("QCAllPassed", "yes" if qc["all_passed"] else "NO",
           "qc_report.json:all_passed")

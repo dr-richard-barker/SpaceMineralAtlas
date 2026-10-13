@@ -1,0 +1,222 @@
+{
+  "provenance": {
+    "note": "Antioxidant assay files were listed in each study's _file_manifest.json but never downloaded before 13 Oct 2026. Fetched by veggie_correction/fetch_antioxidant_data.py; checksums in fair/antioxidant_inputs.sha256.",
+    "studies": [
+      "OSD-655",
+      "OSD-745"
+    ],
+    "assays": [
+      "anthocyanin",
+      "orac",
+      "total_phenolics"
+    ]
+  },
+  "n_measurements": 131,
+  "n_by_crop_assay": {
+    "lettuce/anthocyanin": 20,
+    "lettuce/orac": 24,
+    "lettuce/total_phenolics": 24,
+    "tokyo_bekana/orac": 31,
+    "tokyo_bekana/total_phenolics": 32
+  },
+  "n_by_crop_assay_condition": {
+    "lettuce/anthocyanin/Flight": 8,
+    "lettuce/anthocyanin/Ground": 12,
+    "lettuce/orac/Flight": 11,
+    "lettuce/orac/Ground": 13,
+    "lettuce/total_phenolics/Flight": 11,
+    "lettuce/total_phenolics/Ground": 13,
+    "tokyo_bekana/orac/Flight": 13,
+    "tokyo_bekana/orac/Ground": 18,
+    "tokyo_bekana/total_phenolics/Flight": 14,
+    "tokyo_bekana/total_phenolics/Ground": 18
+  },
+  "stratified": {
+    "lettuce/anthocyanin": {
+      "unit": "milligram_per_gram_dry_weight",
+      "strata": "mission",
+      "n_strata": 3,
+      "n_flight": 8,
+      "n_ground": 12,
+      "median_flight": 4.42,
+      "median_ground": 4.045,
+      "pooled_fold_change": 1.093,
+      "van_elteren_z": 0.896,
+      "p_value": 0.370429791048561,
+      "p_value_fdr": 0.370429791048561,
+      "significant_fdr05": false,
+      "between_mission_spread": 15.94,
+      "max_within_mission_fold": 1.31
+    },
+    "lettuce/orac": {
+      "unit": "umol_trolox_equivalents_per_gram_dry_weight",
+      "strata": "mission",
+      "n_strata": 3,
+      "n_flight": 11,
+      "n_ground": 13,
+      "median_flight": 847.68,
+      "median_ground": 746.85,
+      "pooled_fold_change": 1.135,
+      "van_elteren_z": 1.64,
+      "p_value": 0.10106934894249808,
+      "p_value_fdr": 0.15160402341374712,
+      "significant_fdr05": false,
+      "between_mission_spread": 1.31,
+      "max_within_mission_fold": 1.66
+    },
+    "lettuce/total_phenolics": {
+      "unit": "milligram_per_gram_dry_weight",
+      "strata": "mission",
+      "n_strata": 3,
+      "n_flight": 11,
+      "n_ground": 13,
+      "median_flight": 18.74,
+      "median_ground": 17.9,
+      "pooled_fold_change": 1.047,
+      "van_elteren_z": 1.798,
+      "p_value": 0.07221233428187368,
+      "p_value_fdr": 0.15160402341374712,
+      "significant_fdr05": false,
+      "between_mission_spread": 11.08,
+      "max_within_mission_fold": 1.29
+    },
+    "tokyo_bekana/orac": {
+      "unit": "umol_trolox_equivalents_per_gram_dry_weight",
+      "strata": "missionxlight",
+      "n_strata": 4,
+      "n_flight": 13,
+      "n_ground": 18,
+      "median_flight": 125.11,
+      "median_ground": 120.285,
+      "pooled_fold_change": 1.04,
+      "van_elteren_z": 0.541,
+      "p_value": 0.5883956867173494,
+      "p_value_fdr": 0.6984182735864899,
+      "significant_fdr05": false,
+      "between_mission_spread": 1.19,
+      "max_within_mission_fold": 2.61
+    },
+    "tokyo_bekana/total_phenolics": {
+      "unit": "milligram_per_gram_dry_weight",
+      "strata": "missionxlight",
+      "n_strata": 4,
+      "n_flight": 14,
+      "n_ground": 18,
+      "median_flight": 11.42,
+      "median_ground": 11.905,
+      "pooled_fold_change": 0.959,
+      "van_elteren_z": -0.387,
+      "p_value": 0.6984182735864899,
+      "p_value_fdr": 0.6984182735864899,
+      "significant_fdr05": false,
+      "between_mission_spread": 1.73,
+      "max_within_mission_fold": 1.45
+    }
+  },
+  "by_mission": {
+    "lettuce/anthocyanin/VEG-01A/nan": {
+      "n_flight": 2,
+      "n_ground": 3,
+      "fold_change": 1.293,
+      "p_value": 0.4
+    },
+    "lettuce/anthocyanin/VEG-01B/nan": {
+      "n_flight": 3,
+      "n_ground": 4,
+      "fold_change": 1.305,
+      "p_value": 0.6285714285714286
+    },
+    "lettuce/anthocyanin/VEG-03A/nan": {
+      "n_flight": 3,
+      "n_ground": 5,
+      "fold_change": 1.012,
+      "p_value": 1.0
+    },
+    "lettuce/orac/VEG-01A/nan": {
+      "n_flight": 2,
+      "n_ground": 3,
+      "fold_change": 1.658,
+      "p_value": 0.2
+    },
+    "lettuce/orac/VEG-01B/nan": {
+      "n_flight": 3,
+      "n_ground": 4,
+      "fold_change": 1.16,
+      "p_value": 0.8571428571428571
+    },
+    "lettuce/orac/VEG-03A/nan": {
+      "n_flight": 6,
+      "n_ground": 6,
+      "fold_change": 1.064,
+      "p_value": 0.3939393939393939
+    },
+    "lettuce/total_phenolics/VEG-01A/nan": {
+      "n_flight": 2,
+      "n_ground": 3,
+      "fold_change": 1.294,
+      "p_value": 0.4
+    },
+    "lettuce/total_phenolics/VEG-01B/nan": {
+      "n_flight": 3,
+      "n_ground": 4,
+      "fold_change": 1.093,
+      "p_value": 0.8571428571428571
+    },
+    "lettuce/total_phenolics/VEG-03A/nan": {
+      "n_flight": 6,
+      "n_ground": 6,
+      "fold_change": 1.118,
+      "p_value": 0.1481157959176255
+    },
+    "tokyo_bekana/orac/VEG04A/blue": {
+      "n_flight": 2,
+      "n_ground": 3,
+      "fold_change": 2.613,
+      "p_value": 1.0
+    },
+    "tokyo_bekana/orac/VEG04A/red": {
+      "n_flight": 4,
+      "n_ground": 3,
+      "fold_change": 1.1,
+      "p_value": 0.8571428571428571
+    },
+    "tokyo_bekana/orac/VEG04B/blue": {
+      "n_flight": 3,
+      "n_ground": 6,
+      "fold_change": 1.156,
+      "p_value": 1.0
+    },
+    "tokyo_bekana/orac/VEG04B/red": {
+      "n_flight": 4,
+      "n_ground": 6,
+      "fold_change": 1.327,
+      "p_value": 0.6095238095238095
+    },
+    "tokyo_bekana/total_phenolics/VEG04A/blue": {
+      "n_flight": 2,
+      "n_ground": 3,
+      "fold_change": 1.446,
+      "p_value": 0.8
+    },
+    "tokyo_bekana/total_phenolics/VEG04A/red": {
+      "n_flight": 4,
+      "n_ground": 3,
+      "fold_change": 0.974,
+      "p_value": 0.4
+    },
+    "tokyo_bekana/total_phenolics/VEG04B/blue": {
+      "n_flight": 3,
+      "n_ground": 6,
+      "fold_change": 1.086,
+      "p_value": 0.26190476190476186
+    },
+    "tokyo_bekana/total_phenolics/VEG04B/red": {
+      "n_flight": 5,
+      "n_ground": 6,
+      "fold_change": 0.899,
+      "p_value": 0.24675324675324672
+    }
+  },
+  "finding": "No antioxidant assay in either crop shows a flight effect that survives stratification on mission at FDR 0.05. Between-mission variation (between_mission_spread) exceeds the within-mission flight effect (max_within_mission_fold) by up to an order of magnitude, which is why the pooled comparison is stratified, not naive.",
+  "n_significant_fdr05": 0
+}
