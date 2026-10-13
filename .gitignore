@@ -20,3 +20,6 @@ manuscript/*.blg
 manuscript/*.fdb_latexmk
 manuscript/*.fls
 manuscript/*.synctex.gz
+
+# ABAI attestation directory
+.abai/

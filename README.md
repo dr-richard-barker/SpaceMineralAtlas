@@ -7,7 +7,7 @@ there.
 [![Python](https://img.shields.io/badge/python-3.11-blue)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE-CC-BY-4.0)
-[![Tests](https://img.shields.io/badge/tests-80%20passing-brightgreen)](tests/)
+[![Tests](https://img.shields.io/badge/tests-101%20passing-brightgreen)](tests/)
 
 ---
 
@@ -114,7 +114,7 @@ are fast.
 | `fair/` | Zenodo metadata, RO-Crate, data dictionary, checksums, OSDR curation report |
 | `lsda_request/` | Prepared data request for SMO-016E |
 | `veggie_correction/` | Correction note and replacement fetcher for a prior analysis (see below) |
-| `tests/` | 80 tests, including guards against synthetic data and result drift |
+| `tests/` | 101 tests, including guards against synthetic data and result drift |
 
 ## Data sources
 
@@ -155,6 +155,15 @@ comparable with the results here.
 [`veggie_correction/`](veggie_correction/) contains a correction note with real
 replacement values and a tested drop-in replacement for the data-acquisition
 module. The subject repository has not been modified.
+
+## Related study
+
+The transcriptomic side of the same question (whether spaceflight shifts
+mineral-pathway gene expression in astronauts and rodents, read against an NHANES
+population baseline) is a separate study with its own data, code and manuscript:
+[`astronaut-mineral-final`](https://github.com/dr-richard-barker/astronaut-mineral-final)
+([project page](https://dr-richard-barker.github.io/astronaut-mineral-final/)). It
+is kept there rather than copied here, so that only one version is maintained.
 
 ## Limitations
 
