@@ -28,11 +28,11 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)-7s | %(message)s")
 log = logging.getLogger("fair")
 
 TODAY = date.today().isoformat()
-# ORCID taken from the author's existing CITATION.cff files, not inferred.
+# ORCID verified against pub.orcid.org and CrossRef (10.1038/s41526-023-00247-6) on 2026-10-14.
 AUTHOR = {
     "name": "Barker, Richard",
     "affiliation": "University of Wisconsin-Madison",
-    "orcid": "0000-0002-4525-3341",
+    "orcid": "0000-0001-5681-9857",
 }
 REPO_URL = "https://github.com/dr-richard-barker/SpaceMineralAtlas"
 
